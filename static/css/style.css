@@ -1,2 +1,16 @@
 /*Font inport*/
 @import url('https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700|Roboto+Mono:300,400,500,700&display=swap');
+/*
+body{}
+*/
+
+#sidebar_wrapper {
+    background-color: #686767 ;
+    color: #fad201;
+    width: 250px;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 999;
+    transition: all 0.3s;
+}
