@@ -44,3 +44,13 @@ body{
 .fa-fingerprint:hover {
     color: #fad201;
 }
+
+footer {
+    background-color: #36454f ;
+    color: #fad201;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    padding-left: 15em;
+}
