@@ -5,7 +5,7 @@ body{}
 */
 
 #sidebar_wrapper {
-    background-color: #686767 ;
+    background-color: #36454f ;
     color: #fad201;
     width: 250px;
     top: 0;
@@ -20,5 +20,12 @@ body{}
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     letter-spacing: 3px;
-    padding: 1em;
+    text-align: center;
+}
+.sidebar-link:visited {
+    color: #fad201;
+}
+
+.sidebar-link:hover {
+    color: #fff;
 }
