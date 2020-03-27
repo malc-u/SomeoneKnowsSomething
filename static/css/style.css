@@ -3,8 +3,8 @@
 
 body{
     color: #36454f;
+    font-family: 'Roboto', sans-serif;
 }
-
 
 #sidebar_wrapper {
     background-color: #36454f ;
@@ -52,5 +52,15 @@ footer {
     right: 0;
     bottom: 0;
     width: 100%;
-    padding-left: 15em;
+    padding-left: 15rem;
+    height: 2rem;
+}
+
+.footer-icon:hover {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+footer a {
+    color: #fad201;
 }
