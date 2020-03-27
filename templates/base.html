@@ -8,7 +8,7 @@
 <meta name="author" content="Mal C-U">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="/static/css/style.css">
 <title>Someone knows something</title>
 </head>
 <body>
@@ -17,18 +17,20 @@
   <!--Left side of the page containing sidebar-->
   <div id="sidebar_wrapper">
     <!--Page logo-->
-    <div class="logo">LOGO</div>
+    <div class="logo sidebar-item">
+      <img src="#" id="logo"/>
+    </div>
     <!--Sidebar content-->
     <div class="sidebar_list">
-      <ul class="list-group">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Active</a>
+      <ul class="list-group d-flex justify-content-center my-lg-5">
+        <li class="nav-item sidebar-item py-md-4">
+          <a class="nav-link active sidebar-link" href="#">Recommended By Us</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+        <li class="nav-item sidebar-item">
+          <a class="nav-link sidebar-link py-md-4" href="#">Users Favourite</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+        <li class="nav-item sidebar-item py-md-4">
+          <a class="nav-link sidebar-link" href="#">Login</a>
         </li>
       </ul>
     </div>
@@ -50,7 +52,7 @@
             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="#">Podcasts</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
