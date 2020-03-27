@@ -9,20 +9,24 @@ body{
 #sidebar_wrapper {
     background-color: #36454f ;
     color: #fad201;
-    width: 250px;
+    width: 15rem;
     top: 0;
     left: 0;
     height: 100vh;
     z-index: 999;
-    transition: all 0.3s;
+    transition: all 0.7s;
 }
+.no-sidebar-wrapper{
+    margin-left: -15rem;
+}
+
 #logo {
-    max-width: 12em;
+    max-width: 12rem;
 }
 .sidebar-item{
     display: block;
     font-family: 'Oswald', sans-serif;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     font-weight: 500;
     letter-spacing: 3px;
     text-align: center;
@@ -35,7 +39,7 @@ body{
     color: #fad201;
 }
 .fa-fingerprint {
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 .fa-fingerprint:hover {
     color: #fad201;
