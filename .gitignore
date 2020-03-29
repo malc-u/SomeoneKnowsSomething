@@ -1,2 +1,6 @@
 #folders
 sks
+.vscode
+
+#files
+env.py
