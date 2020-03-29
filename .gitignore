@@ -1,6 +1,7 @@
 #folders
 sks
 .vscode
+__pycache__
 
 #files
 env.py
