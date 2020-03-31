@@ -9,6 +9,7 @@ app = Flask(__name__)
 app.config['MONGO_DBNAME'] = os.getenv("MONGO_DBNAME")
 app.config['MONGO_URI'] = os.getenv("MONGODB_URI")
 
+@app.route('/')
 @app.route('/index')
 def index():
     return render_template('index.html')
