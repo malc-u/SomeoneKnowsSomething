@@ -1,5 +1,5 @@
 import os
-from flask import Flask
+from flask import Flask, render_template
 from os import path
 
 if path.exists("env.py"):
@@ -8,6 +8,10 @@ if path.exists("env.py"):
 app = Flask(__name__)
 app.config['MONGO_DBNAME'] = os.getenv("MONGO_DBNAME")
 app.config['MONGO_URI'] = os.getenv("MONGODB_URI")
+
+@app.route('/index')
+def index():
+    return render_template('index.html')
 
 
 if __name__ == '__main__':
