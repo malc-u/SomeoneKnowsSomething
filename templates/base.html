@@ -79,7 +79,10 @@
         </div>
       </nav>
       <!--Page content-->
-      <div id="content" class="container-fluid"></div>
+      <div id="content" class="container-fluid">
+        {% block content %}
+        {% endblock %}
+      </div>
     </div>
     <!--Footer-->
     <footer class="container-fluid m-0">
