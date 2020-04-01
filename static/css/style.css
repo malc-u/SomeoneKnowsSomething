@@ -64,3 +64,15 @@ footer {
 footer a {
     color: #fad201;
 }
+
+#home-header {
+    background-color: #fad201;
+}
+#home-header h1 {
+    font-family: 'Oswald', sans-serif;
+    color: #000;
+    letter-spacing: 0.3rem;
+    font-weight: 700;
+}
+
+
