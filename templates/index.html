@@ -1,10 +1,59 @@
 {% extends 'base.html' %} {% block content %}
-<div class="row">
+<div class="row mx-0">
     <div class="col-12 text-center" id="home-header">
         <h1 class="text-uppercase pt-2">True Crime Podcasts</h1>
     </div>
-    <div class="col-12"></div>
+    <!--  <div class="col-12 pt-5" id="home-about">
+        <p>True crime podcasts have become another avenue to explore by investigative journalists.
+            It is relatively new genre that very often allows producers and listeners to become
+            a part of a solution.
+            Pretty much all podcasts are released in episodes and very often there is a clear
+            message for people that hold any knowledge to get involved.
+            Someone knows something can be heard in almost all types of true crime podcasts.
+            The true crime genre has been heavily criticized for beaing cheap and tacky or even
+            disrespectful to crime victims and their families.
+            However good true crime media cannot be produced without the consent of the victim's
+            family. That's true that there are a lot of terrible true crime podcast there. Some of
+            them were exploiting victim families, some of them are irresponsible and a lot have the
+            feel of being just a copy of one another. Nevertheleass there is also a world of podcasts
+            that are well made and that also influence invesigative journalism in general.
+            All that said, with podcasts there is exactly the same story that there is
+            with crime books and films. It is up to the listeners to do their own research and make
+            their own mind. Hopefully this page can be useful to do just that.
+        </p>
+    </div>  -->
+    <div class="col-12" id="home-podcasts">
+        <h3 class="index_header text-center">Recommended:</h3>
         
+        <div class="row mx-0">
+            {% for podcast in podcasts %}
+            <div class="col-sm-12 col-md-4 col-lg-3 text-center">
+                <img class="card-img-top index_img" src="{{podcast.podcast_imgurl}}">
+                <div class="card-body">
+                    <h5 class="card-title text-center">{{podcast.podcast_title}}</h5>
+                    <button type="button" class="btn btn-dark">Listen Now</button>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+        <div class="col-12" id="home-podcasts">
+            <h3 class="index_header text-center">User Picks:</h3>
+            
+            <div class="row mx-0">
+                {% for favourite in favourtites %}
+                <div class="col-sm-12 col-md-4 col-lg-3 text-center">
+                    <img class="card-img-top index_img" src="{{favourite.podcast_imgurl}}">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">{{favourite.podcast_title}}</h5>
+                        <button type="button" class="btn btn-dark">Listen Now</button>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+
     </div>
+
+
 </div>
 {% endblock %}
