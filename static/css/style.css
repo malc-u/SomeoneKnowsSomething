@@ -12,7 +12,7 @@ body{
     width: 15rem;
     top: 0;
     left: 0;
-    height: 100vh;
+    min-height: 100vh;
     z-index: 999;
     transition: all 0.7s;
 }
@@ -45,6 +45,10 @@ body{
     color: #fad201;
 }
 
+#page-content {
+    overflow-y: hidden;
+    overflow-x:hidden;
+}
 footer {
     background-color: #36454f ;
     color: #fad201;
@@ -73,6 +77,15 @@ footer a {
     color: #000;
     letter-spacing: 0.3rem;
     font-weight: 700;
+}
+
+.index_img {
+    width: 12rem;
+    height: 15rem;
+}
+
+.index_header {
+    color: #000;
 }
 
 
