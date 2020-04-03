@@ -12,6 +12,7 @@ body{
     width: 15rem;
     top: 0;
     left: 0;
+    padding-top: 5rem;
     min-height: 100vh;
     z-index: 999;
     transition: all 0.7s;
@@ -31,23 +32,31 @@ body{
     letter-spacing: 3px;
     text-align: center;
 }
-.sidebar-link:visited {
+
+.nav-link:visited {
+    color: #ffffff;
+}
+
+.nav-link:hover {
+    color: #fad201;
+}
+.navbar{
+    background-color: #36454f;
+    color: #fad201;
+}
+
+.fa-fingerprint, .fa-bars {
+    font-size: 1.5rem;
+    color: #fad201;
+}
+.fa-fingerprint:hover, .fa-bars:hover {
     color: #fff;
 }
 
-.sidebar-link:hover {
-    color: #fad201;
-}
-.fa-fingerprint {
-    font-size: 1.5rem;
-}
-.fa-fingerprint:hover {
-    color: #fad201;
-}
-
-#page-content {
+#page_content {
     overflow-y: hidden;
-    overflow-x:hidden;
+    overflow-x: hidden;
+    padding-top: 5rem;
 }
 footer {
     background-color: #36454f ;
