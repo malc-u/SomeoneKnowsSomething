@@ -14,6 +14,10 @@ app.config['MONGO_URI'] = os.getenv("MONGODB_URI")
 mongo = PyMongo(app)
 
 @app.route('/')
+@app.route('/index'):
+def index():
+  return render_template('index.html')
+  
 @app.route('/recommended')
 def recommended():
   return render_template('recommended.html', 
