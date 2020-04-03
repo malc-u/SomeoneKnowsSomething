@@ -14,11 +14,10 @@ app.config['MONGO_URI'] = os.getenv("MONGODB_URI")
 mongo = PyMongo(app)
 
 @app.route('/')
-@app.route('/index')
-def index():
-  return render_template('index.html', 
-  podcasts = mongo.db.podcasts.find({"is_recommended": True}),
-  favourtites = mongo.db.podcasts.find({"is_favourite": True}))
+@app.route('/recommended')
+def recommended():
+  return render_template('recommended.html', 
+  podcasts = mongo.db.podcasts.find({"is_recommended": True}))
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
