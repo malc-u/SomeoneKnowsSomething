@@ -19,6 +19,10 @@ def recommended():
   return render_template('recommended.html', 
   podcasts = mongo.db.podcasts.find({"is_recommended": True}))
 
+@app.route('/read_more')
+def read_more():
+  return
+
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
     port=os.environ.get('PORT'),
