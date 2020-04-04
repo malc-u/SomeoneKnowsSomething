@@ -33,7 +33,8 @@ def register():
   if form_register.validate_on_submit():
       entered_password = request.form['password']
       password_hashed = generate_password_hash(entered_password)
-      
+      mongo.db.users.insert({'username': form_register.username.data,
+                                    'password': password_hashed})
   return render_template('register.html', title='Register',
                            form=form_register)
 
