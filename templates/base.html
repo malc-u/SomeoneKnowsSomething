@@ -81,6 +81,17 @@
 
       <!--Page content-->
       <div id="page_content" class="row mx-0">
+        <div class="col-12 text-center">
+          {% with messages = get_flashed_messages(with_categories=true) %}
+              {% if messages %}
+                  {% for category, message in messages %}
+                      <div class="alert h4 alert-{{ category }}">
+                          {{ message }}
+                      </div>
+                  {% endfor %}
+              {% endif %}
+          {% endwith %}
+      </div>
         {% block content %} {% endblock %}
       </div>
     </div>
