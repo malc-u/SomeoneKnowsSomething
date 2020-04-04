@@ -1,5 +1,5 @@
 import os
-from flask import Flask, render_template, url_for, redirect, request, session
+from flask import Flask, render_template, url_for, redirect, request, session, flash
 from flask_pymongo import PyMongo
 from werkzeug.security import generate_password_hash, check_password_hash
 from forms import RegistrationForm, LoginForm
@@ -21,16 +21,21 @@ mongo = PyMongo(app)
 def index():
   return render_template('index.html')
 
-@app.route('/register')
-def register():
-  form_register = RegistrationForm()
-  return render_template('register.html', title = 'Register', form = form_register )
-
 @app.route('/login')
 def login():
   form_login = LoginForm()
   return render_template('login.html', title = 'Login', form = form_login )
 
+@app.route('/register', methods=['GET', 'POST'])
+def register():
+  form_register = RegistrationForm()
+
+  if form_register.validate_on_submit():
+      entered_password = request.form['password']
+      password_hashed = generate_password_hash(entered_password)
+      
+  return render_template('register.html', title='Register',
+                           form=form_register)
 
 @app.route('/recommended')
 def recommended():
