@@ -31,6 +31,9 @@ def register():
   form_register = RegistrationForm()
 
   if form_register.validate_on_submit():
+    existing_username = mongo.db.users.find_one({'username': request.form['username']})
+ 
+    if not existing_username:
       entered_password = request.form['password']
       password_hashed = generate_password_hash(entered_password)
       mongo.db.users.insert({'username': form_register.username.data,
@@ -38,6 +41,11 @@ def register():
       session['username'] = request.form.get('username')
       flash(f'Your account has been created. Please log in.', 'primary')
       return redirect(url_for('login'))
+      
+    else:
+      flash(f'Username already taken. Please try another one.', 'primary')
+      return redirect(url_for('register'))
+
   return render_template('register.html', title='Register',
                            form=form_register)
 
