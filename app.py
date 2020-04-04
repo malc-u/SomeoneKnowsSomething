@@ -35,6 +35,9 @@ def register():
       password_hashed = generate_password_hash(entered_password)
       mongo.db.users.insert({'username': form_register.username.data,
                                     'password': password_hashed})
+      session['username'] = request.form.get('username')
+      flash(f'Your account has been created. Please log in.', 'primary')
+      return redirect(url_for('login'))
   return render_template('register.html', title='Register',
                            form=form_register)
 
