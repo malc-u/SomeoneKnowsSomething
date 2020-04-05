@@ -7,12 +7,24 @@
       <li class="nav-item sidebar-item">
         <a class="nav-link sidebar-link py-md-4" href="#">Users Picks</a>
       </li>
+      {% if 'username' in session %}
+      <li class="nav-item sidebar-item">
+        <a class="nav-link sidebar-link py-md-4" href="#">Australian</a>
+      </li>
+      <li class="nav-item sidebar-item">
+        <a class="nav-link sidebar-link py-md-4" href="#">British</a>
+      </li>
+      <li class="nav-item sidebar-item">
+        <a class="nav-link sidebar-link py-md-4" href="#">American</a>
+      </li>
+      {% else %}
       <li class="nav-item sidebar-item py-md-4">
         <a class="nav-link sidebar-link" href="#">Login</a>
       </li>
       <li class="nav-item sidebar-item py-md-4">
         <a class="nav-link sidebar-link" href="{{url_for('register')}}">Register</a>
       </li>
+      {% endif %}
     </ul>
   </div>
 {% endblock%}
