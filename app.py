@@ -35,6 +35,9 @@ def login():
     elif existing_user is not None and check_password_hash(existing_user['password'], form_login.password.data):
       session['username'] = request.form.get('username')
       return redirect(url_for('index'))
+    
+    flash(f'Password incorrect. Please try again.', 'success')
+    return redirect(url_for('login'))
 
   return render_template('login.html', title = 'Login', form = form_login ) 
 
