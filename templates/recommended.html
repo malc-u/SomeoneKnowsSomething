@@ -12,8 +12,13 @@
             <img class="card-img-top index_img" src="{{podcast.podcast_imgurl}}">
             <div class="card-body">
                 <h5 class="card-title text-center">{{podcast.podcast_title}}</h5>
-                <button type="button" class="btn btn-dark">Read More</button>
-                <button type="button" class="btn btn-warning">Login to Listen</button>
+                <a role="button" class="btn btn-dark" href="#">Read More</a>
+                {% if 'username' in session %}
+                <a role="button" class="btn btn-warning" href="{{podcast.podcast_link}}" target="_blank" rel="noopener"
+                aria-label="Listen to {{podcast.podcast_title}} here">Listen here</a>
+                {% else %}
+                <a role="button" class="btn btn-warning" href="{{url_for('login')}}">Login to Listen</a>
+                {% endif %}
             </div>
         </div>
         {% endfor %}
