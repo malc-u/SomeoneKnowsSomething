@@ -27,6 +27,10 @@ def login():
 
   if form_login.validate_on_submit():
     existing_user = mongo.db.users.find_one({'username': form_login.username.data})
+    
+    if not existing_user:
+      flash(f'Username not found. Please try again or register.', 'warning')
+      return redirect(url_for('register'))
 
   return render_template('login.html', title = 'Login', form = form_login ) 
 
