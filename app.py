@@ -75,6 +75,11 @@ def recommended():
   return render_template('recommended.html', 
   podcasts = mongo.db.podcasts.find({"is_recommended": True}))
 
+@app.route('/favourites')
+def favourites():
+  return render_template('favourites.html', 
+  podcasts = mongo.db.podcasts.find({"is_favourite": True}))
+
 @app.route('/read_more')
 def read_more():
   return
