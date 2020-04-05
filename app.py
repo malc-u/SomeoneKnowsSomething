@@ -66,8 +66,8 @@ def register():
                            form=form_register)
 
 @app.route('/logut')
-def logout:
-  return redirect(url_for('index'))
+def logout():
+  return render_template('index.html')
 
 @app.route('/recommended')
 def recommended():
