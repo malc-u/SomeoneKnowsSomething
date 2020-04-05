@@ -5,7 +5,7 @@
         <a class="nav-link active sidebar-link" href="{{url_for('recommended')}}">Recommended</a>
       </li>
       <li class="nav-item sidebar-item">
-        <a class="nav-link sidebar-link py-md-4" href="#">Users Picks</a>
+        <a class="nav-link sidebar-link py-md-4" href="{{url_for('favourites')}}">Users Picks</a>
       </li>
       {% if 'username' in session %}
       <li class="nav-item sidebar-item">
