@@ -67,6 +67,7 @@ def register():
 
 @app.route('/logut')
 def logout():
+  session.clear()
   return render_template('index.html')
 
 @app.route('/recommended')
