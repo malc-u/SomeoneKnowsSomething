@@ -55,7 +55,7 @@ def register():
       mongo.db.users.insert({'username': form_register.username.data,
                                     'password': password_hashed})
       session['username'] = request.form.get('username')
-      flash(f'Your account has been created. Please log in.', 'primary')
+      flash(f'Your account has been created.', 'primary')
       return redirect(url_for('index'))
       
     else:
