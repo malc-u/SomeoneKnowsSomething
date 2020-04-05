@@ -1,0 +1,26 @@
+{% extends 'layout/base.html' %} {% block content %}
+
+<div class="col-12 text-center" id="home-header">
+    <h1 class="text-uppercase py-2">Users picks</h1>
+</div>
+
+<div class="col-12 pt-5" id="home-podcasts">
+
+    <div class="row mx-0">
+        {% for podcast in podcasts %}
+        <div class="col-sm-12 col-md-4 col-lg-3 text-center">
+            <img class="card-img-top index_img" src="{{podcast.podcast_imgurl}}">
+            <div class="card-body">
+                <h5 class="card-title text-center">{{podcast.podcast_title}}</h5>
+                <a role="button" class="btn btn-dark" href="#">Read More</a>
+                <a role="button" class="btn btn-warning" href="{{url_for('login')}}">Login to Listen</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+</div>
+
+
+
+{% endblock %}
