@@ -23,7 +23,7 @@ def index():
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
-  
+
   form_login = LoginForm()
 
   if form_login.validate_on_submit():
@@ -64,6 +64,10 @@ def register():
 
   return render_template('register.html', title='Register',
                            form=form_register)
+
+@app.route('/logut')
+def logout:
+  return redirect(url_for('index'))
 
 @app.route('/recommended')
 def recommended():
