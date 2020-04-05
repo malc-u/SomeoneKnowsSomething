@@ -23,6 +23,7 @@ def index():
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
+  
   form_login = LoginForm()
 
   if form_login.validate_on_submit():
