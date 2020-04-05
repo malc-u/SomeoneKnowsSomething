@@ -21,10 +21,14 @@ mongo = PyMongo(app)
 def index():
   return render_template('index.html')
 
-@app.route('/login')
+@app.route('/login', methods=['GET', 'POST'])
 def login():
   form_login = LoginForm()
-  return render_template('login.html', title = 'Login', form = form_login )
+
+  if form_login.validate_on_submit():
+    existing_user = mongo.db.users.find_one({'username': form_login.username.data})
+
+  return render_template('login.html', title = 'Login', form = form_login ) 
 
 @app.route('/register', methods=['GET', 'POST'])
 def register():
@@ -40,7 +44,7 @@ def register():
                                     'password': password_hashed})
       session['username'] = request.form.get('username')
       flash(f'Your account has been created. Please log in.', 'primary')
-      return redirect(url_for('login'))
+      return redirect(url_for('index'))
       
     else:
       flash(f'Username already taken. Please try another one.', 'primary')
