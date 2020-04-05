@@ -25,22 +25,7 @@
         <img src="/static/img/logo.png" id="logo" />
       </div>
       <!--Sidebar content-->
-      <div class="sidebar_list">
-        <ul class="list-group d-flex justify-content-center my-lg-5">
-          <li class="nav-item sidebar-item py-md-4">
-            <a class="nav-link active sidebar-link" href="{{url_for('recommended')}}">Recommended</a>
-          </li>
-          <li class="nav-item sidebar-item">
-            <a class="nav-link sidebar-link py-md-4" href="#">Users Picks</a>
-          </li>
-          <li class="nav-item sidebar-item py-md-4">
-            <a class="nav-link sidebar-link" href="#">Login</a>
-          </li>
-          <li class="nav-item sidebar-item py-md-4">
-            <a class="nav-link sidebar-link" href="{{url_for('register')}}">Register</a>
-          </li>
-        </ul>
-      </div>
+      {% include 'layout/sidebar.html' %}
     </div>
     <!--Content side of the page-->
     <div class="container-fluid  mx-0 px-0" id="content_wrapper">
