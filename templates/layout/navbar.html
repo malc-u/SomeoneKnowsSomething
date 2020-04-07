@@ -19,7 +19,7 @@
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="#">Australian</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">British</a>
+              <a class="dropdown-item" href="{{url_for('british')}}">British</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="#">American</a>
             </div>
@@ -38,7 +38,7 @@
         </li>
         {% else %}
         <li class="nav-item ">
-          <a class="nav-link" href="#">Login </a>
+          <a class="nav-link" href="">Login </a>
         </li>
         {% endif %}
       </ul>
