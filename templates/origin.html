@@ -1,8 +1,11 @@
 {% extends 'layout/base.html' %} {% block content %}
 
+{% if origin %}
 <div class="col-12 text-center home_header">
-    <h1 class="text-uppercase py-2">Origin: British</h1>
+    <h1 class="text-uppercase py-2">Origin: {{origin}}</h1>
 </div>
+
+{% endif %}
 
 <div class="col-12 pt-5" id="home-podcasts">
 
