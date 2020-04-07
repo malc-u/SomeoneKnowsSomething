@@ -82,8 +82,11 @@ def favourites():
 
 @app.route('/british')
 def british():
-  return render_template('british.html', 
-  podcasts = mongo.db.podcasts.find({"origin": 'UK'}))
+  return render_template('origin.html', 
+  podcasts = mongo.db.podcasts.find({"origin": 'UK'}),
+  origin = 'United Kingdom')
+
+
 
 @app.route('/read_more')
 def read_more():
