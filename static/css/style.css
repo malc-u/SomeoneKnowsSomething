@@ -102,11 +102,17 @@ footer a {
 }
 
 .hero_container {
-    background-image: url(../img/hero.jpg);
-    height: 50vh;
-    background-position: bottom;
+    background-image: url(../img/indexpic.jpg);
+    height:50vh;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 
+
+@media (min-width: 1024px) {
+    .hero_container {
+        background-size: contain;
+    }
+}
