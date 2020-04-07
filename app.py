@@ -86,6 +86,11 @@ def british():
   podcasts = mongo.db.podcasts.find({"origin": 'UK'}),
   origin = 'United Kingdom')
 
+@app.route('/australian')
+def australian():
+  return render_template('origin.html', 
+  podcasts = mongo.db.podcasts.find({"origin": 'Australia'}),
+  origin = 'Australia')
 
 
 @app.route('/read_more')
