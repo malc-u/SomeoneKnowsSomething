@@ -109,6 +109,12 @@ footer a {
     background-size: cover;
 }
 
+.index_li {
+    font-size: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    list-style-position: inside;
+}
 
 
 @media (min-width: 1024px) {
