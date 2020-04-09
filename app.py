@@ -102,6 +102,10 @@ def american():
 def read_more():
   return
 
+@app.route('/your_account')
+def your_account():
+  return render_template('account.html')
+
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
     port=os.environ.get('PORT'),
