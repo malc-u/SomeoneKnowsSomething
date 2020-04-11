@@ -112,6 +112,20 @@ def your_account():
 def add_podcast():
     add_form = AddForm()
 
+    if request.method == 'POST':
+        mongo.db.podcasts.insert_one({
+            'username': session['username'],
+            'podcast_title': add_form.podcast_title.data,
+            'podcast_imgurl': add_form.podcast_imgurl.data,
+            'origin': add_form.origin.data,
+            'release_year': add_form.release_year.data,
+            'description': add_form.description.data,
+            'is_favourite': add_form.is_favourite.data,
+            'is_recommended': False,
+            'no_episodes': add_form.no_episodes.data,
+            'podcast_link': add_form.podcast_link.data,
+                    })
+        return redirect(url_for('your_account', title='Podcast Added'))
 
     return render_template('add_podcast.html', form=add_form)
 
