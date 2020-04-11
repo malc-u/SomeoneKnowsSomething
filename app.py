@@ -104,6 +104,7 @@ def read_more():
 
 @app.route('/your_account')
 def your_account():
+  current_user = session['username']
   return render_template('account.html')
 
 if __name__ == '__main__':
