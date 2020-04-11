@@ -28,7 +28,14 @@
                             <img class="img_origin" src="{{podcast.podcast_imgurl}}">
                         </div>
                         <div class="col-sm-6 col-md-8 col-lg-10 mb-3">
+                                <div class="row mx-0"><div class="col-sm-12 col-lg-8">
+                                    <h5 class="origin_title">{{podcast.podcast_title}} -  released {{podcast.release_year}}</h5>
+                                </div>
+                                <div class="col-sm-12 col-lg-4 mx-0 pl-0">
+                                    <a href="{{podcast.podcast_link}}" target="_blank"
+                                    rel="noopener" aria-label="Listen to {{podcast.podcast_title}} here"><i class="fas fa-headphones h2 px-2"></i></a>
                                
+                                </div></div>
                                 <div class="row mx-0"><div class="col-12">
                                     <p>Story: {{podcast.description}}</p>
                                 <p>Number of episodes: {{podcast.no_episodes}}</p>
