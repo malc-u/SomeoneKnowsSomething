@@ -2,7 +2,7 @@ import os
 from flask import Flask, render_template, url_for, redirect, request, session, flash
 from flask_pymongo import PyMongo
 from werkzeug.security import generate_password_hash, check_password_hash
-from forms import RegistrationForm, LoginForm
+from forms import RegistrationForm, LoginForm, AddForm
 from os import path
 
 
@@ -83,19 +83,19 @@ def favourites():
 @app.route('/british')
 def british():
   return render_template('origin.html', 
-  podcasts = mongo.db.podcasts.find({"origin": 'UK'}),
+  podcasts = mongo.db.podcasts.find({"origin": 1}),
   origin = 'United Kingdom')
 
 @app.route('/australian')
 def australian():
   return render_template('origin.html', 
-  podcasts = mongo.db.podcasts.find({"origin": 'Australia'}),
+  podcasts = mongo.db.podcasts.find({"origin": 2}),
   origin = 'Australia')
 
 @app.route('/american')
 def american():
   return render_template('origin.html', 
-  podcasts = mongo.db.podcasts.find({"origin": 'USA'}),
+  podcasts = mongo.db.podcasts.find({"origin": 3}),
   origin = 'USA')
 
 @app.route('/read_more')
@@ -107,6 +107,13 @@ def your_account():
   current_user = session['username']
   return render_template('account.html', 
   podcasts = mongo.db.podcasts.find({"username": current_user}))
+
+@app.route('/add_podcast', methods=['GET', 'POST'])
+def add_podcast():
+    add_form = AddForm()
+
+
+    return render_template('add_podcast.html', form=add_form)
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
