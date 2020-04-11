@@ -129,3 +129,12 @@ footer a {
         background-size: contain;
     }
 }
+
+.form-check {
+    list-style: none;
+    font-size: 1.25rem;
+}
+
+#add_button {
+    padding-bottom: 1.5rem;
+}
