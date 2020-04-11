@@ -125,6 +125,7 @@ def add_podcast():
             'no_episodes': add_form.no_episodes.data,
             'podcast_link': add_form.podcast_link.data,
                     })
+        flash(f'Your podcasts has been added', 'success')
         return redirect(url_for('your_account', title='Podcast Added'))
 
     return render_template('add_podcast.html', form=add_form)
