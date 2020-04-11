@@ -105,7 +105,8 @@ def read_more():
 @app.route('/your_account')
 def your_account():
   current_user = session['username']
-  return render_template('account.html')
+  return render_template('account.html', 
+  podcasts = mongo.db.podcasts.find({"username": current_user}))
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
