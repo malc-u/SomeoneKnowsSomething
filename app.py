@@ -160,7 +160,7 @@ def update_podcast(podcast_id):
             'no_episodes': update_form.no_episodes.data,
             'podcast_link': update_form.podcast_link.data}
             })
-
+    flash(f'Podcast details updated sucessfully.', 'success')
 
 
   return render_template('podcast.html', form = update_form, podcast = picked_podcast)
