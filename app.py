@@ -3,6 +3,7 @@ from flask import Flask, render_template, url_for, redirect, request, session, f
 from flask_pymongo import PyMongo
 from werkzeug.security import generate_password_hash, check_password_hash
 from forms import RegistrationForm, LoginForm, AddForm, UpdateForm
+from bson.objectid import ObjectId
 from os import path
 
 
