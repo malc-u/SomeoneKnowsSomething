@@ -148,6 +148,20 @@ def update_podcast(podcast_id):
     update_form.no_episodes.data = picked_podcast['no_episodes']
     update_form.podcast_link.data = picked_podcast['podcast_link']
 
+  if update_form.validate_on_submit():
+    mongo.db.podcasts.update_one( {'_id': ObjectId(podcast_id)},
+    {'$set': 
+            {'podcast_title': update_form.podcast_title.data,
+            'podcast_imgurl': update_form.podcast_imgurl.data,
+            'origin': update_form.origin.data,
+            'release_year': update_form.release_year.data,
+            'description': update_form.description.data,
+            'is_favourite': update_form.is_favourite.data,
+            'no_episodes': update_form.no_episodes.data,
+            'podcast_link': update_form.podcast_link.data}
+            })
+
+
 
   return render_template('podcast.html', form = update_form, podcast = picked_podcast)
 
