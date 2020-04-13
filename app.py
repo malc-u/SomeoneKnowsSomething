@@ -132,6 +132,21 @@ def add_podcast():
 def update_podcast(podcast_id):
   update_form = UpdateForm()
   picked_podcast = mongo.db.podcasts.find_one({'_id': ObjectId(podcast_id)})
+  """
+  Used this method following advice from https://romain.dorgueil.net/wiki/python/wtforms 
+  and https://stackoverflow.com/a/23714791
+  to populate update form with existing in database details for the podcast that user 
+  wants to amend. 
+  """
+  if request.method == 'GET':
+    update_form.podcast_title.data = picked_podcast['podcast_title'] 
+    update_form.podcast_imgurl.data = picked_podcast['podcast_imgurl'] 
+    update_form.origin.data = picked_podcast['origin']
+    update_form.release_year.data = picked_podcast['release_year'] 
+    update_form.description.data = picked_podcast['description'] 
+    update_form.is_favourite.data = picked_podcast['is_favourite'] 
+    update_form.no_episodes.data = picked_podcast['no_episodes']
+    update_form.podcast_link.data = picked_podcast['podcast_link']
 
 
   return render_template('podcast.html', form = update_form, podcast = picked_podcast)
