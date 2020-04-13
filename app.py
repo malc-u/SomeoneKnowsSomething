@@ -74,12 +74,12 @@ def logout():
 @app.route('/recommended')
 def recommended():
   return render_template('recommended.html', 
-  podcasts = mongo.db.podcasts.find({"is_recommended": True}))
+  podcasts = mongo.db.podcasts.find({"is_recommended": True}), recommended = "Recommended")
 
 @app.route('/favourites')
 def favourites():
-  return render_template('favourites.html', 
-  podcasts = mongo.db.podcasts.find({"is_favourite": True}))
+  return render_template('recommended.html', 
+  podcasts = mongo.db.podcasts.find({"is_favourite": True}), recommended = "Users favourites")
 
 @app.route('/british')
 def british():
@@ -166,7 +166,6 @@ def update_podcast(podcast_id):
   else:
     flash(f'Error updating podcast. Please try again', 'info')
     return redirect(url_for('your_account'))
-
 
   return render_template('podcast.html', form = update_form, podcast = picked_podcast)
 
