@@ -161,7 +161,7 @@ def update_podcast(podcast_id):
             'podcast_link': update_form.podcast_link.data}
             })
     flash(f'Podcast details updated sucessfully.', 'success')
-
+    return redirect(url_for('your_account'))
 
   return render_template('podcast.html', form = update_form, podcast = picked_podcast)
 
