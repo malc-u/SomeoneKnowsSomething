@@ -21,6 +21,7 @@
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="{{url_for('favourites')}}">User Picks</a>
               {% if 'username' in session %}
+              <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="{{url_for('australian')}}">Australian</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="{{url_for('british')}}">British</a>
@@ -35,6 +36,7 @@
             aria-haspopup="true" aria-expanded="false">Hello {{session['username']}}</a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="{{url_for('your_account')}}">My account</a>
+            <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">Add podcasts</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="{{url_for('logout')}}">Logout</a>
