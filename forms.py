@@ -39,4 +39,4 @@ class UpdateForm(FlaskForm):
     is_favourite = BooleanField('Favourite: ')
     no_episodes = StringField('Number of episodes: ', validators=[DataRequired()])
     podcast_link = StringField('Link to podcast website: ', validators=[DataRequired()])
-    submit = SubmitField('Edit podcast')
+    submit = SubmitField('Save changes')
