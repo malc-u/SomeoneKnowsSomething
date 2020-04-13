@@ -102,9 +102,14 @@ def american():
 
 @app.route('/your_account')
 def your_account():
-  current_user = session['username']
-  return render_template('account.html', 
-  podcasts = mongo.db.podcasts.find({"username": current_user}))
+  if 'username' not in session:
+    return redirect(url_for('login'))
+  else:
+    current_user = session['username']
+    return render_template('account.html', 
+    podcasts = mongo.db.podcasts.find({"username": current_user}))
+    
+
 
 @app.route('/add_podcast', methods=['GET', 'POST'])
 def add_podcast():
