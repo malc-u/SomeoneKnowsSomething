@@ -148,7 +148,7 @@ def update_podcast(podcast_id):
     update_form.no_episodes.data = picked_podcast['no_episodes']
     update_form.podcast_link.data = picked_podcast['podcast_link']
 
-  if update_form.validate_on_submit():
+  elif update_form.validate_on_submit():
     mongo.db.podcasts.update_one( {'_id': ObjectId(podcast_id)},
     {'$set': 
             {'podcast_title': update_form.podcast_title.data,
