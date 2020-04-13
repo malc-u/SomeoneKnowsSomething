@@ -2,7 +2,7 @@ import os
 from flask import Flask, render_template, url_for, redirect, request, session, flash
 from flask_pymongo import PyMongo
 from werkzeug.security import generate_password_hash, check_password_hash
-from forms import RegistrationForm, LoginForm, AddForm
+from forms import RegistrationForm, LoginForm, AddForm, UpdateForm
 from os import path
 
 
@@ -98,9 +98,6 @@ def american():
   podcasts = mongo.db.podcasts.find({"origin": 3}),
   origin = 'USA')
 
-@app.route('/read_more')
-def read_more():
-  return
 
 @app.route('/your_account')
 def your_account():
@@ -129,6 +126,9 @@ def add_podcast():
         return redirect(url_for('your_account', title='Podcast Added'))
 
     return render_template('add_podcast.html', form=add_form)
+
+
+
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
