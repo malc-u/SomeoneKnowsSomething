@@ -113,8 +113,10 @@ def your_account():
 
 @app.route('/add_podcast', methods=['GET', 'POST'])
 def add_podcast():
+  if 'username' not in session:
+    return redirect(url_for('login'))
+  else:
     add_form = AddForm()
-
     if request.method == 'POST':
         mongo.db.podcasts.insert_one({
             'username': session['username'],
@@ -131,7 +133,8 @@ def add_podcast():
         flash(f'Your podcasts has been added', 'success')
         return redirect(url_for('your_account', title='Podcast Added'))
 
-    return render_template('add_podcast.html', form=add_form)
+  return render_template('add_podcast.html', form=add_form)
+    
 
 @app.route('/update_podcast/<podcast_id>', methods=['GET', 'POST'])
 def update_podcast(podcast_id):
