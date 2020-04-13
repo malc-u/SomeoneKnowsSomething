@@ -1,5 +1,5 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField, PasswordField, SubmitField, RadioField, BooleanField
+from wtforms import StringField, PasswordField, SubmitField, RadioField, BooleanField, TextAreaField
 from wtforms.validators import DataRequired, Length, EqualTo
 
 class RegistrationForm(FlaskForm):
@@ -22,7 +22,7 @@ class AddForm(FlaskForm):
                                     (1,'UK'), (2,'Australia'), (3,'USA')],
                                     default=1, coerce=int, validators=[DataRequired()])
     release_year = StringField('Release year: ', validators=[DataRequired()])
-    description = StringField('Description: ', validators=[DataRequired()])
+    description = TextAreaField('Description: ', validators=[DataRequired(), Length(max=500)])
     is_favourite = BooleanField('Favourite: ')
     no_episodes = StringField('Number of episodes: ', validators=[DataRequired()])
     podcast_link = StringField('Link to podcast website: ', validators=[DataRequired()])
@@ -35,7 +35,7 @@ class UpdateForm(FlaskForm):
                                     (1,'UK'), (2,'Australia'), (3,'USA')],
                                     default=1, coerce=int, validators=[DataRequired()])
     release_year = StringField('Release year: ', validators=[DataRequired()])
-    description = StringField('Description: ', validators=[DataRequired()])
+    description = TextAreaField('Description: ', validators=[DataRequired(), Length(max=500)])
     is_favourite = BooleanField('Favourite: ')
     no_episodes = StringField('Number of episodes: ', validators=[DataRequired()])
     podcast_link = StringField('Link to podcast website: ', validators=[DataRequired()])
