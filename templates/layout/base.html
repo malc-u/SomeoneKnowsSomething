@@ -22,7 +22,8 @@
     <div id="sidebar_wrapper">
       <!--Page logo-->
       <div class="logo sidebar-item">
-        <img src="/static/img/logo.png" id="logo" />
+        <a href="{{url_for('index')}}" aria-label="Someone Knows Something Logo">
+          <img src="/static/img/logo.png" id="logo" /></a>
       </div>
       <!--Sidebar content-->
       {% include 'layout/sidebar.html' %}
