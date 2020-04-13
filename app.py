@@ -128,8 +128,10 @@ def add_podcast():
 
     return render_template('add_podcast.html', form=add_form)
 
+@app.route('/update_podcast/<podcast_id>', methods=['GET', 'POST'])
+def update_podcast(podcast_id):
 
-
+return render_template('podcast.html')
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
