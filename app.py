@@ -193,4 +193,4 @@ def update_podcast(podcast_id):
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP', '127.0.0.1'),
     port=os.environ.get('PORT', '5000'),
-    debug=True)
+    debug=False)
