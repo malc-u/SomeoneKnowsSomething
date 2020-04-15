@@ -115,6 +115,11 @@ def american():
     podcasts = mongo.db.podcasts.find({"origin": 3}),
     origin = 'USA')
 
+@app.route('/read_more/<podcast_id>', methods=['GET', 'POST'])
+def read_more(podcast_id):
+  picked_podcast = mongo.db.podcasts.find_one({'_id': ObjectId(podcast_id)})
+
+  return render_template('read_more.html', podcast = picked_podcast)
 
 @app.route('/your_account')
 def your_account():
