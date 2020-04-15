@@ -151,8 +151,12 @@ def add_podcast():
 
 @app.route('/update_podcast/<podcast_id>', methods=['GET', 'POST'])
 def update_podcast(podcast_id):
-  update_form = UpdateForm()
-  picked_podcast = mongo.db.podcasts.find_one({'_id': ObjectId(podcast_id)})
+  if 'username' not in session:
+    flash(f'Oops... you need to be logged in to see this page.', 'info')
+    return redirect(url_for('login'))
+  else:
+    update_form = UpdateForm()
+    picked_podcast = mongo.db.podcasts.find_one({'_id': ObjectId(podcast_id)})
   """
   Used this method following advice from https://romain.dorgueil.net/wiki/python/wtforms 
   and https://stackoverflow.com/a/23714791
