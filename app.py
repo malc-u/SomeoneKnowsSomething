@@ -21,6 +21,11 @@ mongo = PyMongo(app)
 def index():
   return render_template('index.html')
 
+"""
+Check_password_hash part is based on example no 9 from this page
+https://www.programcreek.com/python/example/58659/werkzeug.security.check_password_hash
+but it was amended and updated to suit the needs of this app
+"""
 @app.route('/login', methods=['GET', 'POST'])
 def login():
 
@@ -148,7 +153,12 @@ def add_podcast():
 
   return render_template('add_podcast.html', form=add_form)
     
-
+"""
+Used request.method == 'GET' following advice from 
+https://romain.dorgueil.net/wiki/python/wtforms and https://stackoverflow.com/a/23714791
+to populate update form with existing in database details for the podcast that user 
+wants to amend. 
+"""
 @app.route('/update_podcast/<podcast_id>', methods=['GET', 'POST'])
 def update_podcast(podcast_id):
   if 'username' not in session:
@@ -157,12 +167,7 @@ def update_podcast(podcast_id):
   else:
     update_form = UpdateForm()
     picked_podcast = mongo.db.podcasts.find_one({'_id': ObjectId(podcast_id)})
-  """
-  Used this method following advice from https://romain.dorgueil.net/wiki/python/wtforms 
-  and https://stackoverflow.com/a/23714791
-  to populate update form with existing in database details for the podcast that user 
-  wants to amend. 
-  """
+
   if request.method == 'GET':
     update_form.podcast_title.data = picked_podcast['podcast_title'] 
     update_form.podcast_imgurl.data = picked_podcast['podcast_imgurl'] 
@@ -197,4 +202,4 @@ def update_podcast(podcast_id):
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
     port=os.environ.get('PORT'),
-    debug=False)
+    debug=True)
