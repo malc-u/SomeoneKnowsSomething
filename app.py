@@ -103,9 +103,13 @@ def australian():
 
 @app.route('/american')
 def american():
-  return render_template('origin.html', 
-  podcasts = mongo.db.podcasts.find({"origin": 3}),
-  origin = 'USA')
+  if 'username' not in session:
+    flash(f'Oops... you need to be logged in to see this page.', 'info')
+    return redirect(url_for('login'))
+  else:
+    return render_template('origin.html', 
+    podcasts = mongo.db.podcasts.find({"origin": 3}),
+    origin = 'USA')
 
 
 @app.route('/your_account')
