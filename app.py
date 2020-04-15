@@ -6,14 +6,13 @@ from forms import RegistrationForm, LoginForm, AddForm, UpdateForm
 from bson.objectid import ObjectId
 from os import path
 
-
 if path.exists("env.py"):
   import env
   
 app = Flask(__name__)
-app.config['MONGO_DBNAME'] = os.getenv("MONGO_DBNAME")
-app.config['MONGO_URI'] = os.getenv("MONGODB_URI")
-app.config['SECRET_KEY'] = os.getenv("SECRET_KEY")
+app.config["MONGO_URI"] = os.getenv("MONGODB_URI")
+app.config["MONGO_DBNAME"] = os.getenv("MONGO_DBNAME")
+app.config["SECRET_KEY"] = os.getenv("SECRET_KEY")
 
 mongo = PyMongo(app)
 
@@ -194,4 +193,4 @@ def update_podcast(podcast_id):
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP', '127.0.0.1'),
     port=os.environ.get('PORT', '5000'),
-    debug=False)
+    debug=True)
