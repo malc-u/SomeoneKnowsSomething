@@ -84,6 +84,7 @@ def favourites():
 @app.route('/british')
 def british():
   if 'username' not in session:
+    flash(f'Oops... you need to be logged in to see this page.', 'info')
     return redirect(url_for('login'))
   else:
     return render_template('origin.html', 
