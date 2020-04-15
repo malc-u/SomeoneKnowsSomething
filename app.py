@@ -83,9 +83,12 @@ def favourites():
 
 @app.route('/british')
 def british():
-  return render_template('origin.html', 
-  podcasts = mongo.db.podcasts.find({"origin": 1}),
-  origin = 'United Kingdom')
+  if 'username' not in session:
+    return redirect(url_for('login'))
+  else:
+    return render_template('origin.html', 
+    podcasts = mongo.db.podcasts.find({"origin": 1}),
+    origin = 'United Kingdom')
 
 @app.route('/australian')
 def australian():
