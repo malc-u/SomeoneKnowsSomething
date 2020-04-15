@@ -192,6 +192,6 @@ def update_podcast(podcast_id):
   return render_template('podcast.html', form = update_form, podcast = picked_podcast)
 
 if __name__ == '__main__':
-    app.run(host=os.environ.get('IP'),
-    port=os.environ.get('PORT'),
-    debug=True)
+    app.run(host=os.environ.get('IP', '127.0.0.1'),
+    port=os.environ.get('PORT', '5000'),
+    debug=False)
