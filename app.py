@@ -119,6 +119,7 @@ def your_account():
 @app.route('/add_podcast', methods=['GET', 'POST'])
 def add_podcast():
   if 'username' not in session:
+    flash(f'Oops... you need to be logged in to see this page.', 'info')
     return redirect(url_for('login'))
   else:
     add_form = AddForm()
