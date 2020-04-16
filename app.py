@@ -220,8 +220,10 @@ def delete_podcast(podcast_id):
       mongo.db.podcasts.delete_one( {'_id': ObjectId(podcast_id)})
       flash(f'Podcast deleted', 'info')
       return redirect(url_for('your_account', title='Podcast deleted'))
+    else:
+        flash(f'Oops, something went wrong. Please try again', 'danger')
 
-  return render_template('delete_podcast.html', form = delete_form, podcast=picked_podcast )
+  return render_template('delete_podcast.html', form = delete_form , podcast = picked_podcast)
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
