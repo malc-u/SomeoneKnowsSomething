@@ -216,8 +216,10 @@ def delete_podcast(podcast_id):
   if delete_form.validate_on_submit():
     existing_username = session['username']
     existing_user = mongo.db.users.find_one({'username': existing_username})
+    if existing_user and check_password_hash(existing_user['password'], delete_form.password.data):
+      mongo.db.podcasts.delete_one( {'_id': ObjectId(podcast_id)})
 
-  return render_template('delete_podcast.html', form = delete_form )
+  return render_template('delete_podcast.html', form = delete_form, podcast=picked_podcast )
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
