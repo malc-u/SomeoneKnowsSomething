@@ -40,3 +40,7 @@ class UpdateForm(FlaskForm):
     no_episodes = StringField('Number of episodes: ', validators=[DataRequired()])
     podcast_link = StringField('Link to podcast website: ', validators=[DataRequired()])
     submit = SubmitField('Save changes')
+
+class DeleteForm(FlaskForm):
+    password = PasswordField('Password: ', validators=[DataRequired()])
+    submit = SubmitField('Delete')
