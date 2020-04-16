@@ -204,6 +204,11 @@ def update_podcast(podcast_id):
 
   return render_template('podcast.html', form = update_form, podcast = picked_podcast)
 
+@app.route('/delete_podcast/<podcast_id>', methods=['GET', 'POST'])
+def delete_podcast(podcast_id):
+
+  return render_template('delete_podcast.html', form = delete_form )
+
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
     port=os.environ.get('PORT'),
