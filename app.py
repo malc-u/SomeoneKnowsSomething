@@ -213,6 +213,10 @@ def delete_podcast(podcast_id):
     delete_form = DeleteForm()
     picked_podcast = mongo.db.podcasts.find_one({'_id': ObjectId(podcast_id)})
 
+  if delete_form.validate_on_submit():
+    existing_username = session['username']
+    existing_user = mongo.db.users.find_one({'username': existing_username})
+
   return render_template('delete_podcast.html', form = delete_form )
 
 if __name__ == '__main__':
