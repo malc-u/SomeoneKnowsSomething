@@ -206,6 +206,12 @@ def update_podcast(podcast_id):
 
 @app.route('/delete_podcast/<podcast_id>', methods=['GET', 'POST'])
 def delete_podcast(podcast_id):
+  if 'username' not in session:
+    flash(f'Oops... you need to be logged in to see this page.', 'info')
+    return redirect(url_for('login'))
+  else:
+    delete_form = DeleteForm()
+    picked_podcast = mongo.db.podcasts.find_one({'_id': ObjectId(podcast_id)})
 
   return render_template('delete_podcast.html', form = delete_form )
 
