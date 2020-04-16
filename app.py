@@ -218,6 +218,8 @@ def delete_podcast(podcast_id):
     existing_user = mongo.db.users.find_one({'username': existing_username})
     if existing_user and check_password_hash(existing_user['password'], delete_form.password.data):
       mongo.db.podcasts.delete_one( {'_id': ObjectId(podcast_id)})
+      flash(f'Podcast deleted', 'info')
+      return redirect(url_for('your_account', title='Podcast deleted'))
 
   return render_template('delete_podcast.html', form = delete_form, podcast=picked_podcast )
 
