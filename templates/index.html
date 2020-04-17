@@ -1,30 +1,17 @@
 {% extends 'layout/base.html' %} {% block content %}
-
 <div class="col-12 text-center home_header">
     <h1 class="text-uppercase py-2">True crime podcasts</h1>
 </div>
-
-<div class="col-12 pt-4" id="index_wrapper">
-
+<div class="col-12 pt-3" id="index_wrapper">
     <div class="row mx-0">
-
-        <div class="col-sm-12 text-center pb-3">
-            <div class="col-12 hero_container"></div>
-            <div class="col-12 py-2">
-                <ul>
-                    <li class="index_li">Too squimish to watch a crime film?</li>
-                    <li class="index_li">Lacking time to watch your favourtie drama on TV?</li>
-                    <li class="index_li">Constant car travel means no time for good thriller book?</li>
-                </ul>
+        <div class="col-sm-12 text-center">
+            <div class="col-12 hero_container mb-2"></div>
+            <div class="home_bottom my-2">
+                <h1 class="pb-2 mt-3">Sign up to discover a whole new world of drama.</h1>
+                <div class="py-3">
+                    <p class="index_bottom_button">Already Registered?</p><a class="btn btn-info mx-3 index_bottom_button" href="{{url_for('login')}}">Login here</a>
+                </div>
             </div>
-            <div class="home_header pb-3">
-                <h1 class="pb-2">Sign up to discover whole new world of drama.</h1>
-            </div>
-
         </div>
-
     </div>
-
-
-
     {% endblock %}
