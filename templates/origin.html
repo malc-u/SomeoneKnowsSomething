@@ -1,14 +1,10 @@
 {% extends 'layout/base.html' %} {% block content %}
-
 {% if origin %}
 <div class="col-12 text-center home_header">
-    <h1 class="text-uppercase py-2">Origin: {{origin}}</h1>
+    <h1 class="py-2">Origin: {{origin}}</h1>
 </div>
-
 {% endif %}
-
 <div class="col-12 pt-5" id="home-podcasts">
-
     <div class="row mx-0 my-2">
         {% for podcast in podcasts %}
             <div class="col-sm-6 col-md-4 col-lg-2 align-middle text-center mb-3">
@@ -18,12 +14,10 @@
                     <h5 class="origin_title">{{podcast.podcast_title}} -  released {{podcast.release_year}}</h5>
                     <p>Story: {{podcast.description}}</p>
                     <p>Number of episodes: {{podcast.no_episodes}}</p>
-                    <a role="button" class="btn btn-success mb-2" href="{{podcast.podcast_link}}" target="_blank"
+                    <a role="button" class="btn btn-info mb-2" href="{{podcast.podcast_link}}" target="_blank"
                         rel="noopener" aria-label="Listen to {{podcast.podcast_title}} here">Listen here</a>
-            </div>
-        
+            </div>      
         {% endfor %}
     </div>
 </div>
-
 {% endblock %}
