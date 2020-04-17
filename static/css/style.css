@@ -86,6 +86,13 @@ footer a {
     font-weight: 700;
 }
 
+.home_bottom h1 {
+    font-family: 'Oswald', sans-serif;
+    color: #000;
+    letter-spacing: 0.3rem;
+    font-weight: 700;
+}
+
 .index_img {
     width: 12rem;
     height: 15rem;
@@ -93,6 +100,9 @@ footer a {
 
 .index_header {
     color: #000;
+}
+.index_bottom_button {
+    display: inline;
 }
 
 .form-label {
