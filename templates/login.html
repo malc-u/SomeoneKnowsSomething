@@ -20,7 +20,7 @@
                         {% endfor %}
                     </div>
                     {% else %}
-                    {{ form.username(class="form-control form-control-lg")}}
+                    {{ form.username(class="form-control form-control-lg", placeholder="Please enter your username")}}
                     {% endif %}
                  </div> 
                  <div class="form-group">
@@ -33,7 +33,7 @@
                          {% endfor %}
                      </div>
                      {% else %}
-                     {{ form.password(class="form-control form-control-lg")}}
+                     {{ form.password(class="form-control form-control-lg", placeholder="Please enter your password")}}
                      {% endif %}
                   </div> 
                  
