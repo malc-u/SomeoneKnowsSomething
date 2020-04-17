@@ -110,7 +110,7 @@ footer a {
 }
 
 .index_li {
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     list-style-position: inside;
@@ -137,4 +137,15 @@ footer a {
 
 #add_button {
     padding-bottom: 1.5rem;
+}
+
+.btn-info {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    color: #000;
+}
+
+.btn-warning {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
 }
