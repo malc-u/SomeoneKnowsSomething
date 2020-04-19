@@ -33,18 +33,17 @@ body{
     text-align: center;
 }
 
-.nav-link:visited {
+.nav-link:link,
+.navbar-collapse .navbar-nav .dropdown #navbarDropdown:link {
     color: #ffffff;
 }
 
-.nav-link:hover{
-    color: #fad201;
-}
-
+.nav-link:visited,
 .navbar-collapse .navbar-nav .dropdown #navbarDropdown:visited {
     color: #ffffff;
 }
 
+.nav-link:hover,
 .navbar-collapse .navbar-nav .dropdown #navbarDropdown:hover {
     color: #fad201;
 }
