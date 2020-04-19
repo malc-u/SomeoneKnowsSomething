@@ -17,7 +17,7 @@
                         {% endfor %}
                     </div>
                     {% else %}
-                    {{ form.username(class="form-control form-control-lg", placeholder="Requires 5-20 characters.")}}
+                    {{ form.username(class="form-control form-control-lg", placeholder="Case-sensitive, 5-20 characters.")}}
                     {% endif %}
                 </div>
                 <div class="form-group">
@@ -30,7 +30,7 @@
                         {% endfor %}
                     </div>
                     {% else %}
-                    {{ form.password(class="form-control form-control-lg", placeholder="Requires 5-20 characters.")}}
+                    {{ form.password(class="form-control form-control-lg", placeholder="Case-sensitive, 5-20 characters.")}}
                     {% endif %}
                 </div>
                 <div class="form-group">
