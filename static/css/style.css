@@ -167,6 +167,15 @@ footer a {
     font-weight: 500;
 }
 
+@media (max-width: 540px) {
+    #sidebar-toggle {
+        display: none;
+    }
+
+    #sidebar_wrapper {
+        display: none;
+    }
+}
 @media (min-width: 1024px) {
     .hero_container {
         background-size: contain;
