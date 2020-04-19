@@ -33,20 +33,18 @@ body{
     text-align: center;
 }
 
-.nav-link:visited {
+.nav-link:visited,
+#navbarDropdown:visited {
     color: #ffffff;
 }
 
-.nav-link:hover {
+.nav-link:hover,
+#navbarDropdown:hover {
     color: #fad201;
 }
 
-.nav-link:visited {
-    color: #fff;
-}
 .navbar {
     background-color: #36454f;
-    color: #fad201;
 }
 
 .fa-fingerprint, .fa-bars {
