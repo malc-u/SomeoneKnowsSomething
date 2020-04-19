@@ -176,6 +176,13 @@ footer a {
         display: none;
     }
 }
+
+@media (min-width: 541px) {
+    .navbar-brand {
+        display: none;
+    }
+}
+
 @media (min-width: 1024px) {
     .hero_container {
         background-size: contain;
