@@ -34,12 +34,12 @@ body{
 }
 
 .nav-link:visited,
-#navbarDropdown:visited {
+.navbar-collapse .navbar-nav .dropdown .dropdown-toggle:visited {
     color: #ffffff;
 }
 
 .nav-link:hover,
-#navbarDropdown:hover {
+.navbar-collapse .navbar-nav .dropdown .dropdown-toggle:hover {
     color: #fad201;
 }
 
