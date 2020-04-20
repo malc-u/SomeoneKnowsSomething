@@ -27,11 +27,11 @@ This website was created for English speaking enthusiasts of true crime drama as
 
 As a passionate book reader I realized that due to family/work commitments I hadn't got much  time to concentrate on reading but at the same time I used to spend roughly 2 - 2.5 hrs daily in the car - commuting. Podcasts gave me great opportunity of mixing business with pleasure.
 
-Despite this I quickly realised that finding good podcasts was challenge in itself. It meant scrolling through podcast apps, trying to listen to something only to realize after 1 episode that this wasn't the right thing. Another option was to search internet for top charts created by journalists for newpapers of web portals.
+Despite this I quickly realised that finding a good podcast was a challenge in itself. It meant scrolling through a podcast app, trying to listen to something only to realize after 1 episode that this wasn't the right thing. Another option was to search internet for top charts created by journalists for newpapers or web portals.
 
-While the first option was easy to navigate, after couple of uses suggested content was pretty much similar to what I have just finished. Second option was giving me the chance to broaden the content however it meant searching internet for mentioned titles.
+While the first option was very easy to navigate, after couple of uses suggested content was pretty much similar to what I have just finished. Second option was giving me the chance to broaden the content however it meant searching internet for mentioned titles.
 
-This page recommends limited number of content to unregistered users however it gives opportunity for a register user to check another user's favourite podcasts and to see all content added by them split into 3 categories - depending on the podcast origin. It also gives registered user opportunity to access podcast website - via Listen now button - and explore ways of listing to it directly from there.
+This page recommends limited number of content to unregistered users however it gives opportunity for a register user to check another user's favourite podcasts and to see all content added by them split into 3 categories - depending on the podcast origin. It also gives registered user opportunity to access podcast website - via a button - and explore ways of listing to it directly from there.
 
 ### Site user goals
 
