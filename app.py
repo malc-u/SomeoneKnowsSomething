@@ -245,6 +245,7 @@ def change_password():
     {'$set': 
             {'password': password_hashed}
             })
+    flash(f'Password updated sucessfully.', 'success')
     return redirect(url_for('your_account'))
 
 
