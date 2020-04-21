@@ -248,6 +248,9 @@ def change_password():
     flash(f'Password updated sucessfully.', 'success')
     return redirect(url_for('your_account'))
 
+  else:
+    flash(f'Error updating password. Please try again', 'info')
+    return redirect(url_for('your_account'))
 
   return render_template('settings.html', form = change_form)
 
