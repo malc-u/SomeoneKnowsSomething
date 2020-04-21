@@ -1,5 +1,4 @@
 {% extends 'layout/base.html' %} {% block content %}
-
 {% if podcast %}
 <div class="col-12 text-center home_header">
     <h1 class="py-2">{{podcast.podcast_title}}</h1>
@@ -16,7 +15,8 @@
                 <a role="button" class="btn btn-warning" href="{{podcast.podcast_link}}" target="_blank" rel="noopener"
                     aria-label="Listen to {{podcast.podcast_title}} here">Listen here</a>
                 {% else %}
-                <a role="button" class="btn btn-warning" href="{{url_for('login')}}">Login to Listen</a>
+                <a role="button" class="btn btn-warning" href="{{url_for('login')}}" aria-label="Login">Login to
+                    Listen</a>
                 {% endif %}
             </div>
         </div>
