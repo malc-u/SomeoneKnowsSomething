@@ -241,6 +241,11 @@ def change_password():
   elif change_form.validate_on_submit():
     entered_password = request.form['new_password']
     password_hashed = generate_password_hash(entered_password)
+    mongo.db.users.update_one( {'username': current_user},
+    {'$set': 
+            {'password': password_hashed}
+            })
+    return redirect(url_for('your_account'))
 
 
   return render_template('settings.html', form = change_form)
