@@ -35,14 +35,14 @@ def login():
     existing_user = mongo.db.users.find_one({'username': form_login.username.data})
     
     if not existing_user:
-      flash(f'Username not found. Please try again or register.', 'warning')
+      flash(f'Username not found. Please try again or register.', 'danger')
       return redirect(url_for('register'))
 
     elif existing_user is not None and check_password_hash(existing_user['password'], form_login.password.data):
       session['username'] = request.form.get('username')
       return redirect(url_for('index'))
     
-    flash(f'Password incorrect. Please try again.', 'success')
+    flash(f'Password incorrect. Please try again.', 'danger')
     return redirect(url_for('login'))
 
   return render_template('login.html', title = 'Login', form = form_login ) 
@@ -60,11 +60,11 @@ def register():
       mongo.db.users.insert({'username': form_register.username.data,
                                     'password': password_hashed})
       session['username'] = request.form.get('username')
-      flash(f'Your account has been created.', 'primary')
+      flash(f'Your account has been created.', 'success')
       return redirect(url_for('index'))
       
     else:
-      flash(f'Username already taken. Please try another one.', 'primary')
+      flash(f'Username already taken. Please try another one.', 'danger')
       return redirect(url_for('register'))
 
   return render_template('register.html', title='Register',
@@ -88,7 +88,7 @@ def favourites():
 @app.route('/british')
 def british():
   if 'username' not in session:
-    flash(f'Oops... you need to be logged in to see this page.', 'info')
+    flash(f'Oops... you need to be logged in to see this page.', 'danger')
     return redirect(url_for('login'))
   else:
     return render_template('origin.html', 
@@ -98,7 +98,7 @@ def british():
 @app.route('/australian')
 def australian():
   if 'username' not in session:
-    flash(f'Oops... you need to be logged in to see this page.', 'info')
+    flash(f'Oops... you need to be logged in to see this page.', 'danger')
     return redirect(url_for('login'))
   else:
     return render_template('origin.html', 
@@ -108,7 +108,7 @@ def australian():
 @app.route('/american')
 def american():
   if 'username' not in session:
-    flash(f'Oops... you need to be logged in to see this page.', 'info')
+    flash(f'Oops... you need to be logged in to see this page.', 'danger')
     return redirect(url_for('login'))
   else:
     return render_template('origin.html', 
@@ -124,7 +124,7 @@ def read_more(podcast_id):
 @app.route('/your_account')
 def your_account():
   if 'username' not in session:
-    flash(f'Oops... you need to be logged in to see this page.', 'info')
+    flash(f'Oops... you need to be logged in to see this page.', 'danger')
     return redirect(url_for('login'))
   else:
     current_user = session['username']
@@ -136,7 +136,7 @@ def your_account():
 @app.route('/add_podcast', methods=['GET', 'POST'])
 def add_podcast():
   if 'username' not in session:
-    flash(f'Oops... you need to be logged in to see this page.', 'info')
+    flash(f'Oops... you need to be logged in to see this page.', 'danger')
     return redirect(url_for('login'))
   else:
     add_form = AddForm()
@@ -167,7 +167,7 @@ wants to amend.
 @app.route('/update_podcast/<podcast_id>', methods=['GET', 'POST'])
 def update_podcast(podcast_id):
   if 'username' not in session:
-    flash(f'Oops... you need to be logged in to see this page.', 'info')
+    flash(f'Oops... you need to be logged in to see this page.', 'danger')
     return redirect(url_for('login'))
   else:
     update_form = UpdateForm()
@@ -199,7 +199,7 @@ def update_podcast(podcast_id):
     return redirect(url_for('your_account'))
 
   else:
-    flash(f'Error updating podcast. Please try again', 'info')
+    flash(f'Error updating podcast. Please try again', 'danger')
     return redirect(url_for('your_account'))
 
   return render_template('podcast.html', form = update_form, podcast = picked_podcast)
@@ -207,7 +207,7 @@ def update_podcast(podcast_id):
 @app.route('/delete_podcast/<podcast_id>', methods=['GET', 'POST'])
 def delete_podcast(podcast_id):
   if 'username' not in session:
-    flash(f'Oops... you need to be logged in to see this page.', 'info')
+    flash(f'Oops... you need to be logged in to see this page.', 'danger')
     return redirect(url_for('login'))
   else:
     delete_form = DeleteForm()
@@ -218,7 +218,7 @@ def delete_podcast(podcast_id):
     existing_user = mongo.db.users.find_one({'username': existing_username})
     if existing_user and check_password_hash(existing_user['password'], delete_form.password.data):
       mongo.db.podcasts.delete_one( {'_id': ObjectId(podcast_id)})
-      flash(f'Podcast deleted', 'info')
+      flash(f'Podcast deleted', 'success')
       return redirect(url_for('your_account', title='Podcast deleted'))
     else:
         flash(f'Oops, something went wrong. Please try again', 'danger')
@@ -249,7 +249,7 @@ def change_password():
     return redirect(url_for('your_account'))
 
   else:
-    flash(f'Error updating password. Please try again', 'info')
+    flash(f'Error updating password. Please try again', 'danger')
     return redirect(url_for('your_account'))
 
   return render_template('settings.html', form = change_form)
