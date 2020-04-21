@@ -5,7 +5,8 @@
             <h1>My account</h1>
         </div>
         <div class="col-2 py-2 pr-2">
-            <a class="h1" href="{{url_for('change_password')}}" aria-label="#"><i class="fas fa-cog"></i></a>
+            <a class="h1" href="{{url_for('change_password')}}" aria-label="Account settings">
+                <i class="fas fa-cog"></i></a>
         </div>
     </div>
     <hr>
@@ -14,7 +15,8 @@
             <h3>Podcasts</h3>
         </div>
         <div class="col-2 py-2 pr-2">
-            <a class="h1" href="{{url_for('add_podcast')}}" aria-label="Add podcast"><i class="fas fa-plus"></i></a>
+            <a class="h1" href="{{url_for('add_podcast')}}" aria-label="Add podcast">
+                <i class="fas fa-plus"></i></a>
         </div>
         <div class="col-12 p-2" id="home-podcasts">
             <div class="row mx-0 my-2">
@@ -28,12 +30,12 @@
                             <h5 class="origin_title">{{podcast.podcast_title}} - released {{podcast.release_year}}</h5>
                         </div>
                         <div class="col-sm-12 col-lg-4 mx-0 pl-0">
-                            <a href="{{podcast.podcast_link}}" target="_blank" rel="noopener"
-                                aria-label="Listen to {{podcast.podcast_title}} here"><i
-                                    class="fas fa-headphones h2 px-2"></i></a>
-                            <a href="{{url_for('update_podcast', podcast_id=podcast._id)}}"
-                                aria-label="Edit podcast here"><i class="fas fa-edit h2 px-2"></i></a>
-                            <a href="{{url_for('delete_podcast', podcast_id=podcast._id)}}" aria-label="Delete podcast"><i class="fas fa-trash-alt h2 px-2"></i></a>
+                            <a href="{{podcast.podcast_link}}" aria-label="Listen to podcast">
+                                <i class="fas fa-headphones h2 px-2"></i></a>
+                            <a href="{{url_for('update_podcast', podcast_id=podcast._id)}}" aria-label="Edit podcast">
+                                <i class="fas fa-edit h2 px-2"></i></a>
+                            <a href="{{url_for('delete_podcast', podcast_id=podcast._id)}}" aria-label="Delete podcast">
+                                <i class="fas fa-trash-alt h2 px-2"></i></a>
                         </div>
                     </div>
                     <div class="row mx-0">
