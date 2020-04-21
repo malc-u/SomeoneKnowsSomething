@@ -227,7 +227,12 @@ def delete_podcast(podcast_id):
 
 @app.route('/change_password', methods=['GET', 'POST'])
 def change_password():
-
+  if 'username' not in session:
+    flash(f'Oops... you need to be logged in to see this page.', 'info')
+    return redirect(url_for('login'))
+  else:
+    change_form = ChangePasswordForm()
+    
 
   return render_template('settings.html')
 
