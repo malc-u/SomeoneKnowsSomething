@@ -233,9 +233,17 @@ def change_password():
   else:
     change_form = ChangePasswordForm()
     current_user = session['username']
-    
 
-  return render_template('settings.html')
+  if request.method == 'GET':
+    change_form.new_password.data 
+    change_form.confirm_password.data 
+
+  elif change_form.validate_on_submit():
+    entered_password = request.form['new_password']
+    password_hashed = generate_password_hash(entered_password)
+
+
+  return render_template('settings.html', form = change_form)
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
