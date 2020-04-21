@@ -7,7 +7,7 @@
         <div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2 text-center py-2" id="register_wrapper">
             <form action="" method='POST'>
                 {{ form.hidden_tag() }}
-                 <div class="form-group">
+                <div class="form-group">
                     {{ form.podcast_title.label(class="form-control-label form-label")}}
                     {% if form.podcast_title.errors %}
                     {{ form.podcast_title(class="form-control form-control-lg is-invalid")}}
@@ -19,34 +19,34 @@
                     {% else %}
                     {{ form.podcast_title(class="form-control form-control-lg", placeholder="Podcast title")}}
                     {% endif %}
-                 </div> 
-                 <div class="form-group">
-                     {{ form.podcast_imgurl.label(class="form-control-label form-label")}}
-                     {% if form.podcast_imgurl.errors %}
-                     {{ form.podcast_imgurl(class="form-control form-control-lg is-invalid")}}
-                     <div class="invalid-feedback">
-                         {% for error in form.podcast_imgurl.errors %}
-                         <span> {{error}} </span>
-                         {% endfor %}
-                     </div>
-                     {% else %}
-                     {{ form.podcast_imgurl(class="form-control form-control-lg", placeholder="Link to podcast cover image")}}
-                     {% endif %}
-                  </div> 
-                  <div class="form-group">
-                     {{ form.origin.label(class="form-check-label form-label")}}
-                     {% if form.origin.errors %}
-                     {{ form.origin(class="form-check form-check-lg is-invalid")}}
-                     <div class="invalid-feedback">
-                         {% for error in form.origin.errors %}
-                         <span> {{error}} </span>
-                         {% endfor %}
-                     </div>
-                     {% else %}
-                     {{ form.origin(class="form-check form-check-lg", type="radio")}}
-                     {% endif %}
-                  </div>
-                  <div class="form-group">
+                </div>
+                <div class="form-group">
+                    {{ form.podcast_imgurl.label(class="form-control-label form-label")}}
+                    {% if form.podcast_imgurl.errors %}
+                    {{ form.podcast_imgurl(class="form-control form-control-lg is-invalid")}}
+                    <div class="invalid-feedback">
+                        {% for error in form.podcast_imgurl.errors %}
+                        <span> {{error}} </span>
+                        {% endfor %}
+                    </div>
+                    {% else %}
+                    {{ form.podcast_imgurl(class="form-control form-control-lg", placeholder="Link to podcast cover image")}}
+                    {% endif %}
+                </div>
+                <div class="form-group">
+                    {{ form.origin.label(class="form-check-label form-label")}}
+                    {% if form.origin.errors %}
+                    {{ form.origin(class="form-check form-check-lg is-invalid")}}
+                    <div class="invalid-feedback">
+                        {% for error in form.origin.errors %}
+                        <span> {{error}} </span>
+                        {% endfor %}
+                    </div>
+                    {% else %}
+                    {{ form.origin(class="form-check form-check-lg", type="radio")}}
+                    {% endif %}
+                </div>
+                <div class="form-group">
                     {{ form.release_year.label(class="form-control-label form-label")}}
                     {% if form.release_year.errors %}
                     {{ form.release_year(class="form-control form-control-lg is-invalid")}}
@@ -58,8 +58,8 @@
                     {% else %}
                     {{ form.release_year(class="form-control form-control-lg", placeholder="YYYY")}}
                     {% endif %}
-                 </div>
-                 <div class="form-group">
+                </div>
+                <div class="form-group">
                     {{ form.description.label(class="form-control-label form-label")}}
                     {% if form.description.errors %}
                     {{ form.description(class="form-control form-control-lg is-invalid")}}
@@ -71,8 +71,8 @@
                     {% else %}
                     {{ form.description(class="form-control form-control-lg", placeholder="Plot description")}}
                     {% endif %}
-                 </div>
-                 <div class="form-group">
+                </div>
+                <div class="form-group">
                     {{ form.is_favourite.label(class="form-control-label form-label")}}
                     {% if form.is_favourite.errors %}
                     {{ form.is_favourite(class="form-control form-control-lg is-invalid")}}
@@ -84,8 +84,8 @@
                     {% else %}
                     {{ form.is_favourite(class="form-control form-control-lg")}}
                     {% endif %}
-                 </div>
-                 <div class="form-group">
+                </div>
+                <div class="form-group">
                     {{ form.no_episodes.label(class="form-control-label form-label")}}
                     {% if form.no_episodes.errors %}
                     {{ form.no_episodes(class="form-control form-control-lg is-invalid")}}
@@ -97,8 +97,8 @@
                     {% else %}
                     {{ form.no_episodes(class="form-control form-control-lg", placeholder="e.g. 8")}}
                     {% endif %}
-                 </div>
-                 <div class="form-group">
+                </div>
+                <div class="form-group">
                     {{ form.podcast_link.label(class="form-control-label form-label")}}
                     {% if form.podcast_link.errors %}
                     {{ form.podcast_link(class="form-control form-control-lg is-invalid")}}
@@ -110,12 +110,12 @@
                     {% else %}
                     {{ form.podcast_link(class="form-control form-control-lg", placeholder="Link to podcast's offical page")}}
                     {% endif %}
-                 </div>
-                  <div class="form-group" id="add_button">
-                     {{ form.submit(class="btn btn-warning")}}                  
-                  </div>                
+                </div>
+                <div class="form-group" id="add_button">
+                    {{ form.submit(class="btn btn-warning")}}
+                </div>
             </form>
-         </div>
+        </div>
     </div>
 </div>
 {% endblock %}
