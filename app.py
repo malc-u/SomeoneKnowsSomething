@@ -232,6 +232,7 @@ def change_password():
     return redirect(url_for('login'))
   else:
     change_form = ChangePasswordForm()
+    current_user = session['username']
     
 
   return render_template('settings.html')
