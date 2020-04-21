@@ -225,6 +225,12 @@ def delete_podcast(podcast_id):
 
   return render_template('delete_podcast.html', form = delete_form , podcast = picked_podcast)
 
+@app.route('/change_password', methods=['GET', 'POST'])
+def change_password():
+
+
+  return render_template('settings.html')
+
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
     port=os.environ.get('PORT'),
