@@ -1,5 +1,5 @@
-<p align="center" style="background-color: #36454f">
-<img src="https://github.com/malc-u/SomeoneKnowsSomething/blob/master/static/img/logo.png?raw=true">
+<p align="center">
+<img src="https://i.ibb.co/N27FgpP/logoand.png">
 </p>
 
 This website was created for English speaking enthusiasts of true crime drama as well as people that like drama in general. Podcast is a form that can be introduced to  people that like books and/or films but find too little time to focus on any of these.
@@ -77,14 +77,14 @@ Someone knows something - True Crime Podcast website is an ideal way to met all 
 13. As a user that values security I want to be able to change my password as and when I want.
 
 ## Design choices
+
 <p align="center">
 <img src="https://i.ibb.co/dp0bJ2v/multidevice.png">
 </p>
 
 ### Color scheme
-<p align="center">
+
 <img src="https://i.ibb.co/pddrtdn/palette.png">
-</p>
 
 Colors that were picked had be subtle enough not to overwhelm colorful cards of the podcasts covers.
 
