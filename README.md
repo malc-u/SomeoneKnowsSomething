@@ -7,6 +7,7 @@ This website was created for English speaking enthusiasts of true crime drama as
 - [UX](#ux)
   - [Project purpose](#project-purpose)
     - [Site visitor goals](#site-visitor-goals)
+    - [User stories](#user-stories)
   - [Wireframes](#wireframes)
   - [Design](#design)
 - [Features](#features)
@@ -46,6 +47,17 @@ Another/possible goals might be:
 - Possibility of listening to the podcast via links.
 - Reaching podcats that are not too popular in users part of the world but that user might find interesting.
 - Possibility of finding out who the producer is in order to search for similar content beyond this page.
+
+Someone knows something - True Crime Podcast website is an ideal way to met all these goals as it:
+
+- presents users with true crime podcasts,
+- presents users with podcasts from USA, UK and Australia,
+- allows users to read more about each podcast,
+- allows users to access podcasts pages directly,
+- allows users to listen to pdcasts via links,
+- allows users to easily access producters page to explore.
+
+### User stories
 
 ## Wireframes
 
