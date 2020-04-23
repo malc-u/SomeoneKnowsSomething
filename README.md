@@ -22,6 +22,7 @@ This website was created for English speaking enthusiasts of true crime drama as
     - [Login page](#login-page)
     - [Recommended page](#recommended-page)
     - [User picks page](#user-picks-page)
+    - [Australian, British and American page](#australian-british-and-american-page)
   - [Features left to implement in the future](#features-left-to-implement-in-the-future)
 - [Technologies](#technologies)
   - [Languages](#languages)
@@ -186,9 +187,7 @@ Initial wireframes for this project can be seen in the [Wireframes folder](https
    - "Password" - displaying information "Please enter your password" 
 
 ### Recommended page
-
- Page consist:
-
+ 
  1. Head-word with "Recommended" - reusing styling of police tape
  2. 8 different podcasts displayed in order form the most recent to the oldest. Each one is displayed as follows: 
     - Podcast cover picture displayed using Bootstrap class "card-img-top"
@@ -200,8 +199,6 @@ Initial wireframes for this project can be seen in the [Wireframes folder](https
 
 ### User picks page
 
-Page consist:
-
  1. Head-word with "Users favourites" - reusing styling of police tape
  2. 8 different podcasts displayed in order form the most recent to the oldest. Each one is displayed as follows: 
     - Podcast cover picture displayed using Bootstrap class "card-img-top"
@@ -210,6 +207,20 @@ Page consist:
       - Read More - leading to Read More page
       - Login to listen - for users that are not logged in - leading to Login page
       - Listen here - for users that are logged in - leading to podcast producer website that consists links where podcasts can be listened to.
+
+### Australian, British and American page
+
+All these pages are the same except the content they display. They all display content for logged in users from country of origin as in the name of the page. 
+
+1. Head-word with "Origin: {{origin as in page title}}" - reusing styling of police tape
+2. Podcast cover picture displayed on the left (tablets and desktops) and on the top (mobiles).
+3. Podcast title and release date displayed in bold on the right (tablets and desktops) and on directly underneath the picture (mobiles).
+4. Podcast description - on the right (tablets and desktops) and on directly underneath the title(mobiles).
+5. Number of episodes in the podcast - directly under the description.
+6. "Listen here" button that leads to the podcast website - places directly underneath the episode numbers section.
+
+If somehow user that is not logged in lands on this page they will be redirected to login page.
+
 
 ## Features left to implement in the future
 
