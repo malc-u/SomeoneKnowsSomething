@@ -25,7 +25,7 @@ This website was created for English speaking enthusiasts of true crime drama as
 
 ## Project purpose
 
-As a passionate book reader I realized that due to family/work commitments I hadn't got much  time to concentrate on reading but at the same time I used to spend roughly 2 - 2.5 hrs daily in the car - commuting. Podcasts gave me great opportunity of mixing business with pleasure.
+As a passionate book reader as well as a fan of all types of psychological and crime films/series I realized that due to family/work commitments I hadn't got much  time to concentrate on reading and watching TV but at the same time I used to spend roughly 2 - 2.5 hrs daily in the car - commuting. Although there is such a thing as audiobooks I found that podcast(better structured and in relatively short episodes) is a better choice. Podcasts gave me great opportunity of mixing business with pleasure.
 
 Despite this I quickly realised that finding a good podcast was a challenge in itself. It meant scrolling through a podcast app, trying to listen to something only to realize after 1 episode that this wasn't the right thing. Another option was to search internet for top charts created by journalists for newpapers or web portals.
 
