@@ -12,6 +12,7 @@ This website was created for English speaking enthusiasts of true crime drama as
     - [Color scheme](#color-scheme)
     - [Fonts](#fonts)
     - [Logo - headline](#logo---headline)
+      - [Icons](#icons)
   - [Wireframes](#wireframes)
 - [Features](#features)
   - [Existing features](#existing-features)
@@ -107,6 +108,13 @@ Oswald on the other hand, was picked as it displays good (in bold) on the yellow
 "Someone Knows Something" - this sentence is the key one. I can risk to say that it appears in 95% of all crime books/films/series or podcasts. It is almost guaranteed that at some point, some character  related to the story will say it.
 
 It was also noted by Canadian filmmaker and writer David Ridgen who crated 5 seasons of podcasts with the same name.
+
+#### Icons
+
+<img src="https://i.ibb.co/S08R8XP/myaccount.png">
+
+This website - my account section - uses Font Awesome Icons to direct logged in user to add, listen to, edit or delete podcasts. It also displays an icon to allow user to acces password change section.
+
 
 ## Wireframes
 
