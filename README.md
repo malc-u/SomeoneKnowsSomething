@@ -16,6 +16,7 @@ This website was created for English speaking enthusiasts of true crime drama as
   - [Wireframes](#wireframes)
 - [Features](#features)
   - [Existing features](#existing-features)
+    - [Every page](#every-page)
   - [Features left to implement in the future](#features-left-to-implement-in-the-future)
 - [Technologies](#technologies)
   - [Languages](#languages)
@@ -123,6 +124,38 @@ Initial wireframes for this project can be seen in the [Wireframes folder](https
 # Features
 
 ## Existing features
+
+### Every page
+
+1. Navbar (all sizes of screens, collapsed into burger toggler button on mobiles and smaller tablets e.g. iPads):
+   - Brand name "Someone Knows Something"(mobiles only) - on top left hand side - with link to home page.
+   - The navigation bar features a fingerprint button that toggles sidebar in the top left corner (tablets and desktops only).
+   - For visitors to the site that are not logged in, list items links are available for them to use:
+      - Home
+      - Podcasts -> collapsing to 2 -> Recommended & -> User Picks
+      - Login
+      - Register
+   - For users that are logged in, the list items are as follows:
+      - Home
+      - Podcasts collapsing to 5 -> Recommended, -> User Picks, -> Australian, -> British & -> American
+      - Hello "Logged in username" collapsing to 3 -> My account, -> Add Podcast & -> Logout
+2. Sidebar (tablets and desktops only):
+   - The sidebar features "Someone Knows Something" logo on the top with link to the home page.
+   - For visitors to the site that are not logged in, list items links are available for them to use:
+      - Recommended
+      - User Picks
+      - Login
+      - Register
+   - For users that are logged in, the list items are as follows:
+     - Recommended
+     - User Picks
+     - Australian
+     - British
+     - American
+3. Footer includes:
+   - links to social media, however not personalized yet as they have not been created yet
+   - copyright information
+   - link to the author github account
 
 ## Features left to implement in the future
 
