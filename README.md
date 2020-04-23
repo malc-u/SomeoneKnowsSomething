@@ -1,4 +1,4 @@
-<p align="center">
+<p align="center" style="background-color: #36454f">
 <img src="https://github.com/malc-u/SomeoneKnowsSomething/blob/master/static/img/logo.png?raw=true">
 </p>
 
