@@ -40,7 +40,7 @@ def login():
 
     elif existing_user is not None and check_password_hash(existing_user['password'], form_login.password.data):
       session['username'] = request.form.get('username')
-      return redirect(url_for('index'))
+      return redirect(url_for('your_account'))
     
     flash(f'Password incorrect. Please try again.', 'danger')
     return redirect(url_for('login'))
