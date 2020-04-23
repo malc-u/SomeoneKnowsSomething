@@ -191,7 +191,7 @@ Initial wireframes for this project can be seen in the [Wireframes folder](https
  2. Podcast title using Bootstrap "card-title" class within container using Bootstrap "card-body" class
  3. Two buttons also within container using Bootstrap "card-body" class:
     - Read More - leading to Read More page
-   - Login to listen - for users that are not logged in - leading to Login page
+    - Login to listen - for users that are not logged in - leading to Login page
     - Listen here - for users that are logged in - leading to podcast producer website that consists links where podcasts can be listened to.
 
 
