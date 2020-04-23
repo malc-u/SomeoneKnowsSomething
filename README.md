@@ -25,6 +25,7 @@ This website was created for English speaking enthusiasts of true crime drama as
     - [Australian, British and American page](#australian-british-and-american-page)
     - [My account page](#my-account-page)
     - [Add podcast page](#add-podcast-page)
+    - [Edit/Update podcast page](#editupdate-podcast-page)
   - [Features left to implement in the future](#features-left-to-implement-in-the-future)
 - [Technologies](#technologies)
   - [Languages](#languages)
@@ -189,9 +190,9 @@ Initial wireframes for this project can be seen in the [Wireframes folder](https
    - "Password" - displaying information "Please enter your password"
 
 ### Recommended page
- 
+
  1. Head-word with "Recommended" - reusing styling of police tape
- 2. 8 different podcasts displayed in order form the most recent to the oldest. Each one is displayed as follows: 
+ 2. 8 different podcasts displayed in order form the most recent to the oldest. Each one is displayed as follows:
     - Podcast cover picture displayed using Bootstrap class "card-img-top"
     - Podcast title using Bootstrap "card-title" class within container using Bootstrap "card-body" class
     - Two buttons also within container using Bootstrap "card-body" class:
@@ -202,17 +203,18 @@ Initial wireframes for this project can be seen in the [Wireframes folder](https
 ### User picks page
 
  1. Head-word with "Users favourites" - reusing styling of police tape
- 2. 8 different podcasts displayed in order form the most recent to the oldest. Each one is displayed as follows: 
-    - Podcast cover picture displayed using Bootstrap class "card-img-top"
-    - Podcast title using Bootstrap "card-title" class within container using Bootstrap "card-body" class
-    - Two buttons also within container using Bootstrap "card-body" class:
-      - Read More - leading to Read More page
-      - Login to listen - for users that are not logged in - leading to Login page
-      - Listen here - for users that are logged in - leading to podcast producer website that consists links where podcasts can be listened to.
+ 2. 8 different podcasts displayed in order form the most recent to the oldest. Each one is displayed as follows:
+
+- Podcast cover picture displayed using Bootstrap class "card-img-top"
+- Podcast title using Bootstrap "card-title" class within container using Bootstrap "card-body" class
+- Two buttons also within container using Bootstrap "card-body" class:
+  - Read More - leading to Read More page
+  - Login to listen - for users that are not logged in - leading to Login page
+  - Listen here - for users that are logged in - leading to podcast producer website that consists links where podcasts can be listened to.
 
 ### Australian, British and American page
 
-All these pages are the same except the content they display. They all display content for logged in users from country of origin as in the name of the page. 
+All these pages are the same except the content they display. They all display content for logged in users from country of origin as in the name of the page.
 
 1. Head-word with "Origin: {{origin as in page title}}" - reusing styling of police tape
 2. Podcast cover picture displayed on the left (tablets and desktops) and on the top (mobiles).
@@ -243,14 +245,30 @@ If somehow user that is not logged in lands on this page they will be redirected
 
 1. Head-word with "Add podcast" - reusing styling of police tape.
 2. Form that allows to add podcast to the database and display on the website. It consists of 8 fields to be filled in and submit button. These 8 fields are:
-   - "Title" - displaying information "Plodcast title"
-   - "Podcast Image Link" - displaying information "Link to podcast cover image
-   - "Origin" - displaying 3 radio button to chose from - Australia, UK and USA
-   - "Release Year" - displaying information "YYYY"
-   - "Description" - displayng information "Plot description"
-   - "Favourite" - allowing user to check or leave unchecked this box
-   - "Number of Episodes" - displaying information "e.g. 8"
-   - "Link To Podcast Website" - displaying information "Link to podcast's official page"
+
+- "Title" - displaying information "Plodcast title"
+- "Podcast Image Link" - displaying information "Link to podcast cover image
+- "Origin" - displaying 3 radio button to chose from - Australia, UK and USA
+- "Release Year" - displaying information "YYYY"
+- "Description" - displayng information "Plot description"
+- "Favourite" - allowing user to check or leave unchecked this box
+- "Number of Episodes" - displaying information "e.g. 8"
+- "Link To Podcast Website" - displaying information "Link to podcast's official page"
+
+If somehow user that is not logged in lands on this page they will be redirected to login page.
+
+### Edit/Update podcast page
+
+1. Head-word with "Edit podcast" - reusing styling of police tape.
+2. Form that allows to edit podcast and update the database. It consists of 8 pre-populated fields ready to be amended and a submit button. These 8 fields are:
+
+- "Title"
+- "Podcast Image Link"
+- "Origin""Release Year"
+- "Description"
+- "Favourite"
+- "Number of Episodes"
+- "Link To Podcast Website"
 
 If somehow user that is not logged in lands on this page they will be redirected to login page.
 
