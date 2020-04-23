@@ -18,6 +18,7 @@ This website was created for English speaking enthusiasts of true crime drama as
   - [Existing features](#existing-features)
     - [Every page](#every-page)
     - [Home page](#home-page)
+    - [Register page](#register-page)
   - [Features left to implement in the future](#features-left-to-implement-in-the-future)
 - [Technologies](#technologies)
   - [Languages](#languages)
@@ -164,6 +165,16 @@ Initial wireframes for this project can be seen in the [Wireframes folder](https
 1. Head-word with sub-title of the page "True Crime Podcasts" that is reminiscent of a tape "POLICE LINE DO NOT CROSS".
 2. Picture of a phone with earphones attached reffering to listening on the go.
 3. Question "Already registered?" and button linkin to Login page directly next to it.
+
+### Register page
+
+1. Head-wrod with "Register to Listen Now" - reusing styling of police tape.
+2. Form that allows to register to the website. It consists of 3 fields to be filled in and submit button. These 3 fields are:
+   - "Username" - displaying information that username is case-sensitive and must be between 5-20 characters
+   - "Password" - displaying information that password is case-sensitive and must be between 5-20 characters
+   - "Confirm Password" - displaying information to retype the password
+3. Question "Already registered?" and button linking to login page directly undeneath.
+  
 
 ## Features left to implement in the future
 
