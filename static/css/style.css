@@ -16,6 +16,7 @@ body {
     padding-top: 5rem;
     min-height: 100vh;
     z-index: 999;
+    -webkit-transition: all 0.7s;
     transition: all 0.7s;
 }
 
