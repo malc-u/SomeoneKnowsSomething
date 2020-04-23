@@ -10,6 +10,7 @@ This website was created for English speaking enthusiasts of true crime drama as
     - [User stories](#user-stories)
   - [Design choices](#design-choices)
     - [Color scheme](#color-scheme)
+    - [Fonts](#fonts)
   - [Wireframes](#wireframes)
 - [Features](#features)
   - [Existing features](#existing-features)
@@ -93,6 +94,12 @@ Charcoal #36454f was picked as first thing that comes to mind when we think abou
 Off yellow #ffffbf was picked to make forms stick out more but to be subtle enough to not overwhelm them.
 
 Finally blue #5bc0de is a standard Bootstrap "info" class color that was used to differentiate between buttons when more than 1 is present or where there is a need for another color than yellow. It corresponds and compliments remaining colors well.
+
+### Fonts
+
+Font Roboto was picked as it is subtle and well known to many due to being default font for Android phones as well as Google services. It is clean and modern.
+
+Oswald on the other hand, was picked as it displays good (in bold) on the yellow background. It stands out however it does not overwhelms.
 
 ## Wireframes
 
