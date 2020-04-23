@@ -36,6 +36,7 @@ This website was created for English speaking enthusiasts of true crime drama as
   - [Tools](#tools)
 - [Testing](#testing)
 - [Deployment](#deployment)
+  - [How to run this project locally](#how-to-run-this-project-locally)
 - [Credits](#credits)
   
 # UX
@@ -346,5 +347,19 @@ I would want to include:
 Testing details can be found in separate [TESTING.md file](https://github.com/malc-u/SomeoneKnowsSomething/blob/master/TESTING.md)
 
 # Deployment
+
+## How to run this project locally
+
+You must have following instaled on your machine:
+
+1. IDE such as VS Code or Sublime
+2. Python
+3. PIP
+4. Git
+5. MongoDB running locally on your machine and connected onto your MongoDB Atlas
+
+Once this is installed you can follow below steps:
+
+1. 
 
 # Credits
