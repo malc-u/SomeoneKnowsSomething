@@ -17,6 +17,7 @@ This website was created for English speaking enthusiasts of true crime drama as
 - [Features](#features)
   - [Existing features](#existing-features)
     - [Every page](#every-page)
+    - [Home page](#home-page)
   - [Features left to implement in the future](#features-left-to-implement-in-the-future)
 - [Technologies](#technologies)
   - [Languages](#languages)
@@ -156,6 +157,12 @@ Initial wireframes for this project can be seen in the [Wireframes folder](https
    - links to social media, however not personalized yet as they have not been created yet
    - copyright information
    - link to the author github account
+
+### Home page
+
+1. Head-word with sub-title of the page "True Crime Podcasts" that is reminiscent of a tape "POLICE LINE DO NOT CROSS".
+2. Picture of a phone with earphones attached reffering to listening on the go.
+3. Question "Already registered?" and button linkin to Login page directly next to it.
 
 ## Features left to implement in the future
 
