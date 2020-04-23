@@ -45,7 +45,7 @@ This website was created for English speaking enthusiasts of true crime drama as
 
 As a passionate book reader as well as a fan of all types of psychological and crime films/series I realized that due to family/work commitments I hadn't got much  time to concentrate on reading and watching TV but at the same time I used to spend roughly 2 - 2.5 hrs daily in the car - commuting. Although there is such a thing as audiobooks I found that podcast(better structured and in relatively short episodes) is a better choice. Podcasts gave me great opportunity of mixing business with pleasure.
 
-Despite this I quickly realised that finding a good podcast was a challenge in itself. It meant scrolling through a podcast app, trying to listen to something only to realize after 1 episode that this wasn't the right thing. Another option was to search internet for top charts created by journalists for newpapers or web portals.
+Despite this I quickly realised that finding a good podcast was a challenge in itself. It meant scrolling through a podcast app, trying to listen to something only to realize after 1 episode that this wasn't the right thing. Another option was to search internet for top charts created by journalists for newspapers or web portals.
 
 While the first option was very easy to navigate, after couple of uses suggested content was pretty much similar to what I have just finished. Second option was giving me the chance to broaden the content however it meant searching internet for mentioned titles.
 
@@ -63,7 +63,7 @@ Another/possible goals might be:
 
 - Direct access to podcast website.
 - Possibility of listening to the podcast via links.
-- Reaching podcats that are not too popular in users part of the world but that user might find interesting.
+- Reaching podcasts that are not too popular in users part of the world but that user might find interesting.
 - Possibility of finding out who the producer is in order to search for similar content beyond this page.
 
 Someone knows something - True Crime Podcast website is an ideal way to met all these goals as it:
@@ -72,24 +72,24 @@ Someone knows something - True Crime Podcast website is an ideal way to met all 
 - presents users with podcasts from USA, UK and Australia,
 - allows users to read more about each podcast,
 - allows users to access podcasts pages directly,
-- allows users to listen to pdcasts via links,
-- allows users to easily access producters page to explore.
+- allows users to listen to podcasts via links,
+- allows users to easily access producer's page to explore.
 
 ### User stories
 
-1. As a user I want easy the page to be easy to navigate.
-2. As a user that is accessing the page fromt he mobile phone only I want to be able to use it without any problems with content displayed properly.
+1. As a user I want the page to be easy to navigate.
+2. As a user that is accessing the page from the mobile phone only I want to be able to use it without any problems with content displayed properly.
 3. As a true crime podcast listener I want to be able to see content I am interested in.
 4. As a busy person I want to have possibility of easily navigating to the content that I can listen to on the go.
 5. As a user I want to be able to see more details about the content.
-6. As a user that is interested in this genre I want to have link directly to the producer webiste.
-7. As a user that is aware I might have missed some interesting content fromt he pas I want to have content release year displayed.
-8. As a British user I want to have possibility of exploring sotries from other parts of the world.
+6. As a user that is interested in this genre I want to have link directly to the producer website.
+7. As a user that is aware I might have missed some interesting content from the past I want to have content release year displayed.
+8. As a British user I want to have possibility of exploring stories from other parts of the world.
 9. As a money savvy user I want to have possibility of accessing content via all means provided by the producer.
 10. As a user that relies on recommendations I want to have possibility of finding our what other users like.
 11. As a user that likes to stay up to date  I want to see release year to keep on top of new content.
-12. As a user that doesn't like long stories and in general prefers fils to Tv series I want to be able to see how many episodes each podcast have.
-13. As a user that likes to share my ideas I want to be able to add/update and delete content to the page for oters to enjoy.
+12. As a user that doesn't like long stories and in general prefers films to TV series I want to be able to see how many episodes each podcast have.
+13. As a user that likes to share my ideas I want to be able to add/update and delete content to the page for others to enjoy.
 14. As a user that values security I want to be able to change my password as and when I want.
 
 ## Design choices
@@ -122,13 +122,13 @@ Oswald on the other hand, was picked as it displays good (in bold) on the yellow
 
 "Someone Knows Something" - this sentence is the key one. I can risk to say that it appears in 95% of all crime books/films/series or podcasts. It is almost guaranteed that at some point, some character  related to the story will say it.
 
-It was also noted by Canadian filmmaker and writer David Ridgen who crated 5 seasons of podcasts with the same name.
+It was also noted by Canadian film-maker and writer David Ridgen who crated 5 seasons of podcasts with the same name.
 
 ### Icons
 
 <img src="https://i.ibb.co/S08R8XP/myaccount.png">
 
-This website - my account section - uses Font Awesome Icons to direct logged in user to add, listen to, edit or delete podcasts. It also displays an icon to allow user to acces password change section.
+This website - my account section - uses Font Awesome Icons to direct logged in user to add, listen to, edit or delete podcasts. It also displays an icon to allow user to access password change section.
 There is also fingerprint icon in the top left corner of navbar. This used to toggle sidebar. This icon is not displayed on mobile devices.
 
 ## Wireframes
@@ -174,8 +174,8 @@ Initial wireframes for this project can be seen in the [Wireframes folder](https
 ### Home page
 
 1. Head-word with sub-title of the page "True Crime Podcasts" that is reminiscent of a tape "POLICE LINE DO NOT CROSS".
-2. Picture of a phone with earphones attached reffering to listening on the go.
-3. Question "Already registered?" and button linkin to Login page directly next to it.
+2. Picture of a phone with earphones attached referring to listening on the go.
+3. Question "Already registered?" and button linking to Login page directly next to it.
 
 ### Register page
 
@@ -184,7 +184,7 @@ Initial wireframes for this project can be seen in the [Wireframes folder](https
    - "Username" - displaying information that username is case-sensitive and must be between 5-20 characters
    - "Password" - displaying information that password is case-sensitive and must be between 5-20 characters
    - "Confirm Password" - displaying information to retype the password
-3. Question "Already registered?" and button linking to login page directly undeneath.
+3. Question "Already registered?" and button linking to login page directly underneath.
 
 ### Login page
 
@@ -250,11 +250,11 @@ If somehow user that is not logged in lands on this page they will be redirected
 1. Head-word with "Add podcast" - reusing styling of police tape.
 2. Form that allows to add podcast to the database and display on the website. It consists of 8 fields to be filled in and submit button. These 8 fields are:
 
-- "Title" - displaying information "Plodcast title"
+- "Title" - displaying information "Podcast title"
 - "Podcast Image Link" - displaying information "Link to podcast cover image
 - "Origin" - displaying 3 radio button to chose from - Australia, UK and USA
 - "Release Year" - displaying information "YYYY"
-- "Description" - displayng information "Plot description"
+- "Description" - displaying information "Plot description"
 - "Favourite" - allowing user to check or leave unchecked this box
 - "Number of Episodes" - displaying information "e.g. 8"
 - "Link To Podcast Website" - displaying information "Link to podcast's official page"
@@ -289,7 +289,7 @@ If somehow user that is not logged in lands on this page they will be redirected
 
 1. Head-word with "{{podcast title}}" - reusing styling of police tape.
 2. Left side (tablets and desktops) and top of the page (mobiles) - displays contents of Read more page
-3. Right side (tablets and desktops) and bottom of the page (mobiles) displays form thah allows for podcast to be deleted from database therefore from displaying on the page. Form is with 1 field to be filled in and a submit button. This field is called "Enter password to delete".
+3. Right side (tablets and desktops) and bottom of the page (mobiles) displays form that allows for podcast to be deleted from database therefore from displaying on the page. Form is with 1 field to be filled in and a submit button. This field is called "Enter password to delete".
 
 ### Password change page
 
@@ -350,7 +350,7 @@ Testing details can be found in separate [TESTING.md file](https://github.com/ma
 
 ## How to run this project locally
 
-You must have following instaled on your machine:
+You must have following installed on your machine:
 
 1. IDE such as VS Code or Sublime
 2. Python
