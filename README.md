@@ -59,6 +59,20 @@ Someone knows something - True Crime Podcast website is an ideal way to met all 
 
 ### User stories
 
+1. As a user I want easy the page to be easy to navigate.
+2. As a user that is accessing the page fromt he mobile phone only I want to be able to use it without any problems with content displayed properly.
+3. As a true crime podcast listener I want to be able to see content I am interested in.
+4. As a user I want to be able to see more details about the content.
+5. As a user that is interested in this genre I want to have link directly to the producer webiste.
+6. As a user that is aware I might have missed some interesting content fromt he pas I want to have content release year displayed.
+7. As a British user I want to have possibility of exploring sotries from other parts of the world.
+8. As a money savvy user I want to have possibility of accessing content via all means provided by the producer.
+9. As a user that relies on recommendations I want to have possibility of finding our what other users like.
+10. As a user that likes to stay up to date  I want to see release year to keep on top of new content.
+11. As a user that doesn't like long stories and in general prefers fils to Tv series I want to be able to see how many episodes each podcast have.
+12. As a user that likes to share my ideas I want to be able to add/update and delete content to the page for oters to enjoy.
+13. As a user that values security I want to be able to change my password as and when I want.
+
 ## Wireframes
 
 ## Design
