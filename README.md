@@ -28,6 +28,7 @@ This website was created for English speaking enthusiasts of true crime drama as
     - [Edit/Update podcast page](#editupdate-podcast-page)
     - [Read more page](#read-more-page)
     - [Delete podcast page](#delete-podcast-page)
+    - [Password change page](#password-change-page)
   - [Features left to implement in the future](#features-left-to-implement-in-the-future)
 - [Technologies](#technologies)
   - [Languages](#languages)
@@ -287,7 +288,15 @@ If somehow user that is not logged in lands on this page they will be redirected
 
 1. Head-word with "{{podcast title}}" - reusing styling of police tape.
 2. Left side (tablets and desktops) and top of the page (mobiles) - displays contents of Read more page
-3. Right side (tablets and desktops) and bottom of the page (mobiles) displays form with 1 field to be filled in and a submit button. This field is called "Enter password to delete".
+3. Right side (tablets and desktops) and bottom of the page (mobiles) displays form thah allows for podcast to be deleted from database therefore from displaying on the page. Form is with 1 field to be filled in and a submit button. This field is called "Enter password to delete".
+
+### Password change page
+
+1. Head-word with "Password change" - reusing styling of police tape.
+2. Form that allows for password to be changed. It consists of 2 fields to be filled in and submit button. These fields are:
+
+- "Enter New Password" that displays information "Case-sensitive, 5-20 characters"
+- "Confirm New Password" that displays information "Repeat Password"
 
 ## Features left to implement in the future
 
