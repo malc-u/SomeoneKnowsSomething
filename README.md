@@ -319,6 +319,16 @@ I would want to include:
 
 ## Libraries
 
+- JQuery
+- Bootstrap
+- FontAwesome
+- Google Fonts
+- PyMongo
+- Flask
+- Jinja
+- WTForms
+- Werkzeug
+
 ## Tools
 
 # Testing
