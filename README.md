@@ -300,6 +300,14 @@ If somehow user that is not logged in lands on this page they will be redirected
 
 ## Features left to implement in the future
 
+I would want to include:
+
+1. Reviews to be left for each podcast.
+2. Possibility to be logged in using e-mail not only username
+3. Podcasts to be searched using not by origin but e.g. number of episodes or release year.
+4. Assign subject to each podcast (such as missing person, murder, fraud etc.) that can be also used to filter down the podcasts by the user.
+5. Possibility of adding podcast to own "To listen folder" from origin page etc.
+
 # Technologies
 
 ## Languages
