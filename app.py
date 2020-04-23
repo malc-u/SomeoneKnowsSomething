@@ -83,7 +83,7 @@ def recommended():
 @app.route('/favourites')
 def favourites():
   return render_template('recommended.html', 
-  podcasts = mongo.db.podcasts.find({"is_favourite": True}), recommended = "Users favourites")
+  podcasts = mongo.db.podcasts.find({"is_favourite": True}).limit(8), recommended = "Users favourites")
 
 @app.route('/british')
 def british():
