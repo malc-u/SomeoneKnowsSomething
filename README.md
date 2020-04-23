@@ -343,6 +343,8 @@ I would want to include:
 
 # Testing
 
+Testing details can be found in separate [TESTING.md file](https://github.com/malc-u/SomeoneKnowsSomething/blob/master/TESTING.md)
+
 # Deployment
 
 # Credits
