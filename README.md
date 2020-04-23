@@ -11,6 +11,7 @@ This website was created for English speaking enthusiasts of true crime drama as
   - [Design choices](#design-choices)
     - [Color scheme](#color-scheme)
     - [Fonts](#fonts)
+    - [Logo - headline](#logo---headline)
   - [Wireframes](#wireframes)
 - [Features](#features)
   - [Existing features](#existing-features)
@@ -100,6 +101,12 @@ Finally blue #5bc0de is a standard Bootstrap "info" class color that was used to
 Font Roboto was picked as it is subtle and well known to many due to being default font for Android phones as well as Google services. It is clean and modern.
 
 Oswald on the other hand, was picked as it displays good (in bold) on the yellow background. It stands out however it does not overwhelms.
+
+### Logo - headline
+
+"Someone Knows Something" - this sentence is the key one. I can risk to say that it appears in 95% of all crime books/films/series or podcasts. It is almost guaranteed that at some point, some character  related to the story will say it.
+
+It was also noted by Canadian filmmaker and writer David Ridgen who crated 5 seasons of podcasts with the same name.
 
 ## Wireframes
 
