@@ -312,6 +312,11 @@ I would want to include:
 
 ## Languages
 
+- HTML
+- CSS
+- Python
+- JavaScript
+
 ## Libraries
 
 ## Tools
