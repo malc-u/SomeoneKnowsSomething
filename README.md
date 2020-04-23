@@ -8,8 +8,8 @@ This website was created for English speaking enthusiasts of true crime drama as
   - [Project purpose](#project-purpose)
     - [Site visitor goals](#site-visitor-goals)
     - [User stories](#user-stories)
-  - [Wireframes](#wireframes)
   - [Design](#design)
+  - [Wireframes](#wireframes)
 - [Features](#features)
   - [Existing features](#existing-features)
   - [Features left to implement in the future](#features-left-to-implement-in-the-future)
@@ -73,9 +73,12 @@ Someone knows something - True Crime Podcast website is an ideal way to met all 
 12. As a user that likes to share my ideas I want to be able to add/update and delete content to the page for oters to enjoy.
 13. As a user that values security I want to be able to change my password as and when I want.
 
-## Wireframes
-
 ## Design
+<p align="center">
+<img src="https://i.ibb.co/dp0bJ2v/multidevice.png">
+</p>
+
+## Wireframes
 
 # Features
 
