@@ -20,6 +20,7 @@ This website was created for English speaking enthusiasts of true crime drama as
     - [Home page](#home-page)
     - [Register page](#register-page)
     - [Login page](#login-page)
+    - [Recommended page](#recommended-page)
   - [Features left to implement in the future](#features-left-to-implement-in-the-future)
 - [Technologies](#technologies)
   - [Languages](#languages)
@@ -181,7 +182,18 @@ Initial wireframes for this project can be seen in the [Wireframes folder](https
 1. Head-word with "Please Login" - reusing styling of police tape.
 2. Form that allows to login to the website. It consists of 2 fields to be filled in and submit button. These 2 fields are:
    - "Username" - displaying information "Please enter your username"
-   - "Password" - displaying information "Please enter your password"  
+   - "Password" - displaying information "Please enter your password" 
+
+### Recommended page
+
+ Page consist of 8 different podcasts displayed in order form the most recent to the oldest. Each one is displayed as follows:
+ 1. Podcast cover picture displayed using Bootstrap class "card-img-top"
+ 2. Podcast title using Bootstrap "card-title" class within container using Bootstrap "card-body" class
+ 3. Two buttons also within container using Bootstrap "card-body" class:
+    - Read More - leading to Read More page
+   - Login to listen - for users that are not logged in - leading to Login page
+    - Listen here - for users that are logged in - leading to podcast producer website that consists links where podcasts can be listened to.
+
 
 ## Features left to implement in the future
 
