@@ -26,6 +26,7 @@ This website was created for English speaking enthusiasts of true crime drama as
     - [My account page](#my-account-page)
     - [Add podcast page](#add-podcast-page)
     - [Edit/Update podcast page](#editupdate-podcast-page)
+    - [Read more page](#read-more-page)
   - [Features left to implement in the future](#features-left-to-implement-in-the-future)
 - [Technologies](#technologies)
   - [Languages](#languages)
@@ -271,6 +272,15 @@ If somehow user that is not logged in lands on this page they will be redirected
 - "Link To Podcast Website"
 
 If somehow user that is not logged in lands on this page they will be redirected to login page.
+
+### Read more page
+
+1. Head-word with "{{podcast title}}" - reusing styling of police tape.
+2. Podcast cover picture.
+3. Podcast release date.
+4. Podcast description.
+5. Number of episodes.
+6. Button leading to the podcast page.
 
 ## Features left to implement in the future
 
