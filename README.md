@@ -12,7 +12,7 @@ This website was created for English speaking enthusiasts of true crime drama as
     - [Color scheme](#color-scheme)
     - [Fonts](#fonts)
     - [Logo - headline](#logo---headline)
-      - [Icons](#icons)
+    - [Icons](#icons)
   - [Wireframes](#wireframes)
 - [Features](#features)
   - [Existing features](#existing-features)
@@ -109,7 +109,7 @@ Oswald on the other hand, was picked as it displays good (in bold) on the yellow
 
 It was also noted by Canadian filmmaker and writer David Ridgen who crated 5 seasons of podcasts with the same name.
 
-#### Icons
+### Icons
 
 <img src="https://i.ibb.co/S08R8XP/myaccount.png">
 
