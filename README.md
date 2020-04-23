@@ -8,7 +8,8 @@ This website was created for English speaking enthusiasts of true crime drama as
   - [Project purpose](#project-purpose)
     - [Site visitor goals](#site-visitor-goals)
     - [User stories](#user-stories)
-  - [Design](#design)
+  - [Design choices](#design-choices)
+    - [Color scheme](#color-scheme)
   - [Wireframes](#wireframes)
 - [Features](#features)
   - [Existing features](#existing-features)
@@ -73,10 +74,25 @@ Someone knows something - True Crime Podcast website is an ideal way to met all 
 12. As a user that likes to share my ideas I want to be able to add/update and delete content to the page for oters to enjoy.
 13. As a user that values security I want to be able to change my password as and when I want.
 
-## Design
+## Design choices
 <p align="center">
 <img src="https://i.ibb.co/dp0bJ2v/multidevice.png">
 </p>
+
+### Color scheme
+<p align="center">
+<img src="https://i.ibb.co/pddrtdn/palette.png">
+</p>
+
+Colors that were picked had be subtle enough not to overwhelm colorful cards of the podcasts covers.
+
+Yellow #fad201 and black #000000 were picked to be reminiscent of a tape "POLICE LINE DO NOT CROSS".
+
+Charcoal #36454f was picked as first thing that comes to mind when we think about crime is "gray" This color it is subtle and corresponds well with yellow and white as well as does not cause distraction for colorful podcasts covers.
+
+Off yellow #ffffbf was picked to make forms stick out more but to be subtle enough to not overwhelm them.
+
+Finally blue #5bc0de is a standard Bootstrap "info" class color that was used to differentiate between buttons when more than 1 is present or where there is a need for another color than yellow. It corresponds and compliments remaining colors well.
 
 ## Wireframes
 
