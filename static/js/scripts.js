@@ -6,3 +6,9 @@ $(document).ready(function () {
         $('#sidebar_wrapper').toggleClass('no-sidebar-wrapper')
     });
 });
+/**
+ * Navbar collapsing on click
+ */
+$('.navbar-nav>li>a').on('click', function(){
+    $('.navbar-collapse').collapse('hide');
+});
