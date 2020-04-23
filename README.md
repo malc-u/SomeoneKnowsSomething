@@ -19,6 +19,7 @@ This website was created for English speaking enthusiasts of true crime drama as
     - [Every page](#every-page)
     - [Home page](#home-page)
     - [Register page](#register-page)
+    - [Login page](#login-page)
   - [Features left to implement in the future](#features-left-to-implement-in-the-future)
 - [Technologies](#technologies)
   - [Languages](#languages)
@@ -168,13 +169,19 @@ Initial wireframes for this project can be seen in the [Wireframes folder](https
 
 ### Register page
 
-1. Head-wrod with "Register to Listen Now" - reusing styling of police tape.
+1. Head-word with "Register to Listen Now" - reusing styling of police tape.
 2. Form that allows to register to the website. It consists of 3 fields to be filled in and submit button. These 3 fields are:
    - "Username" - displaying information that username is case-sensitive and must be between 5-20 characters
    - "Password" - displaying information that password is case-sensitive and must be between 5-20 characters
    - "Confirm Password" - displaying information to retype the password
 3. Question "Already registered?" and button linking to login page directly undeneath.
-  
+
+### Login page
+
+1. Head-word with "Please Login" - reusing styling of police tape.
+2. Form that allows to login to the website. It consists of 2 fields to be filled in and submit button. These 2 fields are:
+   - "Username" - displaying information "Please enter your username"
+   - "Password" - displaying information "Please enter your password"  
 
 ## Features left to implement in the future
 
