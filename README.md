@@ -331,6 +331,16 @@ I would want to include:
 
 ## Tools
 
+- Git
+- GitHub
+- Heroku
+- PIP
+- Visual Studio Code
+- Chrome Developer Tools
+- Autoprefixer
+- Balsamiq
+- Imgbb
+
 # Testing
 
 # Deployment
