@@ -21,6 +21,7 @@ This website was created for English speaking enthusiasts of true crime drama as
     - [Register page](#register-page)
     - [Login page](#login-page)
     - [Recommended page](#recommended-page)
+    - [User picks page](#user-picks-page)
   - [Features left to implement in the future](#features-left-to-implement-in-the-future)
 - [Technologies](#technologies)
   - [Languages](#languages)
@@ -187,6 +188,7 @@ Initial wireframes for this project can be seen in the [Wireframes folder](https
 ### Recommended page
 
  Page consist of 8 different podcasts displayed in order form the most recent to the oldest. Each one is displayed as follows:
+
  1. Podcast cover picture displayed using Bootstrap class "card-img-top"
  2. Podcast title using Bootstrap "card-title" class within container using Bootstrap "card-body" class
  3. Two buttons also within container using Bootstrap "card-body" class:
@@ -194,6 +196,16 @@ Initial wireframes for this project can be seen in the [Wireframes folder](https
     - Login to listen - for users that are not logged in - leading to Login page
     - Listen here - for users that are logged in - leading to podcast producer website that consists links where podcasts can be listened to.
 
+### User picks page
+
+Page consist of 8 different podcasts displayed in order form the most recent to the oldest. Each one is displayed as follows:
+
+ 1. Podcast cover picture displayed using Bootstrap class "card-img-top"
+ 2. Podcast title using Bootstrap "card-title" class within container using Bootstrap "card-body" class
+ 3. Two buttons also within container using Bootstrap "card-body" class:
+    - Read More - leading to Read More page
+    - Login to listen - for users that are not logged in - leading to Login page
+    - Listen here - for users that are logged in - leading to podcast producer website that consists links where podcasts can be listened to.
 
 ## Features left to implement in the future
 
