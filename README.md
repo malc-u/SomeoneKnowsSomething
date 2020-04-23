@@ -27,6 +27,7 @@ This website was created for English speaking enthusiasts of true crime drama as
     - [Add podcast page](#add-podcast-page)
     - [Edit/Update podcast page](#editupdate-podcast-page)
     - [Read more page](#read-more-page)
+    - [Delete podcast page](#delete-podcast-page)
   - [Features left to implement in the future](#features-left-to-implement-in-the-future)
 - [Technologies](#technologies)
   - [Languages](#languages)
@@ -280,7 +281,13 @@ If somehow user that is not logged in lands on this page they will be redirected
 3. Podcast release date.
 4. Podcast description.
 5. Number of episodes.
-6. Button leading to the podcast page.
+6. Button "Listen here" leading to the podcast page.
+
+### Delete podcast page
+
+1. Head-word with "{{podcast title}}" - reusing styling of police tape.
+2. Left side (tablets and desktops) and top of the page (mobiles) - displays contents of Read more page
+3. Right side (tablets and desktops) and bottom of the page (mobiles) displays form with 1 field to be filled in and a submit button. This field is called "Enter password to delete".
 
 ## Features left to implement in the future
 
