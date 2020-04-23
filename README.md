@@ -6,8 +6,7 @@ This website was created for English speaking enthusiasts of true crime drama as
 
 - [UX](#ux)
   - [Project purpose](#project-purpose)
-    - [Site user goals](#site-user-goals)
-    - [User stories](#user-stories)
+    - [Site visitor goals](#site-visitor-goals)
   - [Wireframes](#wireframes)
   - [Design](#design)
 - [Features](#features)
@@ -33,9 +32,20 @@ While the first option was very easy to navigate, after couple of uses suggested
 
 This page recommends limited number of content to unregistered users however it gives opportunity for a register user to check another user's favourite podcasts and to see all content added by them split into 3 categories - depending on the podcast origin. It also gives registered user opportunity to access podcast website - via a button - and explore ways of listing to it directly from there.
 
-### Site user goals
+### Site visitor goals
 
-### User stories
+These goals are:
+
+- Have somewhere to search for podcasts that they are interested in.
+- Possibility of reading the plot details before listening to the podcast.
+- Knowing that the page is dedicated to this genre and there will not be need of wasting time to find something interesting.
+
+Another/possible goals might be:
+
+- Direct access to podcast website.
+- Possibility of listening to the podcast via links.
+- Reaching podcats that are not too popular in users part of the world but that user might find interesting.
+- Possibility of finding out who the producer is in order to search for similar content beyond this page.
 
 ## Wireframes
 
