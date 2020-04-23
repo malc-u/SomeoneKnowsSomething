@@ -24,6 +24,7 @@ This website was created for English speaking enthusiasts of true crime drama as
     - [User picks page](#user-picks-page)
     - [Australian, British and American page](#australian-british-and-american-page)
     - [My account page](#my-account-page)
+    - [Add podcast page](#add-podcast-page)
   - [Features left to implement in the future](#features-left-to-implement-in-the-future)
 - [Technologies](#technologies)
   - [Languages](#languages)
@@ -185,7 +186,7 @@ Initial wireframes for this project can be seen in the [Wireframes folder](https
 1. Head-word with "Please Login" - reusing styling of police tape.
 2. Form that allows to login to the website. It consists of 2 fields to be filled in and submit button. These 2 fields are:
    - "Username" - displaying information "Please enter your username"
-   - "Password" - displaying information "Please enter your password" 
+   - "Password" - displaying information "Please enter your password"
 
 ### Recommended page
  
@@ -236,6 +237,22 @@ If somehow user that is not logged in lands on this page they will be redirected
 7. Podcast description - to the right of the picture (tablets and desktops) and on directly underneath the title and icons (smaller tablets and mobiles).
 8. Number of episodes in the podcast - directly under the description.
 
+If somehow user that is not logged in lands on this page they will be redirected to login page.
+
+### Add podcast page
+
+1. Head-word with "Add podcast" - reusing styling of police tape.
+2. Form that allows to add podcast to the database and display on the website. It consists of 8 fields to be filled in and submit button. These 8 fields are:
+   - "Title" - displaying information "Plodcast title"
+   - "Podcast Image Link" - displaying information "Link to podcast cover image
+   - "Origin" - displaying 3 radio button to chose from - Australia, UK and USA
+   - "Release Year" - displaying information "YYYY"
+   - "Description" - displayng information "Plot description"
+   - "Favourite" - allowing user to check or leave unchecked this box
+   - "Number of Episodes" - displaying information "e.g. 8"
+   - "Link To Podcast Website" - displaying information "Link to podcast's official page"
+
+If somehow user that is not logged in lands on this page they will be redirected to login page.
 
 ## Features left to implement in the future
 
