@@ -114,6 +114,7 @@ It was also noted by Canadian filmmaker and writer David Ridgen who crated 5 sea
 <img src="https://i.ibb.co/S08R8XP/myaccount.png">
 
 This website - my account section - uses Font Awesome Icons to direct logged in user to add, listen to, edit or delete podcasts. It also displays an icon to allow user to acces password change section.
+There is also fingerprint icon in the top left corner of navbar. This used to toggle sidebar. This icon is not displayed on mobile devices.
 
 ## Wireframes
 
