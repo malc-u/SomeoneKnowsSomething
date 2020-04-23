@@ -23,6 +23,7 @@ This website was created for English speaking enthusiasts of true crime drama as
     - [Recommended page](#recommended-page)
     - [User picks page](#user-picks-page)
     - [Australian, British and American page](#australian-british-and-american-page)
+    - [My account page](#my-account-page)
   - [Features left to implement in the future](#features-left-to-implement-in-the-future)
 - [Technologies](#technologies)
   - [Languages](#languages)
@@ -220,6 +221,20 @@ All these pages are the same except the content they display. They all display c
 6. "Listen here" button that leads to the podcast website - places directly underneath the episode numbers section.
 
 If somehow user that is not logged in lands on this page they will be redirected to login page.
+
+### My account page
+
+1. Head word - my account on the left and cog icon leading to the change password page on the right.
+2. Below this is the Podcasts section and in the top right corner of it there is a + icon that leads to add podcast page.
+3. Directly below this there is a list of podcasts that were added by the logged in user.
+4. Podcast cover picture displayed on the left (tablets and desktops) and on the top (mobiles).
+5. Podcast title and release date displayed in bold to the right of the picture (tablets and desktops) and on directly underneath the picture (mobiles).
+6. Set of 3 icons displayed in to the right of the title and release date (bigger tablets and desktops) and on directly underneath the picture (smaller tablets and mobiles). These icons are:
+   - headphones icon - leading user to podcast website
+   - edit icon (pencil and paper icon) - leading user to podcast update page
+   - delete icon (trash icon) - leading user to delete podcast page.
+7. Podcast description - to the right of the picture (tablets and desktops) and on directly underneath the title and icons (smaller tablets and mobiles).
+8. Number of episodes in the podcast - directly under the description.
 
 
 ## Features left to implement in the future
