@@ -115,8 +115,8 @@ It was also noted by Canadian filmmaker and writer David Ridgen who crated 5 sea
 
 This website - my account section - uses Font Awesome Icons to direct logged in user to add, listen to, edit or delete podcasts. It also displays an icon to allow user to acces password change section.
 
-
 ## Wireframes
+Initial wireframes for this project can be seen in the [Wireframes folder]().
 
 # Features
 
