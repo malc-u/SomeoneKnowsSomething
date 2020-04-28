@@ -223,8 +223,8 @@ def podcast_delete(podcast_id):
 
   return render_template('podcast-delete.html', form = delete_form , podcast = picked_podcast)
 
-@app.route('/change_password', methods=['GET', 'POST'])
-def change_password():
+@app.route('/password_change', methods=['GET', 'POST'])
+def password_change():
   if 'username' not in session:
     flash(f'Oops... you need to be logged in to see this page.', 'info')
     return redirect(url_for('login'))
