@@ -17,9 +17,9 @@
   <!--Top navigation bar-->
   {% include 'layout/navbar.html' %}
   <!--Container wrapping page-->
-  <div class="container-fluid d-flex p-0" id="page_wrapper">
+  <div class="container-fluid d-flex p-0">
     <!--Left side of the page containing sidebar-->
-    <div id="sidebar_wrapper">
+    <div id="sidebar-wrapper">
       <!--Page logo-->
       <div class="logo sidebar-item">
         <a href="{{url_for('index')}}" aria-label="Someone Knows Something Logo">
@@ -29,9 +29,9 @@
       {% include 'layout/sidebar.html' %}
     </div>
     <!--Content - right side of the page wrapper-->
-    <div class="container-fluid  mx-0 px-0" id="content_wrapper">
+    <div class="container-fluid  mx-0 px-0">
       <!--Page content-->
-      <div id="page_content" class="row mx-0 pb-5">
+      <div id="page-content" class="row mx-0 pb-5">
         <!--Container that will display flashed messages/alerts-->
         <div class="col-12 text-center">
           {% with messages = get_flashed_messages(with_categories=true) %}
