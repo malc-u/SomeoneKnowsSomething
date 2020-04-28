@@ -162,8 +162,8 @@ https://romain.dorgueil.net/wiki/python/wtforms and https://stackoverflow.com/a/
 to populate update form with existing in database details for the podcast that user 
 wants to amend. 
 """
-@app.route('/update_podcast/<podcast_id>', methods=['GET', 'POST'])
-def update_podcast(podcast_id):
+@app.route('/podcast/update/<podcast_id>', methods=['GET', 'POST'])
+def podcast_update(podcast_id):
   if 'username' not in session:
     flash(f'Oops... you need to be logged in to see this page.', 'danger')
     return redirect(url_for('login'))
@@ -200,7 +200,7 @@ def update_podcast(podcast_id):
     flash(f'Error updating podcast. Please try again', 'danger')
     return redirect(url_for('your_account'))
 
-  return render_template('podcast.html', form = update_form, podcast = picked_podcast)
+  return render_template('podcast-update.html', form = update_form, podcast = picked_podcast)
 
 @app.route('/delete_podcast/<podcast_id>', methods=['GET', 'POST'])
 def delete_podcast(podcast_id):
