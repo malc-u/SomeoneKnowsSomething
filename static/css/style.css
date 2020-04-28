@@ -7,7 +7,7 @@ body {
 }
 
 /*Sidebar customization*/
-#sidebar_wrapper {
+#sidebar-wrapper {
     background-color: #36454f;
     color: #fad201;
     width: 15rem;
@@ -77,13 +77,13 @@ body {
 }
 
 /* Customized main page part to be visible at all times and scrollable */
-#page_content {
+#page-content {
     overflow-y: hidden;
     overflow-x: hidden;
     padding-top: 5rem;
 }
 
-.home_header h1 {
+.home-header h1 {
     background-color: #fad201;
     font-family: 'Oswald', sans-serif;
     color: #000;
@@ -91,23 +91,23 @@ body {
     font-weight: 700;
 }
 
-.home_bottom h1 {
+.home-bottom h1 {
     font-family: 'Oswald', sans-serif;
     color: #000;
     letter-spacing: 0.3rem;
     font-weight: 700;
 }
 
-.index_img {
+.index-img {
     width: 12rem;
     height: 15rem;
 }
 
-.index_bottom_button {
+.index-bottom-button {
     display: inline;
 }
 
-.hero_container {
+.hero-container {
     background-image: url(../img/indexpic.jpg);
     height: 50vh;
     background-position: center;
@@ -143,17 +143,17 @@ footer a {
 }
 
 /*Origin page podcast display customization*/
-.img_origin {
+.img-origin {
     width: 10rem;
 }
 
-.origin_title {
+.origin-title {
     font-family: 'Oswald', sans-serif;
     font-weight: 600;
 }
 
 /*Pages with forms customization*/
-#register_wrapper {
+#register-wrapper {
     background-color: #ffffbf;
 }
 
@@ -163,7 +163,7 @@ footer a {
 }
 
 /*My account add_podcast button customization*/
-#add_button {
+#add-button {
     padding-bottom: 1.5rem;
 }
 
@@ -185,7 +185,7 @@ footer a {
         display: none;
     }
 
-    #sidebar_wrapper {
+    #sidebar-wrapper {
         display: none;
     }
 }
@@ -197,7 +197,7 @@ footer a {
 }
 
 @media (min-width: 1024px) {
-    .hero_container {
+    .hero-container {
         background-size: contain;
     }
 }
