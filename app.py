@@ -131,9 +131,8 @@ def your_account():
     podcasts = mongo.db.podcasts.find({"username": current_user}))
     
 
-
-@app.route('/add_podcast', methods=['GET', 'POST'])
-def add_podcast():
+@app.route('/podcast/add', methods=['GET', 'POST'])
+def podcast_add():
   if 'username' not in session:
     flash(f'Oops... you need to be logged in to see this page.', 'danger')
     return redirect(url_for('login'))
@@ -155,7 +154,7 @@ def add_podcast():
         flash(f'Your podcasts has been added', 'success')
         return redirect(url_for('your_account', title='Podcast Added'))
 
-  return render_template('add_podcast.html', form=add_form)
+  return render_template('podcast-add.html', form=add_form)
     
 """
 Used request.method == 'GET' following advice from 
