@@ -202,8 +202,8 @@ def podcast_update(podcast_id):
 
   return render_template('podcast-update.html', form = update_form, podcast = picked_podcast)
 
-@app.route('/delete_podcast/<podcast_id>', methods=['GET', 'POST'])
-def delete_podcast(podcast_id):
+@app.route('/podcast/delete/<podcast_id>', methods=['GET', 'POST'])
+def podcast_delete(podcast_id):
   if 'username' not in session:
     flash(f'Oops... you need to be logged in to see this page.', 'danger')
     return redirect(url_for('login'))
@@ -221,7 +221,7 @@ def delete_podcast(podcast_id):
     else:
         flash(f'Oops, something went wrong. Please try again', 'danger')
 
-  return render_template('delete_podcast.html', form = delete_form , podcast = picked_podcast)
+  return render_template('podcast-delete.html', form = delete_form , podcast = picked_podcast)
 
 @app.route('/change_password', methods=['GET', 'POST'])
 def change_password():
