@@ -17,18 +17,17 @@ app.config["SECRET_KEY"] = os.getenv("SECRET_KEY")
 mongo = PyMongo(app)
 
 @app.route('/')
-@app.route('/index')
 def index():
   return render_template('index.html')
 
-"""
-Check_password_hash part is based on example no 9 from this page
-https://www.programcreek.com/python/example/58659/werkzeug.security.check_password_hash
-but it was amended and updated to suit the needs of this app
-"""
+
 @app.route('/login', methods=['GET', 'POST'])
 def login():
-
+  """
+  Check_password_hash part is based on example no 9 from this page
+  https://www.programcreek.com/python/example/58659/werkzeug.security.check_password_hash
+  but it was amended and updated to suit the needs of this app
+  """
   form_login = LoginForm()
 
   if form_login.validate_on_submit():
@@ -119,7 +118,7 @@ def american():
 def read_more(podcast_id):
   picked_podcast = mongo.db.podcasts.find_one({'_id': ObjectId(podcast_id)})
 
-  return render_template('read_more.html', podcast = picked_podcast)
+  return render_template('more.html', podcast = picked_podcast)
 
 @app.route('/your_account')
 def your_account():
