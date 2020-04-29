@@ -133,7 +133,7 @@ There is also fingerprint icon in the top left corner of navbar. This used to to
 
 ## Wireframes
 
-Initial wireframes for this project can be seen in the [Wireframes folder](https://github.com/malc-u/SomeoneKnowsSomething/tree/master/static/wireframes).
+Initial wireframes for this project can be seen in the [Wireframes folder](https://github.com/malc-u/SomeoneKnowsSomething/tree/master/wireframes).
 
 # Features
 
