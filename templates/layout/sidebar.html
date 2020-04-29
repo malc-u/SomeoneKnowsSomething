@@ -1,5 +1,12 @@
 {% block sidebar %}
-<div>
+<div id="sidebar-wrapper">
+  <!--Page logo-->
+  <div class="logo sidebar-item">
+    <a href="{{url_for('index')}}" aria-label="Someone Knows Something Logo">
+      <img src="/static/img/logo.png" id="logo" /></a>
+  </div>
+  <!--Sidebar content-->
+  <div>
     <ul class="list-group d-flex justify-content-center my-lg-5">
       <li class="nav-item sidebar-item py-md-4">
         <a class="nav-link active sidebar-link" href="{{url_for('recommended')}}">Recommended</a>
@@ -27,4 +34,5 @@
       {% endif %}
     </ul>
   </div>
+</div>
 {% endblock%}

@@ -18,16 +18,8 @@
   {% include 'layout/navbar.html' %}
   <!--Container wrapping page-->
   <div class="container-fluid d-flex p-0">
-    <!--Left side of the page containing sidebar-->
-    <div id="sidebar-wrapper">
-      <!--Page logo-->
-      <div class="logo sidebar-item">
-        <a href="{{url_for('index')}}" aria-label="Someone Knows Something Logo">
-          <img src="/static/img/logo.png" id="logo" /></a>
-      </div>
-      <!--Sidebar content-->
-      {% include 'layout/sidebar.html' %}
-    </div>
+    <!--Left side of the page containing sidebar and logo -->
+    {% include 'layout/sidebar.html' %}
     <!--Content - right side of the page wrapper-->
     <div class="container-fluid  mx-0 px-0">
       <!--Page content-->
@@ -38,10 +30,9 @@
         {% block content %} {% endblock %}
       </div>
     </div>
-    <!--Footer-->
-    {% include 'layout/footer.html' %}
   </div>
-
+  <!--Footer-->
+  {% include 'layout/footer.html' %}
   <!-- Imported scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
