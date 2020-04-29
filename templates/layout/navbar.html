@@ -1,57 +1,58 @@
 {% block navbar %}
 <nav class="navbar fixed-top navbar-expand-lg">
-    <!--Button toggling sidebar-->
-    <button class="btn" id="sidebar-toggle"><i class="fas fa-fingerprint"></i></button>
-    <a class="navbar-brand pl-2" href="{{url_for('index')}}">Someone Knows Somethig</a>
-    <!--Button toggling top navbar on smaller screens-->
-    <button class="navbar-toggler" id="my-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <i class="fas fa-bars"></i>
-    </button>
-    <!--Top navbar from Bootstrap-->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="{{url_for('index')}}">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">Podcasts</a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="{{url_for('recommended')}}">Recommended</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="{{url_for('favourites')}}">Users Picks</a>
-              {% if 'username' in session %}
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="{{url_for('australian')}}">Australian</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="{{url_for('british')}}">British</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="{{url_for('american')}}">American</a>
-            </div>
-        </li>
+  <!--Button toggling sidebar-->
+  <button class="btn" id="sidebar-toggle"><i class="fas fa-fingerprint"></i></button>
+  <a class="navbar-brand pl-2" href="{{url_for('index')}}">Someone Knows Somethig</a>
+  <!--Button toggling top navbar on smaller screens-->
+  <button class="navbar-toggler" id="my-toggler" type="button" data-toggle="collapse"
+    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+    aria-label="Toggle navigation">
+    <i class="fas fa-bars"></i>
+  </button>
+  <!--Top navbar from Bootstrap-->
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="{{url_for('index')}}">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">Podcasts</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="{{url_for('recommended')}}">Recommended</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="{{url_for('favourites')}}">Users Picks</a>
+          {% if 'username' in session %}
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="{{url_for('australian')}}">Australian</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="{{url_for('british')}}">British</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="{{url_for('american')}}">American</a>
+        </div>
+      </li>
 
-        
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">Hello {{session['username']}}</a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="{{url_for('your_account')}}">My account</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="{{url_for('podcast_add')}}">Add podcasts</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="{{url_for('logout')}}">Logout</a>
-          </div>
-        </li>
-        {% else %}
-        <li class="nav-item ">
-          <a class="nav-link" href="{{url_for('login')}}">Login </a>
-        </li>
-        <li class="nav-item ">
-          <a class="nav-link" href="{{url_for('register')}}">Register </a>
-        </li>
-        {% endif %}
-      </ul>
-    </div>
-  </nav>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">Hello {{session['username']}}</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="{{url_for('your_account')}}">My account</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="{{url_for('podcast_add')}}">Add podcasts</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="{{url_for('logout')}}">Logout</a>
+        </div>
+      </li>
+      {% else %}
+      <li class="nav-item ">
+        <a class="nav-link" href="{{url_for('login')}}">Login </a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="{{url_for('register')}}">Register </a>
+      </li>
+      {% endif %}
+    </ul>
+  </div>
+</nav>
 {% endblock %}
