@@ -18,7 +18,7 @@ mongo = PyMongo(app)
 
 @app.route('/')
 def index():
-  return render_template('index.html')
+  return render_template('pages/index.html')
 
 
 @app.route('/login', methods=['GET', 'POST'])
@@ -44,7 +44,7 @@ def login():
     flash(f'Password incorrect. Please try again.', 'danger')
     return redirect(url_for('login'))
 
-  return render_template('login.html', title = 'Login', form = form_login ) 
+  return render_template('pages/login.html', title = 'Login', form = form_login ) 
 
 @app.route('/register', methods=['GET', 'POST'])
 def register():
@@ -66,22 +66,22 @@ def register():
       flash(f'Username already taken. Please try another one.', 'danger')
       return redirect(url_for('register'))
 
-  return render_template('register.html', title='Register',
+  return render_template('pages/register.html', title='Register',
                            form=form_register)
 
 @app.route('/logut')
 def logout():
   session.clear()
-  return render_template('index.html')
+  return render_template('pages/index.html')
 
 @app.route('/recommended')
 def recommended():
-  return render_template('recommended.html', 
+  return render_template('pages/recommended.html', 
   podcasts = mongo.db.podcasts.find({"is_recommended": True}), recommended = "Recommended")
 
 @app.route('/favourites')
 def favourites():
-  return render_template('recommended.html', 
+  return render_template('pages/recommended.html', 
   podcasts = mongo.db.podcasts.find({"is_favourite": True}).limit(8), recommended = "Users favourites")
 
 @app.route('/british')
@@ -90,7 +90,7 @@ def british():
     flash(f'Oops... you need to be logged in to see this page.', 'danger')
     return redirect(url_for('login'))
   else:
-    return render_template('origin.html', 
+    return render_template('pages/origin.html', 
     podcasts = mongo.db.podcasts.find({"origin": 1}),
     origin = 'United Kingdom')
 
@@ -100,7 +100,7 @@ def australian():
     flash(f'Oops... you need to be logged in to see this page.', 'danger')
     return redirect(url_for('login'))
   else:
-    return render_template('origin.html', 
+    return render_template('pages/origin.html', 
     podcasts = mongo.db.podcasts.find({"origin": 2}),
     origin = 'Australia')
 
@@ -110,7 +110,7 @@ def american():
     flash(f'Oops... you need to be logged in to see this page.', 'danger')
     return redirect(url_for('login'))
   else:
-    return render_template('origin.html', 
+    return render_template('pages/origin.html', 
     podcasts = mongo.db.podcasts.find({"origin": 3}),
     origin = 'USA')
 
@@ -118,7 +118,7 @@ def american():
 def read_more(podcast_id):
   picked_podcast = mongo.db.podcasts.find_one({'_id': ObjectId(podcast_id)})
 
-  return render_template('more.html', podcast = picked_podcast)
+  return render_template('pages/more.html', podcast = picked_podcast)
 
 @app.route('/your_account')
 def your_account():
@@ -127,7 +127,7 @@ def your_account():
     return redirect(url_for('login'))
   else:
     current_user = session['username']
-    return render_template('account.html', 
+    return render_template('pages/account.html', 
     podcasts = mongo.db.podcasts.find({"username": current_user}))
     
 
@@ -154,7 +154,7 @@ def podcast_add():
         flash(f'Your podcasts has been added', 'success')
         return redirect(url_for('your_account', title='Podcast Added'))
 
-  return render_template('podcast-add.html', form=add_form)
+  return render_template('pages/podcast-add.html', form=add_form)
     
 """
 Used request.method == 'GET' following advice from 
@@ -200,7 +200,7 @@ def podcast_update(podcast_id):
     flash(f'Error updating podcast. Please try again', 'danger')
     return redirect(url_for('your_account'))
 
-  return render_template('podcast-update.html', form = update_form, podcast = picked_podcast)
+  return render_template('pages/podcast-update.html', form = update_form, podcast = picked_podcast)
 
 @app.route('/podcast/delete/<podcast_id>', methods=['GET', 'POST'])
 def podcast_delete(podcast_id):
@@ -221,7 +221,7 @@ def podcast_delete(podcast_id):
     else:
         flash(f'Oops, something went wrong. Please try again', 'danger')
 
-  return render_template('podcast-delete.html', form = delete_form , podcast = picked_podcast)
+  return render_template('pages/podcast-delete.html', form = delete_form , podcast = picked_podcast)
 
 @app.route('/password_change', methods=['GET', 'POST'])
 def password_change():
@@ -250,7 +250,7 @@ def password_change():
     flash(f'Error updating password. Please try again', 'danger')
     return redirect(url_for('your_account'))
 
-  return render_template('settings.html', form = change_form)
+  return render_template('pages/settings.html', form = change_form)
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
