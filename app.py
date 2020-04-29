@@ -128,8 +128,7 @@ def your_account():
   else:
     current_user = session['username']
     return render_template('pages/account.html', 
-    podcasts = mongo.db.podcasts.find({"username": current_user}),
-    user = current_user)
+    podcasts = mongo.db.podcasts.find({"username": current_user}))
     
 
 @app.route('/podcast/add', methods=['GET', 'POST'])
