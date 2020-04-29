@@ -5,51 +5,7 @@
 <div class="col-12 pt-5">
     <div class="row mx-0">
         <div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2 text-center py-2" id="register-wrapper">
-            <form action="" method='POST'>
-                {{ form.hidden_tag() }}
-                <div class="form-group">
-                    {{ form.username.label(class="form-control-label form-label")}}
-                    {% if form.username.errors %}
-                    {{ form.username(class="form-control form-control-lg is-invalid")}}
-                    <div class="invalid-feedback">
-                        {% for error in form.username.errors %}
-                        <span> {{error}} </span>
-                        {% endfor %}
-                    </div>
-                    {% else %}
-                    {{ form.username(class="form-control form-control-lg", placeholder="Case-sensitive, 5-20 characters.")}}
-                    {% endif %}
-                </div>
-                <div class="form-group">
-                    {{ form.password.label(class="form-control-label form-label")}}
-                    {% if form.password.errors %}
-                    {{ form.password(class="form-control form-control-lg is-invalid")}}
-                    <div class="invalid-feedback">
-                        {% for error in form.password.errors %}
-                        <span> {{error}} </span>
-                        {% endfor %}
-                    </div>
-                    {% else %}
-                    {{ form.password(class="form-control form-control-lg", placeholder="Case-sensitive, 5-20 characters.")}}
-                    {% endif %}
-                </div>
-                <div class="form-group">
-                    {{ form.confirm_password.label(class="form-control-label form-label")}}
-                    {% if form.confirm_password.errors %}
-                    {{ form.confirm_password(class="form-control form-control-lg is-invalid")}}
-                    <div class="invalid-feedback">
-                        {% for error in form.confirm_password.errors %}
-                        <span> {{error}} </span>
-                        {% endfor %}
-                    </div>
-                    {% else %}
-                    {{ form.confirm_password(class="form-control form-control-lg", placeholder="Repeat password")}}
-                    {% endif %}
-                </div>
-                <div class="form-group">
-                    {{ form.submit(class="btn btn-warning")}}
-                </div>
-            </form>
+            {% include 'components/form-register.html' %}
             <div class="border-top">
                 <p>Already Registered?</p>
                 <a class="btn btn-info mx-3" href="{{url_for('login')}}" aria-label="Login">Login here</a>
