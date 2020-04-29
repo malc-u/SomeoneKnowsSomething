@@ -33,17 +33,8 @@
       <!--Page content-->
       <div id="page-content" class="row mx-0 pb-5">
         <!--Container that will display flashed messages/alerts-->
-        <div class="col-12 text-center">
-          {% with messages = get_flashed_messages(with_categories=true) %}
-          {% if messages %}
-          {% for category, message in messages %}
-          <div class="alert h4 alert-{{ category }}">
-            {{ message }}
-          </div>
-          {% endfor %}
-          {% endif %}
-          {% endwith %}
-        </div>
+        {% include 'components/flash-alerts.html' %}
+        <!--Block of page content to be displayed from templates/pages-->
         {% block content %} {% endblock %}
       </div>
     </div>
