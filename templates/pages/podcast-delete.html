@@ -22,25 +22,7 @@
         </div>
         <div class="col-sm-10 offset-sm-1 col-md-4 offset-md-1 text-center d-flex align-items-center justify-content-center py-2"
             id="register-wrapper">
-            <form action="" method='POST'>
-                {{ form.hidden_tag() }}
-                <div class="form-group">
-                    {{ form.password.label(class="form-control-label form-label")}}
-                    {% if form.password.errors %}
-                    {{ form.password(class="form-control form-control-lg is-invalid")}}
-                    <div class="invalid-feedback">
-                        {% for error in form.password.errors %}
-                        <span> {{error}} </span>
-                        {% endfor %}
-                    </div>
-                    {% else %}
-                    {{ form.password(class="form-control form-control-lg")}}
-                    {% endif %}
-                </div>
-                <div class="form-group">
-                    {{ form.submit(class="btn btn-warning")}}
-                </div>
-            </form>
+            {% include 'components/form-delete.html' %}
         </div>
     </div>
 </div>
