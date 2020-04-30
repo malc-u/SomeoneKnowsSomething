@@ -28,16 +28,23 @@
         {% endif %}
     </div>
     <div class="form-group">
-        {{ form.origin.label(class="form-check-label form-label")}}
+        {{ form.origin.label(class="form-control-label form-label radio-form")}}
         {% if form.origin.errors %}
-        {{ form.origin(class="form-check form-check-lg is-invalid")}}
+        {{ form.origin(class="form-control form-control-lg is-invalid")}}
         <div class="invalid-feedback">
             {% for error in form.origin.errors %}
             <span> {{error}} </span>
             {% endfor %}
         </div>
         {% else %}
-        {{ form.origin(class="form-check form-check-lg", type="radio")}}
+        <div class="radio-form">
+            {% for subfield in form.origin %}
+            <tr>
+                <td>{{ subfield }}</td>
+                <td>{{ subfield.label }}</td>
+            </tr>
+            {% endfor %}
+        </div>
         {% endif %}
     </div>
     <div class="form-group">
