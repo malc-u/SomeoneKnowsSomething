@@ -24,7 +24,7 @@ class AddForm(FlaskForm):
     release_year = StringField('Release Year:', validators=[DataRequired(), Length(min=4, max=4)])
     description = TextAreaField('Description:', validators=[DataRequired(), Length(max=500)])
     is_favourite = BooleanField('Favourite:')
-    no_episodes = StringField('Number Of Episodes:', validators=[DataRequired()])
+    no_episodes = StringField('Number Of Episodes:', validators=[DataRequired(), Length(min=1, max=3)])
     podcast_link = StringField('Link To Podcast Website:', validators=[DataRequired()])
     submit = SubmitField('Add Podcast')
 
