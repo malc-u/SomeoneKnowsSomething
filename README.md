@@ -126,7 +126,7 @@ It was also noted by Canadian film-maker and writer David Ridgen who crated 5 se
 
 ### Icons
 
-<img src="https://i.ibb.co/S08R8XP/myaccount.png">
+<img src="https://i.ibb.co/xfXfwNf/myaccount.png">
 
 This website - my account section - uses Font Awesome Icons to direct logged in user to add, listen to, edit or delete podcasts. It also displays an icon to allow user to access password change section.
 There is also fingerprint icon in the top left corner of navbar. This used to toggle sidebar. This icon is not displayed on mobile devices.
