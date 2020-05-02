@@ -433,7 +433,7 @@ git clone https://github.com/malc-u/SomeoneKnowsSomething
 python -m venv <name of your virtual environment>
 ``` 
 
-  e.g. `python -m venv someoneknows`
+e.g. `python -m venv someoneknows`
 
 4. Activate your virtual environment with command 
 
