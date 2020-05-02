@@ -489,3 +489,26 @@ To deploy this project to Heroku follow the steps below:
 11. The site is now successfully deployed
 
 # Credits
+
+This project has been created by me, however some content has been imported such as podcast details, cover pictures, descriptions etc.:
+
+- [Unravell: Showball](https://www.abc.net.au/radio/programs/truecrime/)
+- [Who the hell in Hamish?](https://www.theaustralian.com.au/podcasts/podcast-who-the-hell-is-hamish/news-story/c95b519a9ececa6076df80bd130ba158)
+- [Missing Cryptoqueen](https://www.bbc.co.uk/programmes/p07nkd84/episodes/downloads)
+- [Dr. Death](https://wondery.com/shows/dr-death/)
+- [Manhunt: Finding Kevin Parle](https://www.bbc.co.uk/sounds/series/p054dybk)
+- [Unheard: The Fred and Rose West Tapes](https://www.somethinelse.com/projects/unheard-the-fred-rose-west-tapes/)
+- [What happened to Zac?](https://www.novafm.com.au/podcast/what-happened-to-zac/?amp)
+- [The Lady Vanishes](https://7news.com.au/news/the-lady-vanishes)
+- [Fake heiress](https://www.bbc.co.uk/programmes/p07y1w0h)
+- [The Lighthouse](https://www.theaustralian.com.au/podcasts/the-lighthouse-what-happened-to-theo-hayez/news-story/8a68d51efd1bd28c509c02dc36881fb5)
+- [Girl taken](https://www.bbc.co.uk/programmes/m000ghxl)
+- [The Clearing](https://gimletmedia.com/shows/the-clearing)
+- [Over my dead body - Tally](https://wondery.com/shows/over-my-dead-body/)
+- [The Teachers Pet](https://www.theaustralian.com.au/podcasts/the-teachers-pet-the-unsolved-murder-of-lyn-dawson/news-story/da4bb90abff76bbe0f2bd932aa987e2a)
+- [Joe Exotic : Tiger King](https://wondery.com/shows/joe-exotic/)
+- [Dirty John](https://wondery.com/shows/dirty-john/)
+- [Perfect Storm - True stroy of the Chamberlains](https://7news.com.au/entertainment/podcasts/a-perfect-storm-a-seven-west-media-podcast--c-547246)
+- [Small Town , Big Crime](https://podcasts.google.com/?feed=aHR0cHM6Ly9mZWVkcy5idXp6c3Byb3V0LmNvbS83MjM5MTUucnNz&ved=0CAAQ4aUDahcKEwiQ_-OP1PToAhUAAAAAHQAAAAAQAQ&hl=en)
+- [Beenham Valley Road](https://www.six10mediagroup.com/beenhamvalleyroad)
+
