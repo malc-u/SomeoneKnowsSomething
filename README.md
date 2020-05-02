@@ -420,20 +420,20 @@ You must have following installed on your machine:
 
 **Once this is installed you can follow below steps:**
 
-1. Save a zip copy of [this](https://github.com/malc-u/SomeoneKnowsSomething) Github repository using "Clone of download" green button or clone repository dircetly to your IDE using command
+1. **Save** a zip **copy of [this](https://github.com/malc-u/SomeoneKnowsSomething)** Github **repository** using "Clone of download" green button or clone repository dircetly to your IDE using command
 
 ```
 git clone https://github.com/malc-u/SomeoneKnowsSomething
 ```
 
-2. In the terminal of your IDE open folder with the repository
-3. Create virual environment using command
+2. In the terminal of your IDE **open folder with the repository**
+3. **Create virual environment** using command
 
 ```
 python -m venv <name of your virtual environment>
-``` 
+```
 
-4. Activate your virtual environment with command 
+4. **Activate** your **virtual environment** with command
 
 ```
 <name of your virtual environment>\Scripts\activate
@@ -445,21 +445,21 @@ python -m venv <name of your virtual environment>
 python -m pip install --upgrade pip
 ```
 
-6. Install all modules this project dependends on using command:
+6. **Install** all **modules** this project dependends on using command:
 
 ```
 pip -r requirements.txt
 ```
 
-7. Create file `.flaskenv` in repository and include MONGO_URI and SECRET_KEY to your own data base. Please call your database `sks` and include 2 collections in it. First called `users` and second called `podcasts`. Examples of JSON structure of these collections can be seen in [schemas folder](https://github.com/malc-u/SomeoneKnowsSomething/tree/master/schemas)
+7. **Create** file **`.flaskenv`** in repository and **include MONGO_URI and SECRET_KEY** to your own data base. Please call your **database `sks`** and include **2 collections** in it. First called **`users` and** second called **`podcasts`**. Examples of JSON structure of these collections can be seen in [schemas folder](https://github.com/malc-u/SomeoneKnowsSomething/tree/master/schemas)
 
-8. Run this application using command:
+8. **Run** this **application** using command:
 
 ```
 python app.py
 ````
 
-9. Visit website using followin gin your browser's address bar
+9. **Visit website** using following in your browser's address bar
 
 ```
 http://127.0.0.1:5000
