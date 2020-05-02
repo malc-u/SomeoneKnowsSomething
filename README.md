@@ -397,6 +397,9 @@ This website relies on two database collections:
 - [Autoprefixer](https://autoprefixer.github.io/)
 - [Balsamiq](https://balsamiq.com/)
 - [Imgbb](https://imgbb.com/)
+- [MongoDB](https://www.mongodb.com/cloud/atlas)
+- [JSON Formatter](https://www.freeformatter.com/json-formatter.html)
+- [Markdown Table](https://www.tablesgenerator.com/markdown_tables)
 
 # Testing
 
