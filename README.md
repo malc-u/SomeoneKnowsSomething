@@ -435,6 +435,7 @@ To deploy this project to Heroku follow the steps below:
 7. **Click** on **"Settings" > "Reveal Config Vars" in Heroku** dashboard
 8. **Set** the **following** config **vars**:
 
+   - key: **DEBUG** as a value: **False**
    - key: **IP** as a value: **0.0.0.0**
    - key: **PORT** as a value: **5000**
    - key: **MONGO_URI** as a value: **mongodb+srv://<username>:<password>@<cluster_name>-qtxun.mongodb.net/<database_name>?retryWrites=true&w=majority**
