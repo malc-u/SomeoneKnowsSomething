@@ -369,10 +369,10 @@ This website relies on two database collections:
 
 ## Languages
 
-- HTML
-- CSS
-- Python
-- JavaScript
+- [HTML](https://www.w3schools.com/html/)
+- [CSS](https://www.w3schools.com/css/)
+- [Python](https://www.w3schools.com/python/)
+- [JavaScript](https://www.w3schools.com/js/)
 
 ## Libraries
 
