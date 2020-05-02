@@ -1,0 +1,17 @@
+[
+   {
+      "_id": {
+         "$oid": "<objectId>"
+      },
+      "username": "<string>",
+      "podcast_title": "<string>",
+      "podcast_imgurl": "<string>",
+      "origin": "<integer>",
+      "release_year": "<string>",
+      "description": "<string>",
+      "no_episodes": "<string>",
+      "podcast_link": "<string>",
+      "is_favourite": "<boolean>",
+      "is_recommended": "<boolean>"
+   }
+]
