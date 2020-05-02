@@ -237,7 +237,7 @@ If somehow user that is not logged in lands on this page they will be redirected
 
 ### My account page
 
-1. Head word - my account on the left and cog icon leading to the change password page on the right.
+1. Head word - Account Dashboard - reusing styling of police tape and  cog icon leading to the change password page on the right.
 2. Below this is the Podcasts section and in the top right corner of it there is a + icon that leads to add podcast page.
 3. Directly below this there is a list of podcasts that were added by the logged in user.
 4. Podcast cover picture displayed on the left (tablets and desktops) and on the top (mobiles).
