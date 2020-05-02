@@ -418,7 +418,7 @@ You must have following installed on your machine:
 4. Git
 5. MongoDB running locally on your machine and connected onto your MongoDB Atlas
 
-Once this is installed you can follow below steps:
+**Once this is installed you can follow below steps:**
 
 1. Save a zip copy of [this](https://github.com/malc-u/SomeoneKnowsSomething) Github repository using "Clone of download" green button or clone repository dircetly to your IDE using command
 
@@ -433,7 +433,7 @@ git clone https://github.com/malc-u/SomeoneKnowsSomething
 python -m venv <name of your virtual environment>
 ```
 
-e.g. `python -m venv someoneknows`
+  e.g. `python -m venv someoneknows`
 
 4. Activate your virtual environment with command 
 
@@ -441,7 +441,7 @@ e.g. `python -m venv someoneknows`
 <name of your virtual environment>\Scripts\activate
 ```
 
-or by pasting path to activate file in your terminal in "" e.g. `"C:\<path to your repository folder>\<Folder with repository>\<your virtual environment>\Scripts\activate.bat"`
+  or by pasting path to activate file in your terminal in "" e.g. `"C:\<path to your repository folder>\<Folder with repository>\<your virtual environment>\Scripts\activate.bat"`
 
 5. If needed upgrade pip locally using command
 
@@ -456,6 +456,7 @@ pip -r requirements.txt
 ```
 
 7. Create file `.flaskenv` in repository and include MONGO_URI and SECRET_KEY to your own data base. Please call your database `sks` and include 2 collections in it. First called `users` and second called `podcasts`. Examples of JSON structure of these collections can be seen in [schemas folder](https://github.com/malc-u/SomeoneKnowsSomething/tree/master/schemas)
+
 8. Run this application using command:
 
 ```
@@ -468,7 +469,7 @@ python app.py
 http://127.0.0.1:5000
 ```
 
-in address bar in your browser
+  in address bar in your browser
 
 ## Deployment to Heroku
 
