@@ -330,10 +330,17 @@ The types of data stored in the data base for this project are:
 - Boolean
 - Integer
 
-
 ## Collections Data Structure
 
+This website relies on two database collections:
+
 ### Users collection
+
+|    Title   | Key in DB |                   Validation type                  | Data type |
+|:----------:|:---------:|:--------------------------------------------------:|:---------:|
+| Account ID |    _id    |                        None                        |  ObjectId |
+|    Name    |  username | text, data required, minlength="5", maxlength="40" |   String  |
+|  Password  |  password | text, data required, minlength="5", maxlength="40" |   String  |
 
 ### Podcasts collection
 
