@@ -30,6 +30,12 @@ This website was created for English speaking enthusiasts of true crime drama as
     - [Delete podcast page](#delete-podcast-page)
     - [Password change page](#password-change-page)
   - [Features left to implement in the future](#features-left-to-implement-in-the-future)
+- [Information Architecture](#information-architecture)
+  - [Database](#database)
+  - [Data Storage Types](#data-storage-types)
+  - [Collections Data Structure](#collections-data-structure)
+    - [Users collection](#users-collection)
+    - [Podcasts collection](#podcasts-collection)
 - [Technologies](#technologies)
   - [Languages](#languages)
   - [Libraries](#libraries)
@@ -308,6 +314,18 @@ I would want to include:
 3. Podcasts to be searched using not by origin but e.g. number of episodes or release year.
 4. Assign subject to each podcast (such as missing person, murder, fraud etc.) that can be also used to filter down the podcasts by the user.
 5. Possibility of adding podcast to own "To listen folder" from origin page etc.
+
+# Information Architecture
+
+## Database
+
+## Data Storage Types
+
+## Collections Data Structure
+
+### Users collection
+
+### Podcasts collection
 
 # Technologies
 
