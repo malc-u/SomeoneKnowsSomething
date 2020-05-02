@@ -434,6 +434,7 @@ python -m venv <name of your virtual environment>
 ```
 
 e.g. `python -m venv someoneknows`
+
 4. Activate your virtual environment with command 
 
 ```
@@ -441,6 +442,7 @@ e.g. `python -m venv someoneknows`
 ```
 
 or by pasting path to activate file in your terminal in "" e.g. `"C:\<path to your repository folder>\<Folder with repository>\<your virtual environment>\Scripts\activate.bat"`
+
 5. If needed upgrade pip locally using command
 
 ```
