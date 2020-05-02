@@ -512,3 +512,20 @@ This project has been created by me, however some content has been imported such
 - [Small Town , Big Crime](https://podcasts.google.com/?feed=aHR0cHM6Ly9mZWVkcy5idXp6c3Byb3V0LmNvbS83MjM5MTUucnNz&ved=0CAAQ4aUDahcKEwiQ_-OP1PToAhUAAAAAHQAAAAAQAQ&hl=en)
 - [Beenham Valley Road](https://www.six10mediagroup.com/beenhamvalleyroad)
 
+Following people and their work influenced me and this project:
+
+- [Corey Schafer](https://coreyms.com/) Flask Youtube [tutorial](https://www.youtube.com/watch?v=UIJKdCIEXUQ&list=PL-osiE80TeTs4UjLw5MM6OjgkjFeUxCYH&index=3) - mechanics of using WTForms
+- [Romain Dorgueil](https://romain.dorgueil.net/about/) - advice on using request.method in WTForms
+- [Simen Daehlin](https://github.com/Eventyret) - Code Institute mentor
+
+I have used following for researching ideas and ways of creating content needed for my page:
+
+- Sidebar - created using ideas from following pages: [Page 1](https://bootstrapious.com/p/bootstrap-sidebar), [Page 2](https://blackrockdigital.github.io/startbootstrap-simple-sidebar/) and [Page 3](https://stackoverflow.com/questions/32244890/my-sidebar-scrollbar-is-not-working)
+- Radio fields in forms - [Page 1](https://gist.github.com/doobeh/4667330) and [Page 2](https://wtforms.readthedocs.io/en/2.3.x/fields/)
+- Check password hashed - based on [example 9](https://www.programcreek.com/python/example/58659/werkzeug.security.check_password_hash)
+- request.method == 'GET' in forms - used following advice from [Page 1](https://romain.dorgueil.net/wiki/python/wtforms) and [Page 2](https://stackoverflow.com/a/23714791)
+- Index page picture - comes from [here](https://unsplash.com/photos/TMOeGZw9NY4)
+- [TextArea and other fields in forms](https://wtforms.readthedocs.io/en/stable/fields.html)
+- [Multi Device Website Mockup Generator](https://techsini.com/)
+- [Code Pen](https://codepen.io/)
+- [Stack overflow](https://stackoverflow.com/)
