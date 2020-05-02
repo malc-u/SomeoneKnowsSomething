@@ -342,6 +342,8 @@ This website relies on two database collections:
 | Name       | username  | text, data required, minlength="5", maxlength="40" | String    |
 | Password   | password  | text, data required, minlength="5", maxlength="40" | String    |
 
+[Example JSON - users collection](https://github.com/malc-u/SomeoneKnowsSomething/blob/master/schemas/users.json)
+
 ### Podcasts collection
 
 | Title                         | Key in DB      | Validation type                                            | Data type |
