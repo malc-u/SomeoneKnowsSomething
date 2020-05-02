@@ -344,19 +344,19 @@ This website relies on two database collections:
 
 ### Podcasts collection
 
-|             Title             |    Key in DB   |                       Validation type                      | Data type |
-|:-----------------------------:|:--------------:|:----------------------------------------------------------:|:---------:|
-|           Podcast ID          |       _id      |                            None                            |  ObjectId |
-|              Name             |    username    |     text, data required, minlength="5", maxlength="40"     |   String  |
-|             Title             |  podcast_title |                     text, data required                    |   String  |
-| Link to podcast cover picture | podcast_imgurl |                     url, data required                     |   String  |
-|  Podcast's country of origin  |     origin     | radio field, data required, 1-"UK", 2-"Australia", 3-"USA" |  Integer  |
-|    Year of podcast release    |  release_year  |      text, data required, minlength="4", maxlength="4"     |   String  |
-|          Description          |   description  |          textarea, data required, maxlength="500"          |   String  |
-|       Number of episodes      |   no_episodes  |      text, data required, minlength="1", maxlength="3"     |   String  |
-|      Link to the podcast      |  podcast_link  |                     text, data required                    |   String  |
-|   Is this podcast favourite?  |  is_favourite  |                   checkbox, data required                  |  Boolean  |
-|  Is this podcast recommended? | is_recommended |                    None, default="False"                   |  Boolean  |
+| Title                         | Key in DB      | Validation type                                            | Data type |
+|-------------------------------|----------------|------------------------------------------------------------|-----------|
+| Podcast ID                    | _id            | None                                                       | ObjectId  |
+| Name                          | username       | text, data required, minlength="5", maxlength="40"         | String    |
+| Title                         | podcast_title  | text, data required                                        | String    |
+| Link to podcast cover picture | podcast_imgurl | url, data required                                         | String    |
+| Podcast's country of origin   | origin         | radio field, data required, 1-"UK", 2-"Australia", 3-"USA" | Integer   |
+| Year of podcast release       | release_year   | text, data required, minlength="4", maxlength="4"          | String    |
+| Description                   | description    | textarea, data required, maxlength="500"                   | String    |
+| Number of episodes            | no_episodes    | text, data required, minlength="1", maxlength="3"          | String    |
+| Link to the podcast           | podcast_link   | text, data required                                        | String    |
+| Is this podcast favourite?    | is_favourite   | checkbox, data required                                    | Boolean   |
+| Is this podcast recommended?  | is_recommended | None, default="False"                                      | Boolean   |
 
 # Technologies
 
