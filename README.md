@@ -336,11 +336,11 @@ This website relies on two database collections:
 
 ### Users collection
 
-|    Title   | Key in DB |                   Validation type                  | Data type |
-|:----------:|:---------:|:--------------------------------------------------:|:---------:|
-| Account ID |    _id    |                        None                        |  ObjectId |
-|    Name    |  username | text, data required, minlength="5", maxlength="40" |   String  |
-|  Password  |  password | text, data required, minlength="5", maxlength="40" |   String  |
+| Title      | Key in DB | Validation type                                    | Data type |
+|------------|-----------|----------------------------------------------------|-----------|
+| Account ID | _id       | None                                               | ObjectId  |
+| Name       | username  | text, data required, minlength="5", maxlength="40" | String    |
+| Password   | password  | text, data required, minlength="5", maxlength="40" | String    |
 
 ### Podcasts collection
 
