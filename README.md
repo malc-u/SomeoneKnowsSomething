@@ -376,15 +376,15 @@ This website relies on two database collections:
 
 ## Libraries
 
-- JQuery
-- Bootstrap
-- FontAwesome
-- Google Fonts
-- PyMongo
-- Flask
-- Jinja
-- WTForms
-- Werkzeug
+- [JQuery](https://jquery.com/)
+- [Bootstrap](https://getbootstrap.com/)
+- [FontAwesome](https://fontawesome.com/)
+- [Google Fonts](https://fonts.google.com/)
+- [PyMongo](https://pymongo.readthedocs.io/en/stable/)
+- [Flask](https://palletsprojects.com/p/flask/)
+- [Jinja](https://jinja.palletsprojects.com/en/2.11.x/)
+- [WTForms](https://wtforms.readthedocs.io/en/2.3.x/)
+- [Werkzeug](https://werkzeug.palletsprojects.com/en/1.0.x/)
 
 ## Tools
 
