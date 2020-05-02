@@ -434,13 +434,13 @@ To deploy this project to Heroku follow the steps below:
 6. **Confirm the link of** the **Heroku** app **to** the correct **GitHub** repository
 7. **Click** on **"Settings" > "Reveal Config Vars" in Heroku** dashboard
 8. **Set** the **following** config **vars**:
-| Key        	| Value                                                                                                            	|
-|------------	|------------------------------------------------------------------------------------------------------------------	|
-| IP         	| 0.0.0.0                                                                                                          	|
-| PORT       	| 5000                                                                                                             	|
-| MONGO_URI  	| mongodb+srv://<username>:<password>@<cluster_name>-qtxun.mongodb.net/<database_name>?retryWrites=true&w=majority 	|
-| SECRET_KEY 	| <your secret key>                                                                                                	|
-9.  **Click "Deploy" in Heroku** dashboard
+
+   - key: **IP** as a value: **0.0.0.0**
+   - key: **PORT** as a value: **5000**
+   - key: **MONGO_URI** as a value: **mongodb+srv://<username>:<password>@<cluster_name>-qtxun.mongodb.net/<database_name>?retryWrites=true&w=majority**
+   - key: **SECRET_KEY** as a value: **<your_secret_key>**
+  
+9. **Click "Deploy" in Heroku** dashboard
 10. Make sure the **master branch** is **selected in** the **"Manual Deployment"** section of this page and then **click "Deploy Branch"**
 11. The site is now successfully deployed
 
