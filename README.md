@@ -319,7 +319,17 @@ I would want to include:
 
 ## Database
 
+This website is a student project that required for MongoDB to be used.
+
 ## Data Storage Types
+
+The types of data stored in the data base for this project are:
+
+- ObjectId
+- String
+- Boolean
+- Integer
+
 
 ## Collections Data Structure
 
