@@ -433,15 +433,11 @@ git clone https://github.com/malc-u/SomeoneKnowsSomething
 python -m venv <name of your virtual environment>
 ``` 
 
-e.g. `python -m venv someoneknows`
-
 4. Activate your virtual environment with command 
 
 ```
 <name of your virtual environment>\Scripts\activate
 ```
-
-or by pasting path to activate file in your terminal in "" e.g. `"C:\<path to your repository folder>\<Folder with repository>\<your virtual environment>\Scripts\activate.bat"`
 
 5. If needed upgrade pip locally using command
 
@@ -463,13 +459,11 @@ pip -r requirements.txt
 python app.py
 ````
 
-9. Visit website using
+9. Visit website using followin gin your browser's address bar
 
 ```
 http://127.0.0.1:5000
 ```
-
-in address bar in your browser
 
 ## Deployment to Heroku
 
