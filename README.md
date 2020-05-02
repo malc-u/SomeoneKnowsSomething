@@ -363,6 +363,8 @@ This website relies on two database collections:
 - The users username is added to each podcast database entry automatically to match the user who added it to the site. This links the two database collections together.
 - The recommended in the database is automatically populated as False. This allows admin to manually amend podcasts to be displayed as recommended on the page visible to all - registered and unregistered users.
 
+[Example JSON - podcasts collection](https://github.com/malc-u/SomeoneKnowsSomething/blob/master/schemas/podcasts.json)
+
 # Technologies
 
 ## Languages
