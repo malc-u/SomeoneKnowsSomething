@@ -388,15 +388,15 @@ This website relies on two database collections:
 
 ## Tools
 
-- Git
-- GitHub
-- Heroku
-- PIP
-- Visual Studio Code
-- Chrome Developer Tools
-- Autoprefixer
-- Balsamiq
-- Imgbb
+- [Git](https://git-scm.com/)
+- [GitHub](https://github.com/)
+- [Heroku](https://www.heroku.com/)
+- [PIP](https://pip.pypa.io/en/stable/installing/)
+- [Visual Studio Code](https://code.visualstudio.com/)
+- [Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools)
+- [Autoprefixer](https://autoprefixer.github.io/)
+- [Balsamiq](https://balsamiq.com/)
+- [Imgbb](https://imgbb.com/)
 
 # Testing
 
