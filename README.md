@@ -43,6 +43,7 @@ This website was created for English speaking enthusiasts of true crime drama as
 - [Testing](#testing)
 - [Deployment](#deployment)
   - [How to run this project locally](#how-to-run-this-project-locally)
+  - [Deployment to Heroku](#deployment-to-heroku)
 - [Credits](#credits)
   
 # UX
@@ -420,5 +421,27 @@ You must have following installed on your machine:
 Once this is installed you can follow below steps:
 
 1. 
+
+## Deployment to Heroku
+
+To deploy this project to Heroku follow the steps below:
+
+1. **Create file** called `requirements.txt` **using** the **terminal command** `pip freeze > requirements.txt`
+2. **Create file** called `Procfile` **with** the **terminal command** `echo web: python app.py > Procfile`
+3. `git add` and `git commit` the new requirements and Procfile and then `git push` to **push the project to GitHub**
+4. On the Heroku website and by using "New" button **in Heroku dashboard create a new app**, give it a name and set the region to Europe
+5. In the **Heroku dashboard** of your newly created application, **click on "Deploy" > "Deployment method"** and **select GitHub**
+6. **Confirm the link of** the **Heroku** app **to** the correct **GitHub** repository
+7. **Click** on **"Settings" > "Reveal Config Vars" in Heroku** dashboard
+8. **Set** the **following** config **vars**:
+| Key        | Value                                                                                                            |
+|------------|------------------------------------------------------------------------------------------------------------------|
+| IP         | 0.0.0.0                                                                                                          |
+| PORT       | 5000                                                                                                             |
+| MONGO_URI  | mongodb+srv://<username>:<password>@<cluster_name>-qtxun.mongodb.net/<database_name>?retryWrites=true&w=majority |
+| SECRET_KEY | <your secret key>                                                                                                |
+9. **Click "Deploy" in Heroku** dashboard
+10. Make sure the **master branch** is **selected in** the **"Manual Deployment"** section of this page and then **click "Deploy Branch"**
+11. The site is now successfully deployed
 
 # Credits
