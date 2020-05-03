@@ -25,6 +25,7 @@
       - [podcast-delete.html](#podcast-deletehtml)
       - [podcast-update.html](#podcast-updatehtml)
       - [recommended.html](#recommendedhtml)
+      - [register.html](#registerhtml)
 
 ## Manual testing
 
@@ -159,3 +160,8 @@ Action not taken - resons described in previous occurences.
 
 Validation of this page beings up 1 warning and 7 errors.
 They are all equivalent to the ones from origin.html page. Action not taken - described in previous occcurences (origin.html, more.html and podcast-delete.html)
+
+#### register.html
+
+Validation of this page beings up 1 warning and 3 errors.
+They are all equivalent to the ones from origin.html page. Action not taken - described in previous occcurences (origin.html, more.html, podcast-delete.html and recommended.html)
