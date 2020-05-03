@@ -4,6 +4,7 @@
   - [Interaction](#interaction)
     - [Bugs - interaction](#bugs---interaction)
   - [Logic](#logic)
+    - [Bugs - logic](#bugs---logic)
 - [User stories testing](#user-stories-testing)
 - [Automated testing](#automated-testing)
   - [HTML validation](#html-validation)
@@ -61,7 +62,6 @@ Throughout the develompment process I came across these bugs:
   - **Bug**: image was not displaying as intended
   - **Fix**: added media in CSS to contain the image within container instead of covering it
   - **Result**: this bug was removed and the picture is displayed as intended on big screens
-- 
 
 ## Interaction
 
@@ -99,21 +99,38 @@ Throughout the develompment process I came across two bugs related to page inter
   - **Result**: this bug was removed and mobile page display does not include sidebar now
 - **Navbar**
   - **Bug**: navbar was not collapsing on click on mobile phones
-  - **Fix**: added function in JavaScript to collaps navabr on click 
+  - **Fix**: added function in JavaScript to collaps navabr on click
   - **Result**: this bug is now fixed and navbar works as intended
-- 
 
 ## Logic
 
-- **Plan**: the page was planned to have 2 tier access for unregistered and registered users, it was planned to store users passwords not as a string but in hashed version, the content was intended to be displayed based on country of origin as well as whether the admin recommends it or if registered users indicated it as their favouire
+- **Plan**:
+  - the page was planned to have 2 tier access for unregistered and registered users,
+  - it was planned to store users passwords not as a string but in hashed version,
+  - the content was intended to be displayed based on country of origin as well as whether the admin recommends it or if registered users indicated it as their favouire,
+  - podcast update page was planned to have fields pre-filled
 - **Implementation**:
   - attempted to access pages intended for registered users by pasting direct access address to the address bar int he browser
   - attempted to register few users and checking if the password will save a string
   - attepmted to add new podcast via the form without indicating country of origin
   - attempted to add new content using a form, not indicating it as a favouire and checking if displays in on "User picks" page
+  - accessed content edit page and checking if fields are pre-filled
 - **Result**: all tested elements are working properly. There are no elements that present problems with logic
 - **Conclusion**: all tests that were run on logic were passed
-  
+
+### Bugs - logic
+
+Throughout the develompment process I came across these bugs:
+
+- **Access for unregistered users**
+  - **Bug**: unregistered user could access pages intended for registered users if they knew direct access address
+  - **Fix**: added defensive conditional in "app.py", functions intended for registered users start with `if 'username' not in session:` that redirectes unregistred user to login page and flashes message that access is denied
+  - **Result**: this bug was removed and unregistered users are not able to access pages not intended for them
+- **Podcast edit form**
+  - **Bug**: fields were not pre-filled
+  - **Fix**: added extra conditional to allow for this to happen, this was `if request.method == 'GET':`
+  - **Result**: this bug was removed and all fields in form editing podcast are now pre-filled
+
 # User stories testing
 
 1. As a user I want the page to be easy to navigate.
