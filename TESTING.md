@@ -21,6 +21,7 @@
       - [login.html](#loginhtml)
       - [more.html](#morehtml)
       - [origin.html](#originhtml)
+      - [podcast-add.html](#podcast-addhtml)
 
 ## Manual testing
 
@@ -134,4 +135,9 @@ Validation of read more page brings up 1 warning and 6 errors.
 
 Validation of read more page brings up 1 warning and 4 errors.
 They are equivalent to the warning, 2 first and 3 last errors from more.html page.
+Action not taken - resons described in previous occurences.
+
+#### podcast-add.html
+
+Validation of this file brings up 1 warning and 2 errors. They are all equivalent to the ones from previous pages (except base.html)
 Action not taken - resons described in previous occurences.
