@@ -8,7 +8,7 @@
     <div class="row mx-0">
         {% for podcast in podcasts|sort(reverse=true, attribute="release_year") %}
         <div class="col-sm-12 col-md-4 col-lg-3 text-center">
-            <img class="card-img-top index-img" src="{{podcast.podcast_imgurl}}">
+            <img class="card-img-top index-img" src="{{podcast.podcast_imgurl}}" alt="Podcast cover picture">
             <div class="card-body">
                 <h5 class="card-title text-center">{{podcast.podcast_title}}</h5>
                 {% if 'username' in session %}
