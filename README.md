@@ -427,7 +427,7 @@ git clone https://github.com/malc-u/SomeoneKnowsSomething
 ```
 
 2. In the terminal of your IDE **open folder with the repository**
-3. **Create virual environment** using command
+3. **Create virtual environment** using command
 
 ```
 python -m venv <name of your virtual environment>
@@ -445,7 +445,7 @@ python -m venv <name of your virtual environment>
 python -m pip install --upgrade pip
 ```
 
-6. **Install** all **modules** this project dependends on using command:
+6. **Install** all **modules** this project depends on using command:
 
 ```
 pip -r requirements.txt
