@@ -22,6 +22,7 @@
       - [more.html](#morehtml)
       - [origin.html](#originhtml)
       - [podcast-add.html](#podcast-addhtml)
+      - [podcast-delete.html](#podcast-deletehtml)
 
 ## Manual testing
 
@@ -141,3 +142,9 @@ Action not taken - resons described in previous occurences.
 
 Validation of this file brings up 1 warning and 2 errors. They are all equivalent to the ones from previous pages (except base.html)
 Action not taken - resons described in previous occurences.
+
+#### podcast-delete.html
+
+Validation of this page beings up 1 warning and 5 errors.
+They are all equivalent to the ones from origin.html page. Action not taken - described in previous occcurences (origin.html and more.html)
+
