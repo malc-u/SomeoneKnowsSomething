@@ -3,6 +3,7 @@
     - [Bugs - responsiveness](#bugs---responsiveness)
   - [Interaction](#interaction)
     - [Bugs - interaction](#bugs---interaction)
+  - [Logic](#logic)
 - [User stories testing](#user-stories-testing)
 - [Automated testing](#automated-testing)
   - [HTML validation](#html-validation)
@@ -102,6 +103,17 @@ Throughout the develompment process I came across two bugs related to page inter
   - **Result**: this bug is now fixed and navbar works as intended
 - 
 
+## Logic
+
+- **Plan**: the page was planned to have 2 tier access for unregistered and registered users, it was planned to store users passwords not as a string but in hashed version, the content was intended to be displayed based on country of origin as well as whether the admin recommends it or if registered users indicated it as their favouire
+- **Implementation**:
+  - attempted to access pages intended for registered users by pasting direct access address to the address bar int he browser
+  - attempted to register few users and checking if the password will save a string
+  - attepmted to add new podcast via the form without indicating country of origin
+  - attempted to add new content using a form, not indicating it as a favouire and checking if displays in on "User picks" page
+- **Result**: all tested elements are working properly. There are no elements that present problems with logic
+- **Conclusion**: all tests that were run on logic were passed
+  
 # User stories testing
 
 1. As a user I want the page to be easy to navigate.
