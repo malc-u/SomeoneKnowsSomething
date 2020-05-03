@@ -89,7 +89,7 @@ Someone knows something - True Crime Podcast website is an ideal way to met all 
 3. As a true crime podcast listener I want to be able to see content I am interested in.
 4. As a busy person I want to have possibility of easily navigating to the content that I can listen to on the go.
 5. As a user I want to be able to see more details about the content.
-6. As a user that is interested in this genre I want to have link directly to the producer website.
+6. As a user that is interested in this genre I want to have link directly to the podcast website.
 7. As a user that is aware I might have missed some interesting content from the past I want to have content release year displayed.
 8. As a British user I want to have possibility of exploring stories from other parts of the world.
 9. As a money savvy user I want to have possibility of accessing content via all means provided by the producer.
