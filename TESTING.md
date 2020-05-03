@@ -27,6 +27,7 @@
       - [recommended.html](#recommendedhtml)
       - [register.html](#registerhtml)
       - [settings.html](#settingshtml)
+    - [CSS Validation](#css-validation)
 
 ## Manual testing
 
@@ -171,3 +172,7 @@ They are all equivalent to the ones from origin.html page. Action not taken - de
 
 Validation of this file brings up 1 warning and 2 errors. They are all equivalent to the ones from previous pages (except base.html)
 Action not taken - resons described in previous occurences.
+
+### CSS Validation
+
+[W3C CSS validation](https://jigsaw.w3.org/css-validator/) was used to validate CSS - no errors found.
