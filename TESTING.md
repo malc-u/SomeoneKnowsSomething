@@ -52,3 +52,9 @@ Validation brings up 1 warning that is exactly the same as in footer.html It als
 
 #### sidebar.html
 
+Validation brings up 1 warning and 14 errors. Warning is identical as in footer.html and navbar.html, errors are:
+
+- First 2 are exactly the same as in footer.html and navbar.html - left unfixed as this file containes html for one block/component of an applicaton that is clearly indicated in the file by sytnax used `{% block sidebar %}` and `{% endblock %}`
+- 8 errors related to use of `{{ url_for }}` in all links in the sidebar and logo. All left unfixed as linked correctly as advised in [Flask tutorial](https://flask.palletsprojects.com/en/1.1.x/tutorial/templates/#)
+- 1 error related to missing alt in logo - this was fixed, alt addded
+- 3 errors informing about not allowed text in element `ul` - these were `{% else %}`, `{% endif %}` and `{% if 'username' in session %}`. Left unchanged as the statments are valid [Jinja control structures](https://jinja.palletsprojects.com/en/2.11.x/templates/#list-of-control-structures)
