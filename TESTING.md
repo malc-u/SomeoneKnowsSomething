@@ -8,6 +8,7 @@
       - [base.html](#basehtml)
       - [footer.html](#footerhtml)
       - [navbar.html](#navbarhtml)
+      - [sidebar.html](#sidebarhtml)
 
 ## Manual testing
 
@@ -44,11 +45,10 @@ These were left unfixed as this file contains html for one block/component of an
 
 Validation brings up 1 warning that is exactly the same as in footer.html It also brings up 18 erros:
 
-- First 2 are exactly the same as in footer.html - left unfixed as this file containes html for one block/component of an applicaton that is clearly indicated in the file by sytnax used `{% block navbar %}``{% endblock %}`
-- 12 errors related to use of `{{ url_for }}` in all links on the page - in top navbar, sidebar and logo. All left unfixed as linked correctly as advised in [Flask tutorial](https://flask.palletsprojects.com/en/1.1.x/tutorial/templates/#)
+- First 2 are exactly the same as in footer.html - left unfixed as this file containes html for one block/component of an applicaton that is clearly indicated in the file by sytnax used `{% block navbar %}` and `{% endblock %}`
+- 12 errors related to use of `{{ url_for }}` in all links in top navbar. All left unfixed as linked correctly as advised in [Flask tutorial](https://flask.palletsprojects.com/en/1.1.x/tutorial/templates/#)
 - 2 errors informing about repeated occurence of `id="navbarDropdown"`. Left unchanged as there are 2 separate drop down multilink navigation bars used and mentioned `id` is Bootstrap class for multi-link droping down navbar items.
 - 2 errors informing about not allowed text in element `ul` - these were `{% else %}` and `{% endif %}`. Left unchanged as the statments are valid [Jinja control structures](https://jinja.palletsprojects.com/en/2.11.x/templates/#list-of-control-structures)
 
-This is Bootstrap class for multi-link droping down navbar items.
-
+#### sidebar.html
 
