@@ -11,6 +11,7 @@
       - [sidebar.html](#sidebarhtml)
       - [flash-alerts.html](#flash-alertshtml)
       - [form-add.html](#form-addhtml)
+      - [form-delete.html](#form-deletehtml)
 
 ## Manual testing
 
@@ -20,9 +21,9 @@
 
 ### HTML validation
 
-This was carried out using [W3C Markup Validation ](https://validator.w3.org/).
+This was carried out using [W3C Markup Validation](https://validator.w3.org/).
 
-#### base.html 
+#### base.html
 
 Validation brings up 1 error:
 
@@ -68,3 +69,8 @@ Validation brings 1 warning and 2 errors exactly the same as a warning and first
 #### form-add.html
 
 Validation brings up 1 warning and 8 errors, first 2 being the same as in all previously validated pages. Remaining 6 errors are about stray tags `tr` & `td` - these were also left unchanged as they were used as advised for [customer rendering of fadio fields in WTForms](https://wtforms.readthedocs.io/en/2.3.x/fields/)
+
+#### form-delete.html
+
+Validation of this file brings us 1 warning and 2 errors. They are all equivalent to the ones from footer.html and flash-alerts.html
+Action not taken - resons described in previous occurences.
