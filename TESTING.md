@@ -20,6 +20,7 @@
       - [index.html](#indexhtml)
       - [login.html](#loginhtml)
       - [more.html](#morehtml)
+      - [origin.html](#originhtml)
 
 ## Manual testing
 
@@ -128,3 +129,9 @@ Validation of read more page brings up 1 warning and 6 errors.
 
 - Warning and first 3 errors are equivalent to the account.html page.
 - Remainign 3 errors related to use of `{{ url_for }}` and type of the field used in `href` and `src` (e.g. `{{podcast.podcast_link}}`) in all links on this page. All left unfixed as linked correctly as advised in [Flask tutorial](https://flask.palletsprojects.com/en/1.1.x/tutorial/templates/#)
+
+#### origin.html
+
+Validation of read more page brings up 1 warning and 4 errors.
+They are equivalent to the warning, 2 first and 3 last errors from more.html page.
+Action not taken - resons described in previous occurences.
