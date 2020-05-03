@@ -2,6 +2,7 @@
   - [Responsiveness](#responsiveness)
     - [Bugs - responsiveness](#bugs---responsiveness)
   - [Interaction](#interaction)
+    - [Bugs - interaction](#bugs---interaction)
 - [User stories testing](#user-stories-testing)
 - [Automated testing](#automated-testing)
   - [HTML validation](#html-validation)
@@ -66,6 +67,7 @@ Throughout the develompment process I came across these bugs:
 - **Plan**: there are elements that are planned to be interactive on this page e.g. buttons, navbar, sidebar
 - **Implementation**: interaction was carried out on many devices and on several browsers, including Chrome, Firefox and Opera. Following elements were tested by making sure they act in the way they were intended, that they lead to the page or action as planned.
   - Sidebar toggle button
+  - Sidebar
   - Navbar toggle button
   - Logo
   - `Navbar-brand`
@@ -82,9 +84,24 @@ Throughout the develompment process I came across these bugs:
   - `Edit` button in Account dashboard
   - `Trash` - delete podcast in Account dashboard
   - `Submit` buttons on all forms
+  - Footer icons
 - **Result**: all tested elements are interactive as planned . There are no elements on this page that are not responding as planned
 - **Conclusion**: all tests that were run on interactivity were passed therefore page is interactive
-  
+
+### Bugs - interaction
+
+Throughout the develompment process I came across two bugs related to page interaction:
+
+- **Sidebar**
+  - **Bug**: sidebar was taking too much space on mobile devices
+  - **Fix**: added media to remove sidebar display on mobiles, removed sidebar toggle button and created navbar-brand in the top navbar to replace clickable logo that was leading to index page and was nested inside sidebar
+  - **Result**: this bug was removed and mobile page display does not include sidebar now
+- **Navbar**
+  - **Bug**: navbar was not collapsing on click on mobile phones
+  - **Fix**: added function in JavaScript to collaps navabr on click 
+  - **Result**: this bug is now fixed and navbar works as intended
+- 
+
 # User stories testing
 
 1. As a user I want the page to be easy to navigate.
