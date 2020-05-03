@@ -28,6 +28,7 @@
       - [register.html](#registerhtml)
       - [settings.html](#settingshtml)
     - [CSS Validation](#css-validation)
+    - [Java Script Validation](#java-script-validation)
 
 ## Manual testing
 
@@ -176,3 +177,7 @@ Action not taken - resons described in previous occurences.
 ### CSS Validation
 
 [W3C CSS validation](https://jigsaw.w3.org/css-validator/) was used to validate CSS - no errors found.
+
+### Java Script Validation
+
+[JS Hint](https://jshint.com/) was used to validate JavaScript - found 1 warning - missing semicolon - fixed.
