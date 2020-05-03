@@ -12,6 +12,7 @@
       - [flash-alerts.html](#flash-alertshtml)
       - [form-add.html](#form-addhtml)
       - [form-delete.html](#form-deletehtml)
+      - [form-login.html](#form-loginhtml)
 
 ## Manual testing
 
@@ -72,5 +73,10 @@ Validation brings up 1 warning and 8 errors, first 2 being the same as in all pr
 
 #### form-delete.html
 
-Validation of this file brings us 1 warning and 2 errors. They are all equivalent to the ones from footer.html and flash-alerts.html
+Validation of this file brings up 1 warning and 2 errors. They are all equivalent to the ones from footer.html and flash-alerts.html
+Action not taken - resons described in previous occurences.
+
+#### form-login.html
+
+Validation of this file brings up 1 warning and 2 errors. They are all equivalent to the ones from footer.html, flash-alerts.html and form-delete.html
 Action not taken - resons described in previous occurences.
