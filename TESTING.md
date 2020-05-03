@@ -10,6 +10,7 @@
       - [navbar.html](#navbarhtml)
       - [sidebar.html](#sidebarhtml)
       - [flash-alerts.html](#flash-alertshtml)
+      - [form-add.html](#form-addhtml)
 
 ## Manual testing
 
@@ -63,3 +64,7 @@ Validation brings up 1 warning and 14 errors. Warning is identical as in footer.
 #### flash-alerts.html
 
 Validation brings 1 warning and 2 errors exactly the same as a warning and first 2 errors in previously validated pages. Action not taken as not required - reasons detailed in the previous occurences.
+
+#### form-add.html
+
+Validation brings up 1 warning and 8 errors, first 2 being the same as in all previously validated pages. Remaining 6 errors are about stray tags `tr` & `td` - these were also left unchanged as they were used as advised for [customer rendering of fadio fields in WTForms](https://wtforms.readthedocs.io/en/2.3.x/fields/)
