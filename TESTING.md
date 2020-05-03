@@ -1,5 +1,6 @@
 - [Manual testing](#manual-testing)
   - [Responsiveness](#responsiveness)
+    - [Bugs - responsiveness](#bugs---responsiveness)
 - [User stories testing](#user-stories-testing)
 - [Automated testing](#automated-testing)
   - [HTML validation](#html-validation)
@@ -48,6 +49,16 @@
   
 - **Result**: page is responsive and can be used on all planned devices. There are no elements on this page that are not responding as planned.
 - **Conclusion**: all tests that were run on responsivenes were passed therefore page is fully responsive.
+
+### Bugs - responsiveness
+
+Throughout the develompment process I came across these bugs:
+
+- Hero image
+  - Bug: image was not displaying as intended
+  - Fix: added media in CSS to contain the image within container instead of covering it
+  - Result: this bug was removed and the picture is displayed as intended on big screens
+- 
   
 # User stories testing
 
