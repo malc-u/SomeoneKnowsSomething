@@ -26,6 +26,7 @@
       - [podcast-update.html](#podcast-updatehtml)
       - [recommended.html](#recommendedhtml)
       - [register.html](#registerhtml)
+      - [settings.html](#settingshtml)
 
 ## Manual testing
 
@@ -165,3 +166,8 @@ They are all equivalent to the ones from origin.html page. Action not taken - de
 
 Validation of this page beings up 1 warning and 3 errors.
 They are all equivalent to the ones from origin.html page. Action not taken - described in previous occcurences (origin.html, more.html, podcast-delete.html and recommended.html)
+
+#### settings.html
+
+Validation of this file brings up 1 warning and 2 errors. They are all equivalent to the ones from previous pages (except base.html)
+Action not taken - resons described in previous occurences.
