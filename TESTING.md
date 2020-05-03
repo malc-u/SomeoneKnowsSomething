@@ -35,6 +35,7 @@
 
 - **Plan**: this page was planned to be responsive, working on all devices - mobile phones, tablets and desktops. Following this it was planned for Bootstrap library to be used for a page design.
 - **Implementation**: page was **tested in Chrome Developer Tools** throughout the process of putting it together to make sure it was responsive to all devices. "Responsive" slider was used to make sure content is shown correctly on desktop, tablet and mobile, that they look as desired by the developer. Bootstrap classes as well as media rules were used to adjust responsiveness. **Tested the pages on all sizes/devices available in Chrome**, these were:
+  
   - 360 x 640 Blackberry Z30 & Galaxy Note
   - 375 x 812 iPhone X
   - 375 x 687 iPhone 6/7/8
@@ -44,6 +45,7 @@
   - 600 x 1024 Blackberry PlayBook
   - 768 x 1024 iPad
   - 1024 x 1366 iPad Pro
+  
 - **Result**: page is responsive and can be used on all planned devices. There are no elements on this page that are not responding as planned.
 - **Conclusion**: all tests that were run on responsivenes were passed therefore page is fully responsive.
   
