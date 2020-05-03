@@ -18,6 +18,7 @@
       - [form-update.html](#form-updatehtml)
       - [account.html](#accounthtml)
       - [index.html](#indexhtml)
+      - [login.html](#loginhtml)
 
 ## Manual testing
 
@@ -114,3 +115,8 @@ Validation of this file brings up 1 warning and 9 errors:
 Validation of this file brings up 1 warning and 3 errors.
 - The warning and first 2 errors are equivalent to the ones from all previously validated pages except base.html. 
 - Last error related to use of `{{ url_for }}` - left unfixed as linked correctly as advised in [Flask tutorial](https://flask.palletsprojects.com/en/1.1.x/tutorial/templates/#)
+
+#### login.html
+
+Validation of this file brings up 1 warning and 2 errors. They are all equivalent to the ones from previous pages (except base.html)
+Action not taken - resons described in previous occurences.
