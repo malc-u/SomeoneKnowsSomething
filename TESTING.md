@@ -1,6 +1,7 @@
 - [Manual testing](#manual-testing)
   - [Responsiveness](#responsiveness)
     - [Bugs - responsiveness](#bugs---responsiveness)
+  - [Interaction](#interaction)
 - [User stories testing](#user-stories-testing)
 - [Automated testing](#automated-testing)
   - [HTML validation](#html-validation)
@@ -54,11 +55,35 @@
 
 Throughout the develompment process I came across these bugs:
 
-- Hero image
-  - Bug: image was not displaying as intended
-  - Fix: added media in CSS to contain the image within container instead of covering it
-  - Result: this bug was removed and the picture is displayed as intended on big screens
+- **Hero image**
+  - **Bug**: image was not displaying as intended
+  - **Fix**: added media in CSS to contain the image within container instead of covering it
+  - **Result**: this bug was removed and the picture is displayed as intended on big screens
 - 
+
+## Interaction
+
+- **Plan**: there are elements that are planned to be interactive on this page e.g. buttons, navbar, sidebar
+- **Implementation**: interaction was carried out on many devices and on several browsers, including Chrome, Firefox and Opera. Following elements were tested by making sure they act in the way they were intended, that they lead to the page or action as planned.
+  - Sidebar toggle button
+  - Navbar toggle button
+  - Logo
+  - `Navbar-brand`
+  - `Login here` button on index page
+  - `Read more` button on "Recommended" and "User picks" page
+  - `Login to listen` on "Recommended" and "User picks" page
+  - `Login to listen` on "Read more" page
+  - Navbar links
+  - Sidebar links
+  - `Listen here` on "Australian", "British", "American", "Recommended" and "User picks" pages
+  - `Cog` - password change button in Account dashboard
+  - `+` - add podcast button in Account dashboard
+  - `Headphones`- listen to podcast button in Account dashboard
+  - `Edit` button in Account dashboard
+  - `Trash` - delete podcast in Account dashboard
+  - `Submit` buttons on all forms
+- **Result**: all tested elements are interactive as planned . There are no elements on this page that are not responding as planned
+- **Conclusion**: all tests that were run on interactivity were passed therefore page is interactive
   
 # User stories testing
 
