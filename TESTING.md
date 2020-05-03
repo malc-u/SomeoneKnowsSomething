@@ -14,6 +14,7 @@
       - [form-delete.html](#form-deletehtml)
       - [form-login.html](#form-loginhtml)
       - [form-password.html](#form-passwordhtml)
+      - [form-register.html](#form-registerhtml)
 
 ## Manual testing
 
@@ -85,4 +86,9 @@ Action not taken - resons described in previous occurences.
 #### form-password.html
 
 Validation of this file brings up 1 warning and 2 errors. They are all equivalent to the ones from footer.html, flash-alerts.html, form-delete.html & form-login.html.
+Action not taken - resons described in previous occurences.
+
+#### form-register.html
+
+Validation of this file brings up 1 warning and 2 errors. They are all equivalent to the ones from footer.html, flash-alerts.html, form-delete.html, form-login.html & form-password.html.
 Action not taken - resons described in previous occurences.
