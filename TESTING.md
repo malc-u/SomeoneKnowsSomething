@@ -9,6 +9,7 @@
       - [footer.html](#footerhtml)
       - [navbar.html](#navbarhtml)
       - [sidebar.html](#sidebarhtml)
+      - [flash-alerts.html](#flash-alertshtml)
 
 ## Manual testing
 
@@ -58,3 +59,7 @@ Validation brings up 1 warning and 14 errors. Warning is identical as in footer.
 - 8 errors related to use of `{{ url_for }}` in all links in the sidebar and logo. All left unfixed as linked correctly as advised in [Flask tutorial](https://flask.palletsprojects.com/en/1.1.x/tutorial/templates/#)
 - 1 error related to missing alt in logo - this was fixed, alt addded
 - 3 errors informing about not allowed text in element `ul` - these were `{% else %}`, `{% endif %}` and `{% if 'username' in session %}`. Left unchanged as the statments are valid [Jinja control structures](https://jinja.palletsprojects.com/en/2.11.x/templates/#list-of-control-structures)
+
+#### flash-alerts.html
+
+Validation brings 1 warning and 2 errors exactly the same as a warning and first 2 errors in previously validated pages. Action not taken as not required - reasons detailed in the previous occurences.
