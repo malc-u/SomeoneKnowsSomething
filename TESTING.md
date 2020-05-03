@@ -17,6 +17,7 @@
       - [form-register.html](#form-registerhtml)
       - [form-update.html](#form-updatehtml)
       - [account.html](#accounthtml)
+      - [index.html](#indexhtml)
 
 ## Manual testing
 
@@ -100,10 +101,16 @@ Action not taken - resons described in previous occurences.
 Validation of this file brings up 1 warning and 8 errors. They are all equivalent to the ones from form-add.html.
 Action not taken - resons described in previous occurence.
 
-#### account.html 
+#### account.html
 
 Validation of this file brings up 1 warning and 9 errors:
 
 - The warning and first 2 errors are equivalent to the ones from all previously validated pages except base.html. 
 - 1 errors regarding missing alt in `img` tag - this was fixed
 - Remaining 6 errors related to use of `{{ url_for }}` and type of the field used in `href` and `src` (e.g. `{{podcast.podcast_link}}`) in all links on this page. All left unfixed as linked correctly as advised in [Flask tutorial](https://flask.palletsprojects.com/en/1.1.x/tutorial/templates/#)
+
+#### index.html
+
+Validation of this file brings up 1 warning and 3 errors.
+- The warning and first 2 errors are equivalent to the ones from all previously validated pages except base.html. 
+- Last error related to use of `{{ url_for }}` - left unfixed as linked correctly as advised in [Flask tutorial](https://flask.palletsprojects.com/en/1.1.x/tutorial/templates/#)
