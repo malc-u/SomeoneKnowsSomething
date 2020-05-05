@@ -92,7 +92,7 @@ def logout():
   Function that logs the user out and clears the session cookie.
   """ 
   session.clear()
-  return render_template('pages/index.html')
+  return redirect(url_for('index'))
 
 @app.route('/recommended')
 def recommended():
