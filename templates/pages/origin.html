@@ -7,10 +7,10 @@
 <div class="col-12 pt-5">
     <div class="row mx-0 my-2">
         {% for podcast in podcasts %}
-        <div class="col-sm-6 col-md-4 col-lg-2 align-middle text-center mb-3">
+        <div class="col-sm-6 col-md-4 col-lg-3 align-middle text-center mb-3">
             <img class="img-origin" src="{{podcast.podcast_imgurl}}" alt="Podcats cover picture">
         </div>
-        <div class="col-sm-6 col-md-8 col-lg-10 align-middle mb-3 pb-2">
+        <div class="col-sm-6 col-md-8 col-lg-9 align-middle mb-3 pb-2">
             <h5 class="origin-title">{{podcast.podcast_title}} - released {{podcast.release_year}}</h5>
             <p>Story: {{podcast.description}}</p>
             <p>Number of episodes: {{podcast.no_episodes}}</p>
