@@ -111,13 +111,13 @@ Someone knows something - True Crime Podcast website is an ideal way to met all 
 
 Colors that were picked had be subtle enough not to overwhelm colorful cards of the podcasts covers.
 
-Yellow ![#fad201](https://place-hold.it/10x10/fad201/fad201)#fad201 and black ![#000000](https://place-hold.it/10x10/000000/000000)#000000 were picked to be reminiscent of a tape "POLICE LINE DO NOT CROSS".
+Yellow ![#fad201](https://place-hold.it/15x15/fad201/fad201)#fad201 and black ![#000000](https://place-hold.it/15x15/000000/000000)#000000 were picked to be reminiscent of a tape "POLICE LINE DO NOT CROSS".
 
-Charcoal ![#36454f](https://place-hold.it/10x10/36454f/36454f)#36454f was picked as first thing that comes to mind when we think about crime is "gray" This color it is subtle and corresponds well with yellow and white as well as does not cause distraction for colorful podcasts covers.
+Charcoal ![#36454f](https://place-hold.it/15x15/36454f/36454f)#36454f was picked as first thing that comes to mind when we think about crime is "gray" This color it is subtle and corresponds well with yellow and white as well as does not cause distraction for colorful podcasts covers.
 
-Off yellow ![#ffffbf](https://place-hold.it/10x10/ffffbf/ffffbf)#ffffbf was picked to make forms stick out more but to be subtle enough to not overwhelm them.
+Off yellow ![#ffffbf](https://place-hold.it/15x15/ffffbf/ffffbf)#ffffbf was picked to make forms stick out more but to be subtle enough to not overwhelm them.
 
-Finally blue ![#5bc0de](https://place-hold.it/10x10/5bc0de/5bc0de)#5bc0de is a standard Bootstrap "info" class color that was used to differentiate between buttons when more than 1 is present or where there is a need for another color than yellow. It corresponds and compliments remaining colors well.
+Finally blue ![#5bc0de](https://place-hold.it/15x15/5bc0de/5bc0de)#5bc0de is a standard Bootstrap "info" class color that was used to differentiate between buttons when more than 1 is present or where there is a need for another color than yellow. It corresponds and compliments remaining colors well.
 
 ### Fonts
 
@@ -527,6 +527,7 @@ I have used following for researching ideas and ways of creating content needed 
 - request.method == 'GET' in forms - used following advice from [Page 1](https://romain.dorgueil.net/wiki/python/wtforms) and [Page 2](https://stackoverflow.com/a/23714791)
 - Index page picture - comes from [here](https://unsplash.com/photos/TMOeGZw9NY4)
 - Logo created using [Canva](https://www.canva.com/)
+- Color placeholders created using [Place-Hold](https://place-hold.it/)
 - [TextArea and other fields in forms](https://wtforms.readthedocs.io/en/stable/fields.html)
 - [Multi Device Website Mockup Generator](https://techsini.com/)
 - [Code Pen](https://codepen.io/)
