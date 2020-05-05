@@ -128,7 +128,8 @@ def british():
   else:
     return render_template('pages/origin.html', 
     podcasts = mongo.db.podcasts.find({"origin": 1}),
-    origin = 'United Kingdom')
+    origin = 'United Kingdom',
+    title='British podcasts')
 
 @app.route('/australian')
 def australian():
@@ -145,7 +146,8 @@ def australian():
   else:
     return render_template('pages/origin.html', 
     podcasts = mongo.db.podcasts.find({"origin": 2}),
-    origin = 'Australia')
+    origin = 'Australia',
+    title='Australian podcasts')
 
 @app.route('/american')
 def american():
@@ -162,7 +164,8 @@ def american():
   else:
     return render_template('pages/origin.html', 
     podcasts = mongo.db.podcasts.find({"origin": 3}),
-    origin = 'USA')
+    origin = 'USA',
+    title='American podcasts')
 
 @app.route('/read_more/<podcast_id>', methods=['GET', 'POST'])
 def read_more(podcast_id):
