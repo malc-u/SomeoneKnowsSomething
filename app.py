@@ -22,8 +22,8 @@ def index():
   Function that opens home/index page of the project.
   """  
   return render_template('pages/index.html',
-  title="True crime podcasts",
-  head="True crime podcasts")
+                          title="True crime podcasts",
+                           head="True crime podcasts")
 
 
 @app.route('/login', methods=['GET', 'POST'])
@@ -54,9 +54,9 @@ def login():
     return redirect(url_for('login'))
 
   return render_template('pages/login.html', 
-  title = 'Login', 
-  form = form_login,
-  head="Please Login") 
+                          title = 'Login', 
+                          form = form_login,
+                          head="Please Login") 
 
 @app.route('/register', methods=['GET', 'POST'])
 def register():
@@ -103,9 +103,9 @@ def recommended():
   for all content with value of a key "is_recommended" set to "True"
   """ 
   return render_template('pages/recommended.html', 
-  podcasts = mongo.db.podcasts.find({"is_recommended": True}), 
-  head = "Recommended",
-  title='Recommended')
+                          podcasts = mongo.db.podcasts.find({"is_recommended": True}), 
+                          head = "Recommended",
+                          title='Recommended')
 
 @app.route('/favourites')
 def favourites():
@@ -115,9 +115,9 @@ def favourites():
   then limits output to 8 results only.
   """ 
   return render_template('pages/recommended.html', 
-  podcasts = mongo.db.podcasts.find({"is_favourite": True}).limit(8), 
-  head = "Users favourites",
-  title='Users favourites')
+                          podcasts = mongo.db.podcasts.find({"is_favourite": True}).limit(8), 
+                          head = "Users favourites",
+                          title='Users favourites')
 
 @app.route('/british')
 def british():
@@ -133,9 +133,9 @@ def british():
     return redirect(url_for('login'))
   else:
     return render_template('pages/origin.html', 
-    podcasts = mongo.db.podcasts.find({"origin": 1}),
-    origin = 'United Kingdom',
-    title='British podcasts')
+                            podcasts = mongo.db.podcasts.find({"origin": 1}),
+                            origin = 'United Kingdom',
+                            title='British podcasts')
 
 @app.route('/australian')
 def australian():
@@ -151,9 +151,9 @@ def australian():
     return redirect(url_for('login'))
   else:
     return render_template('pages/origin.html', 
-    podcasts = mongo.db.podcasts.find({"origin": 2}),
-    origin = 'Australia',
-    title='Australian podcasts')
+                            podcasts = mongo.db.podcasts.find({"origin": 2}),
+                            origin = 'Australia',
+                            title='Australian podcasts')
 
 @app.route('/american')
 def american():
@@ -169,9 +169,9 @@ def american():
     return redirect(url_for('login'))
   else:
     return render_template('pages/origin.html', 
-    podcasts = mongo.db.podcasts.find({"origin": 3}),
-    origin = 'USA',
-    title='American podcasts')
+                            podcasts = mongo.db.podcasts.find({"origin": 3}),
+                            origin = 'USA',
+                            title='American podcasts')
 
 @app.route('/read_more/<podcast_id>', methods=['GET', 'POST'])
 def read_more(podcast_id):
@@ -183,8 +183,8 @@ def read_more(podcast_id):
   picked_podcast = mongo.db.podcasts.find_one({'_id': ObjectId(podcast_id)})
 
   return render_template('pages/more.html', 
-  podcast = picked_podcast,
-  title='Read more about podcast')
+                          podcast = picked_podcast,
+                          title='Read more about podcast')
 
 @app.route('/your_account')
 def your_account():
@@ -201,9 +201,9 @@ def your_account():
   else:
     current_user = session['username']
     return render_template('pages/account.html', 
-    podcasts = mongo.db.podcasts.find({"username": current_user}), 
-    head="Account Dashboard", 
-    title="Account dashboard")
+                            podcasts = mongo.db.podcasts.find({"username": current_user}), 
+                            head="Account Dashboard", 
+                            title="Account dashboard")
     
 
 @app.route('/podcast/add', methods=['GET', 'POST'])
@@ -235,9 +235,9 @@ def podcast_add():
         return redirect(url_for('your_account'))
 
   return render_template('pages/podcast-add.html', 
-  form=add_form,
-  Title='Add new podcast',
-  head='Add Podcast')
+                          form=add_form,
+                          title='Add new podcast',
+                          head='Add Podcast')
     
 @app.route('/podcast/update/<podcast_id>', methods=['GET', 'POST'])
 def podcast_update(podcast_id):
@@ -289,10 +289,10 @@ def podcast_update(podcast_id):
     return redirect(url_for('your_account'))
 
   return render_template('pages/podcast-update.html', 
-  form = update_form, 
-  podcast = picked_podcast,
-  title='Update podcast details',
-  head='Edit Podcast')
+                          form = update_form, 
+                          podcast = picked_podcast,
+                          title='Update podcast details',
+                          head='Edit Podcast')
 
 @app.route('/podcast/delete/<podcast_id>', methods=['GET', 'POST'])
 def podcast_delete(podcast_id):
@@ -321,9 +321,9 @@ def podcast_delete(podcast_id):
         flash(f'Oops, something went wrong. Please try again', 'danger')
 
   return render_template('pages/podcast-delete.html', 
-  form = delete_form , 
-  podcast = picked_podcast,
-  title='Delete podcast')
+                          form = delete_form , 
+                          podcast = picked_podcast,
+                          title='Delete podcast')
 
 @app.route('/change-password', methods=['GET', 'POST'])
 def change_password():
