@@ -2,7 +2,7 @@
 <img src="https://i.ibb.co/N27FgpP/logoand.png">
 </p>
 
-[This website]((https://someone-knows-something.herokuapp.com/)) was created for English speaking enthusiasts of true crime drama as well as people that like drama in general. Podcast is a form that can be introduced to  people that like books and/or films but find too little time to focus on any of these.
+[This website](https://someone-knows-something.herokuapp.com/) was created for English speaking enthusiasts of true crime drama as well as people that like drama in general. Podcast is a form that can be introduced to  people that like books and/or films but find too little time to focus on any of these.
 
 - [UX](#ux)
   - [Project purpose](#project-purpose)
