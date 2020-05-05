@@ -306,11 +306,14 @@ def podcast_delete(podcast_id):
     if existing_user and check_password_hash(existing_user['password'], delete_form.password.data):
       mongo.db.podcasts.delete_one( {'_id': ObjectId(podcast_id)})
       flash(f'Podcast deleted', 'success')
-      return redirect(url_for('your_account', title='Podcast deleted'))
+      return redirect(url_for('your_account'))
     else:
         flash(f'Oops, something went wrong. Please try again', 'danger')
 
-  return render_template('pages/podcast-delete.html', form = delete_form , podcast = picked_podcast)
+  return render_template('pages/podcast-delete.html', 
+  form = delete_form , 
+  podcast = picked_podcast,
+  title='Delete podcast')
 
 @app.route('/password_change', methods=['GET', 'POST'])
 def password_change():
