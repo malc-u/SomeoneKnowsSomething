@@ -1,3 +1,9 @@
+<p align="center">
+<img src="https://i.ibb.co/N27FgpP/logoand.png">
+</p>
+
+This is TESTING.md file created as an extension to the [README.md](https://github.com/malc-u/SomeoneKnowsSomething/blob/master/README.md) testing section.
+
 - [Manual testing](#manual-testing)
   - [Responsiveness](#responsiveness)
     - [Bugs - responsiveness](#bugs---responsiveness)
@@ -32,7 +38,7 @@
     - [settings.html](#settingshtml)
   - [CSS Validation](#css-validation)
   - [Java Script Validation](#java-script-validation)
-  - [Python Validation](#python-validation)
+  - [Python code anylisis](#python-code-anylisis)
 
 # Manual testing
 
@@ -187,7 +193,9 @@ Throughout the develompment process I came across these bugs:
 
 This was carried out using [W3C Markup Validation](https://validator.w3.org/).
 
-### base.html
+### Layout
+
+#### base
 
 Validation brings up 1 error:
 
@@ -195,7 +203,7 @@ Validation brings up 1 error:
 
 This was left unfixed as advised on [Flask - The Base Layout](https://flask.palletsprojects.com/en/1.1.x/tutorial/templates/) as correct.
 
-### footer.html
+#### footer
 
 Validation brings up 1 warning:
 
@@ -208,7 +216,7 @@ Validation also brings up 2 errors:
 
 These were left unfixed as this file contains html for one block/component of an application layout that is clearly indicated in the file by syntax used `{% block footer %} {% endblock %}`.
 
-### navbar.html
+#### navbar
 
 Validation brings up 1 warning that is exactly the same as in footer.html It also brings up 18 erros:
 
@@ -217,7 +225,7 @@ Validation brings up 1 warning that is exactly the same as in footer.html It als
 - 2 errors informing about repeated occurence of `id="navbarDropdown"`. Left unchanged as there are 2 separate drop down multilink navigation bars used and mentioned `id` is Bootstrap class for multi-link droping down navbar items.
 - 2 errors informing about not allowed text in element `ul` - these were `{% else %}` and `{% endif %}`. Left unchanged as the statments are valid [Jinja control structures](https://jinja.palletsprojects.com/en/2.11.x/templates/#list-of-control-structures)
 
-### sidebar.html
+#### sidebar
 
 Validation brings up 1 warning and 14 errors. Warning is identical as in footer.html and navbar.html, errors are:
 
@@ -226,40 +234,44 @@ Validation brings up 1 warning and 14 errors. Warning is identical as in footer.
 - 1 error related to missing alt in logo - this was fixed, alt addded
 - 3 errors informing about not allowed text in element `ul` - these were `{% else %}`, `{% endif %}` and `{% if 'username' in session %}`. Left unchanged as the statments are valid [Jinja control structures](https://jinja.palletsprojects.com/en/2.11.x/templates/#list-of-control-structures)
 
-### flash-alerts.html
+### Components
+
+#### flash-alerts
 
 Validation brings 1 warning and 2 errors exactly the same as a warning and first 2 errors in previously validated pages. Action not taken as not required - reasons detailed in the previous occurences.
 
-### form-add.html
+#### form-add
 
 Validation brings up 1 warning and 8 errors, first 2 being the same as in all previously validated pages. Remaining 6 errors are about stray tags `tr` & `td` - these were also left unchanged as they were used as advised for [customer rendering of fadio fields in WTForms](https://wtforms.readthedocs.io/en/2.3.x/fields/)
 
-### form-delete.html
+#### form-delete
 
 Validation of this file brings up 1 warning and 2 errors. They are all equivalent to the ones from footer.html and flash-alerts.html
 Action not taken - resons described in previous occurences.
 
-### form-login.html
+#### form-login
 
 Validation of this file brings up 1 warning and 2 errors. They are all equivalent to the ones from footer.html, flash-alerts.html and form-delete.html
 Action not taken - resons described in previous occurences.
 
-### form-password.html
+#### form-password
 
 Validation of this file brings up 1 warning and 2 errors. They are all equivalent to the ones from footer.html, flash-alerts.html, form-delete.html & form-login.html.
 Action not taken - resons described in previous occurences.
 
-### form-register.html
+#### form-register
 
 Validation of this file brings up 1 warning and 2 errors. They are all equivalent to the ones from footer.html, flash-alerts.html, form-delete.html, form-login.html & form-password.html.
 Action not taken - resons described in previous occurences.
 
-### form-update.html
+#### form-update
 
 Validation of this file brings up 1 warning and 8 errors. They are all equivalent to the ones from form-add.html.
 Action not taken - resons described in previous occurence.
 
-### account.html
+### Pages
+
+#### account
 
 Validation of this file brings up 1 warning and 9 errors:
 
@@ -267,57 +279,57 @@ Validation of this file brings up 1 warning and 9 errors:
 - 1 errors regarding missing alt in `img` tag - this was fixed
 - Remaining 6 errors related to use of `{{ url_for }}` and type of the field used in `href` and `src` (e.g. `{{podcast.podcast_link}}`) in all links on this page. All left unfixed as linked correctly as advised in [Flask tutorial](https://flask.palletsprojects.com/en/1.1.x/tutorial/templates/#)
 
-### index.html
+#### index
 
 Validation of this file brings up 1 warning and 3 errors.
 
 - The warning and first 2 errors are equivalent to the ones from all previously validated pages except base.html.
 - Last error related to use of `{{ url_for }}` - left unfixed as linked correctly as advised in [Flask tutorial](https://flask.palletsprojects.com/en/1.1.x/tutorial/templates/#)
 
-### login.html
+#### login
 
 Validation of this file brings up 1 warning and 2 errors. They are all equivalent to the ones from previous pages (except base.html)
 Action not taken - resons described in previous occurences.
 
-### more.html
+#### more
 
 Validation of read more page brings up 1 warning and 6 errors.
 
 - Warning and first 3 errors are equivalent to the account.html page.
 - Remainign 3 errors related to use of `{{ url_for }}` and type of the field used in `href` and `src` (e.g. `{{podcast.podcast_link}}`) in all links on this page. All left unfixed as linked correctly as advised in [Flask tutorial](https://flask.palletsprojects.com/en/1.1.x/tutorial/templates/#)
 
-### origin.html
+#### origin
 
 Validation of read more page brings up 1 warning and 4 errors.
 They are equivalent to the warning, 2 first and 3 last errors from more.html page.
 Action not taken - resons described in previous occurences.
 
-### podcast-add.html
+#### podcast-add
 
 Validation of this file brings up 1 warning and 2 errors. They are all equivalent to the ones from previous pages (except base.html)
 Action not taken - resons described in previous occurences.
 
-### podcast-delete.html
+#### podcast-delete
 
 Validation of this page beings up 1 warning and 5 errors.
 They are all equivalent to the ones from origin.html page. Action not taken - described in previous occcurences (origin.html and more.html)
 
-### podcast-update.html
+#### podcast-update
 
 Validation of this file brings up 1 warning and 2 errors. They are all equivalent to the ones from previous pages (except base.html)
 Action not taken - resons described in previous occurences.
 
-### recommended.html
+#### recommended
 
 Validation of this page beings up 1 warning and 7 errors.
 They are all equivalent to the ones from origin.html page. Action not taken - described in previous occcurences (origin.html, more.html and podcast-delete.html)
 
-### register.html
+#### register
 
 Validation of this page beings up 1 warning and 3 errors.
 They are all equivalent to the ones from origin.html page. Action not taken - described in previous occcurences (origin.html, more.html, podcast-delete.html and recommended.html)
 
-### settings.html
+#### settings
 
 Validation of this file brings up 1 warning and 2 errors. They are all equivalent to the ones from previous pages (except base.html)
 Action not taken - resons described in previous occurences.
@@ -330,6 +342,6 @@ Action not taken - resons described in previous occurences.
 
 [JS Hint](https://jshint.com/) was used to validate JavaScript - found 1 warning - missing semicolon - fixed.
 
-## Python Validation
+## Python code anylisis
 
-[Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) extension for Visual Studio Code was used to validate Python.
+[Pylint](https://www.pylint.org/) extension for Visual Studio Code was used to analyze Python code.
