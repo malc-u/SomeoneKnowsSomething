@@ -18,12 +18,19 @@ mongo = PyMongo(app)
 
 @app.route('/')
 def index():
+  """
+  Function that opens home/index page of the project.
+  """  
   return render_template('pages/index.html')
 
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
   """
+  Function allowing to login into the page using Login Form.
+  It check whether username provided matches the one stored in users collection of 
+  a database.
+  It also checks whether hashed form of a password provided in the form is a match too.
   Check_password_hash part is based on example no 9 from this page
   https://www.programcreek.com/python/example/58659/werkzeug.security.check_password_hash
   but it was amended and updated to suit the needs of this app
@@ -48,6 +55,11 @@ def login():
 
 @app.route('/register', methods=['GET', 'POST'])
 def register():
+  """
+  Function that allows to register new user by creating saving into database(users 
+  collection) new username and new password (both provided in a registration form). 
+  Password to be stored in a hashed form.
+  """ 
   form_register = RegistrationForm()
 
   if form_register.validate_on_submit():
@@ -71,21 +83,40 @@ def register():
 
 @app.route('/logut')
 def logout():
+  """
+  Function that logs the user out and clears the session cookie.
+  """ 
   session.clear()
   return render_template('pages/index.html')
 
 @app.route('/recommended')
 def recommended():
+  """
+  Function that opens recommended page by searchnign podcasts collection of a database
+  for all content with value of a key "is_recommended" set to "True"
+  """ 
   return render_template('pages/recommended.html', 
   podcasts = mongo.db.podcasts.find({"is_recommended": True}), recommended = "Recommended")
 
 @app.route('/favourites')
 def favourites():
+  """
+  Function that opens recommended page by searchning podcasts collection of a database
+  for content with value of a key "is_favourite" set to "True" and 
+  then limits output to 8 results only.
+  """ 
   return render_template('pages/recommended.html', 
   podcasts = mongo.db.podcasts.find({"is_favourite": True}).limit(8), recommended = "Users favourites")
 
 @app.route('/british')
 def british():
+  """
+  Function that checks whether user is logged in. For logged in user it opens 
+  an origin page by searchning podcasts collection of a database
+  for content with value of an key "origin" set to "1" and presents it to a user as
+  of a British origin.
+  For users that are not logged in it redirects to login page.
+  """ 
   if 'username' not in session:
     flash(f'Oops... you need to be logged in to see this page.', 'danger')
     return redirect(url_for('login'))
@@ -96,6 +127,13 @@ def british():
 
 @app.route('/australian')
 def australian():
+  """
+  Function that checks whether user is logged in. For logged in user it opens 
+  an origin page by searchning podcasts collection of a database
+  for content with value of an key "origin" set to "2" and presents it to a user as 
+  of an Australian origin.
+  For users that are not logged in it redirects to login page.
+  """ 
   if 'username' not in session:
     flash(f'Oops... you need to be logged in to see this page.', 'danger')
     return redirect(url_for('login'))
@@ -106,6 +144,13 @@ def australian():
 
 @app.route('/american')
 def american():
+  """
+  Function that checks whether user is logged in. For logged in user it opens 
+  an origin page by searchning podcasts collection of a database
+  for content with value of an key "origin" set to "3" and presents it to a user as 
+  of an American origin.
+  For users that are not logged in it redirects to login page.
+  """ 
   if 'username' not in session:
     flash(f'Oops... you need to be logged in to see this page.', 'danger')
     return redirect(url_for('login'))
@@ -116,12 +161,24 @@ def american():
 
 @app.route('/read_more/<podcast_id>', methods=['GET', 'POST'])
 def read_more(podcast_id):
+  """
+  Function that dispalys read more page with details of clicked by the user podcast.
+  It searched database collection podcasts for the podcast using a value "ObjectId"
+  of the key "_id"
+  """ 
   picked_podcast = mongo.db.podcasts.find_one({'_id': ObjectId(podcast_id)})
 
   return render_template('pages/more.html', podcast = picked_podcast)
 
 @app.route('/your_account')
 def your_account():
+  """
+  Function that checks whether user is logged in. For logged in user it opens 
+  account dashboard and displays podcasts of this user by searchning podcasts collection 
+  of a database for content with value of an key "username" set to "username" 
+  from session.
+  For users that are not logged in it redirects to login page.
+  """ 
   if 'username' not in session:
     flash(f'Oops... you need to be logged in to see this page.', 'danger')
     return redirect(url_for('login'))
@@ -133,6 +190,11 @@ def your_account():
 
 @app.route('/podcast/add', methods=['GET', 'POST'])
 def podcast_add():
+  """
+  Function that checks whether user is logged in. For logged in user it opens 
+  page with a form that allows user to add new content to the database.
+  For users that are not logged in it redirects to login page.
+  """ 
   if 'username' not in session:
     flash(f'Oops... you need to be logged in to see this page.', 'danger')
     return redirect(url_for('login'))
@@ -156,14 +218,19 @@ def podcast_add():
 
   return render_template('pages/podcast-add.html', form=add_form)
     
-"""
-Used request.method == 'GET' following advice from 
-https://romain.dorgueil.net/wiki/python/wtforms and https://stackoverflow.com/a/23714791
-to populate update form with existing in database details for the podcast that user 
-wants to amend. 
-"""
 @app.route('/podcast/update/<podcast_id>', methods=['GET', 'POST'])
 def podcast_update(podcast_id):
+  """
+  Function that checks whether user is logged in. For logged in user it opens 
+  page with a form that allows user to edit existing content to the database.
+  It searches collection podcasts in the detabase and displays pre-filled in form
+  with the content of a podcast found using value "ObjectId(podcast_id)" of a key "_id".
+  Used request.method == 'GET' following advice from 
+  https://romain.dorgueil.net/wiki/python/wtforms and https://stackoverflow.com/a/23714791
+  to populate update form with existing in database details for the podcast that user 
+  wants to amend.  
+  For users that are not logged in it redirects to login page.
+  """ 
   if 'username' not in session:
     flash(f'Oops... you need to be logged in to see this page.', 'danger')
     return redirect(url_for('login'))
@@ -204,6 +271,13 @@ def podcast_update(podcast_id):
 
 @app.route('/podcast/delete/<podcast_id>', methods=['GET', 'POST'])
 def podcast_delete(podcast_id):
+  """
+  Function that checks whether user is logged in. For logged in user it opens page with
+  more details of podcast to be deleted and short form to be submitted for a podcast 
+  to be deleted. It searched database collection podcasts for the podcast using a 
+  value "ObjectId(podcast_id)" of the key "_id".
+  For users that are not logged in it redirects to login page.
+  """ 
   if 'username' not in session:
     flash(f'Oops... you need to be logged in to see this page.', 'danger')
     return redirect(url_for('login'))
@@ -225,6 +299,14 @@ def podcast_delete(podcast_id):
 
 @app.route('/password_change', methods=['GET', 'POST'])
 def password_change():
+  """
+  Function that checks whether user is logged in. For logged in user it opens page with
+  a form that allows user to change their password.
+  It searches database collection users for a value of a key "username" that is 
+  identical to "username" in session. It then replaces existing in the database password
+  with a hashed form of the one from the form.
+  For users that are not logged in it redirects to login page.
+  """ 
   if 'username' not in session:
     flash(f'Oops... you need to be logged in to see this page.', 'info')
     return redirect(url_for('login'))
