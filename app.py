@@ -360,7 +360,10 @@ def password_change():
     flash(f'Error updating password. Please try again', 'danger')
     return redirect(url_for('your_account'))
 
-  return render_template('pages/settings.html', form = change_form)
+  return render_template('pages/settings.html', 
+                          form = change_form,
+                          head='Password change',
+                          title='Change password')
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
