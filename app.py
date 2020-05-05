@@ -21,7 +21,9 @@ def index():
   """
   Function that opens home/index page of the project.
   """  
-  return render_template('pages/index.html')
+  return render_template('pages/index.html',
+  title="True crime podcasts",
+  head="True crime podcasts")
 
 
 @app.route('/login', methods=['GET', 'POST'])
