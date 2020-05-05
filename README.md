@@ -2,7 +2,7 @@
 <img src="https://i.ibb.co/N27FgpP/logoand.png">
 </p>
 
-This website was created for English speaking enthusiasts of true crime drama as well as people that like drama in general. Podcast is a form that can be introduced to  people that like books and/or films but find too little time to focus on any of these.
+[This website]((https://someone-knows-something.herokuapp.com/)) was created for English speaking enthusiasts of true crime drama as well as people that like drama in general. Podcast is a form that can be introduced to  people that like books and/or films but find too little time to focus on any of these.
 
 - [UX](#ux)
   - [Project purpose](#project-purpose)
@@ -414,7 +414,7 @@ Testing details can be found in separate [TESTING.md file](https://github.com/ma
 You must have following installed on your machine:
 
 1. IDE such as VS Code or Sublime
-2. Python
+2. Python3
 3. PIP
 4. Git
 5. MongoDB running locally on your machine and connected onto your MongoDB Atlas
@@ -423,46 +423,51 @@ You must have following installed on your machine:
 
 1. **Save** a zip **copy of [this](https://github.com/malc-u/SomeoneKnowsSomething)** Github **repository** using "Clone of download" green button or clone repository dircetly to your IDE using command
 
-```
+```console
 git clone https://github.com/malc-u/SomeoneKnowsSomething
 ```
 
 2. In the terminal of your IDE **open folder with the repository**
 3. **Create virtual environment** using command
 
-```
-python -m venv <name of your virtual environment>
+```console
+Windows: python -m venv <name of your virtual environment>
+Linux: py3 -m venv <name of your virtual environment>
 ```
 
 4. **Activate** your **virtual environment** with command
 
-```
-<name of your virtual environment>\Scripts\activate
+```console
+Windows: <name of your virtual environment>\Scripts\activate
+Linux: source <name of your virtual environment>\Scripts\activate
 ```
 
 5. If needed upgrade pip locally using command
 
-```
-python -m pip install --upgrade pip
+```console
+Windows: python -m pip install --upgrade pip
+Linux: sudo -H pip3 install --upgrade pip
 ```
 
-6. **Install** all **modules** this project depends on using command:
+6. **Install** all Python **modules** this project depends on using command:
 
-```
-pip -r requirements.txt
+```console
+Windows: pip install -r requirements.txt
+Linux: pi3 install -r requirements.txt
 ```
 
 7. **Create** file **`.flaskenv`** in repository and **include MONGO_URI and SECRET_KEY** to your own data base. Please call your **database `sks`** and include **2 collections** in it. First called **`users` and** second called **`podcasts`**. Examples of JSON structure of these collections can be seen in [schemas folder](https://github.com/malc-u/SomeoneKnowsSomething/tree/master/schemas)
 
 8. **Run** this **application** using command:
 
-```
-python app.py
+```console
+Windows: python app.py
+Linux: python3 app.py
 ````
 
 9. **Visit website** using following in your browser's address bar
 
-```
+```console
 http://127.0.0.1:5000
 ```
 
