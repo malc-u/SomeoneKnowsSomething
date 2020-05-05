@@ -282,7 +282,10 @@ def podcast_update(podcast_id):
     flash(f'Error updating podcast. Please try again', 'danger')
     return redirect(url_for('your_account'))
 
-  return render_template('pages/podcast-update.html', form = update_form, podcast = picked_podcast)
+  return render_template('pages/podcast-update.html', 
+  form = update_form, 
+  podcast = picked_podcast,
+  title='Update podcast details')
 
 @app.route('/podcast/delete/<podcast_id>', methods=['GET', 'POST'])
 def podcast_delete(podcast_id):
