@@ -325,8 +325,8 @@ def podcast_delete(podcast_id):
   podcast = picked_podcast,
   title='Delete podcast')
 
-@app.route('/password_change', methods=['GET', 'POST'])
-def password_change():
+@app.route('/change-password', methods=['GET', 'POST'])
+def change_password():
   """
   Function that checks whether user is logged in. For logged in user it opens page with
   a form that allows user to change their password.
