@@ -41,7 +41,7 @@ This is TESTING.md file created as an extension to the [README.md](https://githu
       - [settings](#settings)
   - [CSS Validation](#css-validation)
   - [Java Script Validation](#java-script-validation)
-  - [Python code anylisis](#python-code-anylisis)
+  - [Python code analysis](#python-code-analysis)
 
 # Manual testing
 
@@ -61,11 +61,11 @@ This is TESTING.md file created as an extension to the [README.md](https://githu
   - 1024 x 1366 iPad Pro
   
 - **Result**: page is responsive and can be used on all planned devices. There are no elements on this page that are not responding as planned.
-- **Conclusion**: all tests that were run on responsivenes were passed therefore page is fully responsive.
+- **Conclusion**: all tests that were run on responsiveness were passed therefore page is fully responsive.
 
 ### Bugs - responsiveness
 
-Throughout the develompment process I came across these bugs:
+Throughout the development process I came across these bugs:
 
 - **Hero image**
   - **Bug**: image was not displaying as intended
@@ -100,7 +100,7 @@ Throughout the develompment process I came across these bugs:
 
 ### Bugs - interaction
 
-Throughout the develompment process I came across two bugs related to page interaction:
+Throughout the development process I came across two bugs related to page interaction:
 
 - **Sidebar**
   - **Bug**: sidebar was taking too much space on mobile devices
@@ -108,7 +108,7 @@ Throughout the develompment process I came across two bugs related to page inter
   - **Result**: this bug was removed and mobile page display does not include sidebar now
 - **Navbar**
   - **Bug**: navbar was not collapsing on click on mobile phones
-  - **Fix**: added function in JavaScript to collaps navabr on click
+  - **Fix**: added function in JavaScript to collapse navbar on click
   - **Result**: this bug is now fixed and navbar works as intended
 
 ## Logic
@@ -116,24 +116,24 @@ Throughout the develompment process I came across two bugs related to page inter
 - **Plan**:
   - the page was planned to have 2 tier access for unregistered and registered users,
   - it was planned to store users passwords not as a string but in hashed version,
-  - the content was intended to be displayed based on country of origin as well as whether the admin recommends it or if registered users indicated it as their favouire,
+  - the content was intended to be displayed based on country of origin as well as whether the admin recommends it or if registered users indicated it as their favourite,
   - podcast update page was planned to have fields pre-filled
 - **Implementation**:
   - attempted to access pages intended for registered users by pasting direct access address to the address bar int he browser
   - attempted to register few users and checking if the password will save a string
-  - attepmted to add new podcast via the form without indicating country of origin
-  - attempted to add new content using a form, not indicating it as a favouire and checking if displays in on "User picks" page
+  - attempted to add new podcast via the form without indicating country of origin
+  - attempted to add new content using a form, not indicating it as a favourite and checking if displays in on "User picks" page
   - accessed content edit page and checking if fields are pre-filled
 - **Result**: all tested elements are working properly. There are no elements that present problems with logic
 - **Conclusion**: all tests that were run on logic were passed
 
 ### Bugs - logic
 
-Throughout the develompment process I came across these bugs:
+Throughout the development process I came across these bugs:
 
 - **Access for unregistered users**
   - **Bug**: unregistered user could access pages intended for registered users if they knew direct access address
-  - **Fix**: added defensive conditional in "app.py", functions intended for registered users start with `if 'username' not in session:` that redirectes unregistred user to login page and flashes message that access is denied
+  - **Fix**: added defensive conditional in "app.py", functions intended for registered users start with `if 'username' not in session:` that redirects unregistered user to login page and flashes message that access is denied
   - **Result**: this bug was removed and unregistered users are not able to access pages not intended for them
 - **Podcast edit form**
   - **Bug**: fields were not pre-filled
@@ -221,18 +221,18 @@ These were left unfixed as this file contains html for one block/component of an
 
 #### navbar
 
-Validation brings up 1 warning that is exactly the same as in footer.html It also brings up 18 erros:
+Validation brings up 1 warning that is exactly the same as in footer.html It also brings up 18 errors:
 
-- First 2 are exactly the same as in footer.html - left unfixed as this file containes html for one block/component of an applicaton that is clearly indicated in the file by sytnax used `{% block navbar %}` and `{% endblock %}`
+- First 2 are exactly the same as in footer.html - left unfixed as this file contains html for one block/component of an application that is clearly indicated in the file by syntax used `{% block navbar %}` and `{% endblock %}`
 - 12 errors related to use of `{{ url_for }}` in all links in top navbar. All left unfixed as linked correctly as advised in [Flask tutorial](https://flask.palletsprojects.com/en/1.1.x/tutorial/templates/#)
-- 2 errors informing about repeated occurence of `id="navbarDropdown"`. Left unchanged as there are 2 separate drop down multilink navigation bars used and mentioned `id` is Bootstrap class for multi-link droping down navbar items.
+- 2 errors informing about repeated occurrence of `id="navbarDropdown"`. Left unchanged as there are 2 separate drop down multi-link navigation bars used and mentioned `id` is Bootstrap class for multi-link dropping down navbar items.
 - 2 errors informing about not allowed text in element `ul` - these were `{% else %}` and `{% endif %}`. Left unchanged as the statments are valid [Jinja control structures](https://jinja.palletsprojects.com/en/2.11.x/templates/#list-of-control-structures)
 
 #### sidebar
 
 Validation brings up 1 warning and 14 errors. Warning is identical as in footer.html and navbar.html, errors are:
 
-- First 2 are exactly the same as in footer.html and navbar.html - left unfixed as this file containes html for one block/component of an applicaton that is clearly indicated in the file by sytnax used `{% block sidebar %}` and `{% endblock %}`
+- First 2 are exactly the same as in footer.html and navbar.html - left unfixed as this file contains html for one block/component of an application that is clearly indicated in the file by syntax used `{% block sidebar %}` and `{% endblock %}`
 - 8 errors related to use of `{{ url_for }}` in all links in the sidebar and logo. All left unfixed as linked correctly as advised in [Flask tutorial](https://flask.palletsprojects.com/en/1.1.x/tutorial/templates/#)
 - 1 error related to missing alt in logo - this was fixed, alt addded
 - 3 errors informing about not allowed text in element `ul` - these were `{% else %}`, `{% endif %}` and `{% if 'username' in session %}`. Left unchanged as the statments are valid [Jinja control structures](https://jinja.palletsprojects.com/en/2.11.x/templates/#list-of-control-structures)
@@ -241,11 +241,11 @@ Validation brings up 1 warning and 14 errors. Warning is identical as in footer.
 
 #### flash-alerts
 
-Validation brings 1 warning and 2 errors exactly the same as a warning and first 2 errors in previously validated pages. Action not taken as not required - reasons detailed in the previous occurences.
+Validation brings 1 warning and 2 errors exactly the same as a warning and first 2 errors in previously validated pages. Action not taken as not required - reasons detailed in the previous occurrences.
 
 #### form-add
 
-Validation brings up 1 warning and 8 errors, first 2 being the same as in all previously validated pages. Remaining 6 errors are about stray tags `tr` & `td` - these were also left unchanged as they were used as advised for [customer rendering of fadio fields in WTForms](https://wtforms.readthedocs.io/en/2.3.x/fields/)
+Validation brings up 1 warning and 8 errors, first 2 being the same as in all previously validated pages. Remaining 6 errors are about stray tags `tr` & `td` - these were also left unchanged as they were used as advised for [customer rendering of radio fields in WTForms](https://wtforms.readthedocs.io/en/2.3.x/fields/)
 
 #### form-delete
 
@@ -255,22 +255,22 @@ Action not taken - resons described in previous occurences.
 #### form-login
 
 Validation of this file brings up 1 warning and 2 errors. They are all equivalent to the ones from footer.html, flash-alerts.html and form-delete.html
-Action not taken - resons described in previous occurences.
+Action not taken - reasons described in previous occurrences.
 
 #### form-password
 
 Validation of this file brings up 1 warning and 2 errors. They are all equivalent to the ones from footer.html, flash-alerts.html, form-delete.html & form-login.html.
-Action not taken - resons described in previous occurences.
+Action not taken - reasons described in previous occurrences..
 
 #### form-register
 
 Validation of this file brings up 1 warning and 2 errors. They are all equivalent to the ones from footer.html, flash-alerts.html, form-delete.html, form-login.html & form-password.html.
-Action not taken - resons described in previous occurences.
+Action not taken - reasons described in previous occurrences.
 
 #### form-update
 
 Validation of this file brings up 1 warning and 8 errors. They are all equivalent to the ones from form-add.html.
-Action not taken - resons described in previous occurence.
+Action not taken - reasons described in previous occurrence.
 
 ### Pages
 
@@ -292,50 +292,50 @@ Validation of this file brings up 1 warning and 3 errors.
 #### login
 
 Validation of this file brings up 1 warning and 2 errors. They are all equivalent to the ones from previous pages (except base.html)
-Action not taken - resons described in previous occurences.
+Action not taken - reasons described in previous occurrences.
 
 #### more
 
 Validation of read more page brings up 1 warning and 6 errors.
 
 - Warning and first 3 errors are equivalent to the account.html page.
-- Remainign 3 errors related to use of `{{ url_for }}` and type of the field used in `href` and `src` (e.g. `{{podcast.podcast_link}}`) in all links on this page. All left unfixed as linked correctly as advised in [Flask tutorial](https://flask.palletsprojects.com/en/1.1.x/tutorial/templates/#)
+- Remaining 3 errors related to use of `{{ url_for }}` and type of the field used in `href` and `src` (e.g. `{{podcast.podcast_link}}`) in all links on this page. All left unfixed as linked correctly as advised in [Flask tutorial](https://flask.palletsprojects.com/en/1.1.x/tutorial/templates/#)
 
 #### origin
 
 Validation of read more page brings up 1 warning and 4 errors.
 They are equivalent to the warning, 2 first and 3 last errors from more.html page.
-Action not taken - resons described in previous occurences.
+Action not taken - reasons described in previous occurrences.
 
 #### podcast-add
 
 Validation of this file brings up 1 warning and 2 errors. They are all equivalent to the ones from previous pages (except base.html)
-Action not taken - resons described in previous occurences.
+Action not taken - reasons described in previous occurrences.
 
 #### podcast-delete
 
 Validation of this page beings up 1 warning and 5 errors.
-They are all equivalent to the ones from origin.html page. Action not taken - described in previous occcurences (origin.html and more.html)
+They are all equivalent to the ones from origin.html page. Action not taken - described in previous occurrences (origin.html and more.html)
 
 #### podcast-update
 
 Validation of this file brings up 1 warning and 2 errors. They are all equivalent to the ones from previous pages (except base.html)
-Action not taken - resons described in previous occurences.
+Action not taken - reasons described in previous occurrences.
 
 #### recommended
 
 Validation of this page beings up 1 warning and 7 errors.
-They are all equivalent to the ones from origin.html page. Action not taken - described in previous occcurences (origin.html, more.html and podcast-delete.html)
+They are all equivalent to the ones from origin.html page. Action not taken - described in previous occurrences (origin.html, more.html and podcast-delete.html)
 
 #### register
 
 Validation of this page beings up 1 warning and 3 errors.
-They are all equivalent to the ones from origin.html page. Action not taken - described in previous occcurences (origin.html, more.html, podcast-delete.html and recommended.html)
+They are all equivalent to the ones from origin.html page. Action not taken - described in previous occurrences (origin.html, more.html, podcast-delete.html and recommended.html)
 
 #### settings
 
 Validation of this file brings up 1 warning and 2 errors. They are all equivalent to the ones from previous pages (except base.html)
-Action not taken - resons described in previous occurences.
+Action not taken - reasons described in previous occurrences.
 
 ## CSS Validation
 
@@ -345,6 +345,6 @@ Action not taken - resons described in previous occurences.
 
 [JS Hint](https://jshint.com/) was used to validate JavaScript - found 1 warning - missing semicolon - fixed.
 
-## Python code anylisis
+## Python code analysis
 
-[Pylint](https://www.pylint.org/) extension for Visual Studio Code was used to analyze Python code.
+[Pylint](https://www.pylint.org/) extension for Visual Studio Code was used to analyse Python code.
