@@ -226,9 +226,12 @@ def podcast_add():
             'podcast_link': add_form.podcast_link.data,
                     })
         flash(f'Your podcasts has been added', 'success')
-        return redirect(url_for('your_account', title='Podcast Added'))
+        return redirect(url_for('your_account'))
 
-  return render_template('pages/podcast-add.html', form=add_form)
+  return render_template('pages/podcast-add.html', 
+  form=add_form,
+  Title='Add new podcast',
+  head='Add Podcast')
     
 @app.route('/podcast/update/<podcast_id>', methods=['GET', 'POST'])
 def podcast_update(podcast_id):
