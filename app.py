@@ -173,7 +173,9 @@ def read_more(podcast_id):
   """ 
   picked_podcast = mongo.db.podcasts.find_one({'_id': ObjectId(podcast_id)})
 
-  return render_template('pages/more.html', podcast = picked_podcast)
+  return render_template('pages/more.html', 
+  podcast = picked_podcast,
+  title='Read more about podcast')
 
 @app.route('/your_account')
 def your_account():
