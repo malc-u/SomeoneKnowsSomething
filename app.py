@@ -365,6 +365,17 @@ def change_password():
                           head='Password change',
                           title='Change password')
 
+# Error Handling of 404 & 500
+@app.errorhandler(404)
+def page_not_found(e):
+    '''
+    Error handler as supplied by Flask 
+    https://flask.palletsprojects.com/en/1.1.x/patterns/errorpages/- 
+    '''
+    return render_template('pages/404.html', 
+                            title="'404' Page Not Found",
+                            head='404 - Page Not Found'), 404
+
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
     port=os.environ.get('PORT'),
