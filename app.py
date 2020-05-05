@@ -83,8 +83,10 @@ def register():
       flash(f'Username already taken. Please try another one.', 'danger')
       return redirect(url_for('register'))
 
-  return render_template('pages/register.html', title='Register',
-                           form=form_register)
+  return render_template('pages/register.html', 
+                          title='Register',
+                          form=form_register,
+                          head='Register to Listen Now')
 
 @app.route('/logut')
 def logout():
