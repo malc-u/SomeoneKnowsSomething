@@ -50,13 +50,13 @@ This website was created for English speaking enthusiasts of true crime drama as
 
 ## Project purpose
 
-As a passionate book reader as well as a fan of all types of psychological and crime films/series I realized that due to family/work commitments I hadn't got much  time to concentrate on reading and watching TV but at the same time I used to spend roughly 2 - 2.5 hrs daily in the car - commuting. Although there is such a thing as audiobooks I found that podcast(better structured and in relatively short episodes) is a better choice. Podcasts gave me great opportunity of mixing business with pleasure.
+**As a passionate book reader** as well as a fan of all types of psychological and crime films/series I realized that due to family/work commitments **I hadn't got much  time to concentrate on reading and watching TV but at the same time I used to spend roughly 2 - 2.5 hrs daily in the car - commuting**. Although there is such a thing as audiobooks **I found that podcast**(better structured and in relatively short episodes) **is a better choice**. Podcasts **gave me great opportunity of mixing business with pleasure**.
 
-Despite this I quickly realised that finding a good podcast was a challenge in itself. It meant scrolling through a podcast app, trying to listen to something only to realize after 1 episode that this wasn't the right thing. Another option was to search internet for top charts created by journalists for newspapers or web portals.
+Despite this I quickly realised that **finding a good podcast was a challenge** in itself. It meant scrolling through a podcast app, trying to listen to something only to realize after 1 episode that this wasn't the right thing. Another option was to **search internet** for top charts created by journalists for newspapers or web portals.
 
 While the first option was very easy to navigate, after couple of uses suggested content was pretty much similar to what I have just finished. Second option was giving me the chance to broaden the content however it meant searching internet for mentioned titles.
 
-This page recommends limited number of content to unregistered users however it gives opportunity for a register user to check another user's favourite podcasts and to see all content added by them split into 3 categories - depending on the podcast origin. It also gives registered user opportunity to access podcast website - via a button - and explore ways of listing to it directly from there.
+**This page recommends limited number of content to unregistered users** however it **gives** opportunity for **a registered user** to check another user's favourite podcasts and to see **all content added by them split into 3 categories** - depending on the podcast origin. It also gives registered user opportunity to access podcast website - via a button - and explore ways of listing to it directly from there.
 
 ### Site visitor goals
 
@@ -111,13 +111,13 @@ Someone knows something - True Crime Podcast website is an ideal way to met all 
 
 Colors that were picked had be subtle enough not to overwhelm colorful cards of the podcasts covers.
 
-Yellow #fad201 and black #000000 were picked to be reminiscent of a tape "POLICE LINE DO NOT CROSS".
+Yellow ![#fad201](https://place-hold.it/10x10/fad201/fad201)#fad201 and black ![#000000](https://place-hold.it/10x10/000000/000000)#000000 were picked to be reminiscent of a tape "POLICE LINE DO NOT CROSS".
 
-Charcoal #36454f was picked as first thing that comes to mind when we think about crime is "gray" This color it is subtle and corresponds well with yellow and white as well as does not cause distraction for colorful podcasts covers.
+Charcoal ![#36454f](https://place-hold.it/10x10/36454f/36454f)#36454f was picked as first thing that comes to mind when we think about crime is "gray" This color it is subtle and corresponds well with yellow and white as well as does not cause distraction for colorful podcasts covers.
 
-Off yellow #ffffbf was picked to make forms stick out more but to be subtle enough to not overwhelm them.
+Off yellow ![#ffffbf](https://place-hold.it/10x10/ffffbf/ffffbf)#ffffbf was picked to make forms stick out more but to be subtle enough to not overwhelm them.
 
-Finally blue #5bc0de is a standard Bootstrap "info" class color that was used to differentiate between buttons when more than 1 is present or where there is a need for another color than yellow. It corresponds and compliments remaining colors well.
+Finally blue ![#5bc0de](https://place-hold.it/10x10/5bc0de/5bc0de)#5bc0de is a standard Bootstrap "info" class color that was used to differentiate between buttons when more than 1 is present or where there is a need for another color than yellow. It corresponds and compliments remaining colors well.
 
 ### Fonts
 
