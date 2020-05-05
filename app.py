@@ -285,7 +285,8 @@ def podcast_update(podcast_id):
   return render_template('pages/podcast-update.html', 
   form = update_form, 
   podcast = picked_podcast,
-  title='Update podcast details')
+  title='Update podcast details',
+  head='Edit Podcast')
 
 @app.route('/podcast/delete/<podcast_id>', methods=['GET', 'POST'])
 def podcast_delete(podcast_id):
