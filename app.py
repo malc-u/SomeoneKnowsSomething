@@ -365,7 +365,7 @@ def change_password():
                           head='Password change',
                           title='Change password')
 
-# Error Handling of 404 & 500
+# Error Handling of 404
 @app.errorhandler(404)
 def page_not_found(e):
     '''
