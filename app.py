@@ -101,7 +101,9 @@ def recommended():
   for all content with value of a key "is_recommended" set to "True"
   """ 
   return render_template('pages/recommended.html', 
-  podcasts = mongo.db.podcasts.find({"is_recommended": True}), recommended = "Recommended")
+  podcasts = mongo.db.podcasts.find({"is_recommended": True}), 
+  head = "Recommended",
+  title='Recommended')
 
 @app.route('/favourites')
 def favourites():
@@ -111,7 +113,9 @@ def favourites():
   then limits output to 8 results only.
   """ 
   return render_template('pages/recommended.html', 
-  podcasts = mongo.db.podcasts.find({"is_favourite": True}).limit(8), recommended = "Users favourites")
+  podcasts = mongo.db.podcasts.find({"is_favourite": True}).limit(8), 
+  head = "Users favourites",
+  title='Users favourites')
 
 @app.route('/british')
 def british():
