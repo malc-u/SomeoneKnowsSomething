@@ -48,7 +48,7 @@ def login():
 
     elif existing_user is not None and check_password_hash(existing_user['password'], form_login.password.data):
       session['username'] = request.form.get('username')
-      return redirect(url_for('your_account'))
+      return redirect(url_for('my_account'))
     
     flash(f'Password incorrect. Please try again.', 'danger')
     return redirect(url_for('login'))
@@ -186,8 +186,8 @@ def read_more(podcast_id):
                           podcast = picked_podcast,
                           title='Read more about podcast')
 
-@app.route('/your_account')
-def your_account():
+@app.route('/my-account')
+def my_account():
   """
   Function that checks whether user is logged in. For logged in user it opens 
   account dashboard and displays podcasts of this user by searchning podcasts collection 
@@ -231,8 +231,8 @@ def podcast_add():
             'no_episodes': add_form.no_episodes.data,
             'podcast_link': add_form.podcast_link.data,
                     })
-        flash(f'Your podcasts has been added', 'success')
-        return redirect(url_for('your_account'))
+        flash(f'Your podcast has been added', 'success')
+        return redirect(url_for('my_account'))
 
   return render_template('pages/podcast-add.html', 
                           form=add_form,
@@ -282,11 +282,11 @@ def podcast_update(podcast_id):
             'podcast_link': update_form.podcast_link.data}
             })
     flash(f'Podcast details updated sucessfully.', 'success')
-    return redirect(url_for('your_account'))
+    return redirect(url_for('my_account'))
 
   else:
     flash(f'Error updating podcast. Please try again', 'danger')
-    return redirect(url_for('your_account'))
+    return redirect(url_for('my_account'))
 
   return render_template('pages/podcast-update.html', 
                           form = update_form, 
@@ -316,7 +316,7 @@ def podcast_delete(podcast_id):
     if existing_user and check_password_hash(existing_user['password'], delete_form.password.data):
       mongo.db.podcasts.delete_one( {'_id': ObjectId(podcast_id)})
       flash(f'Podcast deleted', 'success')
-      return redirect(url_for('your_account'))
+      return redirect(url_for('my_account'))
     else:
         flash(f'Oops, something went wrong. Please try again', 'danger')
 
@@ -354,11 +354,11 @@ def change_password():
             {'password': password_hashed}
             })
     flash(f'Password updated sucessfully.', 'success')
-    return redirect(url_for('your_account'))
+    return redirect(url_for('my_account'))
 
   else:
     flash(f'Error updating password. Please try again', 'danger')
-    return redirect(url_for('your_account'))
+    return redirect(url_for('my_account'))
 
   return render_template('pages/settings.html', 
                           form = change_form,
