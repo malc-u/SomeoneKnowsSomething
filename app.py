@@ -53,7 +53,10 @@ def login():
     flash(f'Password incorrect. Please try again.', 'danger')
     return redirect(url_for('login'))
 
-  return render_template('pages/login.html', title = 'Login', form = form_login ) 
+  return render_template('pages/login.html', 
+  title = 'Login', 
+  form = form_login,
+  head="Please Login") 
 
 @app.route('/register', methods=['GET', 'POST'])
 def register():
