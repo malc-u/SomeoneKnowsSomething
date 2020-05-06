@@ -116,6 +116,14 @@ body {
     background-size: cover;
 }
 
+.fof-container {
+    background-image: url(../img/error404.png);
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 /*Footer customization*/
 footer {
     background-color: #36454f;
@@ -201,7 +209,8 @@ footer a {
 }
 
 @media (min-width: 1024px) {
-    .hero-container {
+    .hero-container,
+    .fof-container {
         background-size: contain;
     }
 }
