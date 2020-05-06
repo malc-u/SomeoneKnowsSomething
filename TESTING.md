@@ -39,6 +39,7 @@ This is TESTING.md file created as an extension to the [README.md](https://githu
       - [recommended](#recommended)
       - [register](#register)
       - [settings](#settings)
+      - [404](#404)
   - [CSS Validation](#css-validation)
   - [Java Script Validation](#java-script-validation)
   - [Python code analysis](#python-code-analysis)
@@ -336,6 +337,13 @@ They are all equivalent to the ones from origin.html page. Action not taken - de
 
 Validation of this file brings up 1 warning and 2 errors. They are all equivalent to the ones from previous pages (except base.html)
 Action not taken - reasons described in previous occurrences.
+
+#### 404
+
+Validation brings up 3 errors:
+
+- Bad value `{{url_for('static', filename='css/style.css')}}` for attribute `href` on element `link`: Illegal character in path segment: { is not allowed. This was left unfixed as advised on [Flask - The Base Layout](https://flask.palletsprojects.com/en/1.1.x/tutorial/templates/) as correct.
+- 2 errors related to use of `{{ url_for }}` in all links in the sidebar and logo. All left unfixed as linked correctly as advised in [Flask tutorial](https://flask.palletsprojects.com/en/1.1.x/tutorial/templates/#)
 
 ## CSS Validation
 
