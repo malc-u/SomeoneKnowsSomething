@@ -531,6 +531,7 @@ I have used following for researching ideas and ways of creating content needed 
 - Check password hashed - based on [example 9](https://www.programcreek.com/python/example/58659/werkzeug.security.check_password_hash)
 - request.method == 'GET' in forms - used following advice from [Page 1](https://romain.dorgueil.net/wiki/python/wtforms) and [Page 2](https://stackoverflow.com/a/23714791)
 - Index page picture - comes from [here](https://unsplash.com/photos/TMOeGZw9NY4)
+- 404 error picture - comes from [here](https://pixabay.com/vectors/error-404-panel-attention-work-3060993/)
 - Logo created using [Canva](https://www.canva.com/)
 - Color placeholders created using [Place-Hold](https://place-hold.it/)
 - [TextArea and other fields in forms](https://wtforms.readthedocs.io/en/stable/fields.html)
