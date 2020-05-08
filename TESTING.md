@@ -108,8 +108,8 @@ Throughout the development process I came across two bugs related to page intera
   - **Fix**: added media to remove sidebar display on mobiles, removed sidebar toggle button and created navbar-brand in the top navbar to replace clickable logo that was leading to index page and was nested inside sidebar
   - **Result**: this bug was removed and mobile page display does not include sidebar now
 - **Navbar**
-  - **Bug**: navbar was not collapsing on click on mobile phones
-  - **Fix**: added function in JavaScript to collapse navbar on click
+  - **Bug**: navbar collapsing on mobiles blocked possibility of opening dropdown links
+  - **Fix**: removed function in JavaScript to collaps navbar on click
   - **Result**: this bug is now fixed and navbar works as intended
 
 ## Logic
